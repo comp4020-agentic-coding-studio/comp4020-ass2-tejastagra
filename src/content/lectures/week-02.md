@@ -1,23 +1,24 @@
 ---
-title: Second lecture
-description:
-  Week 2 — the first substantive material, and the run-up to the first review
+title: The Three-Second Test
+description: Subject lines as the pitch, not the label.
 week: 2
-date: 2027-03-01
+date: 2027-02-15
 teachers:
-  - idris-fenn
+  - tejas-tagra
 related:
-  - sessions/02-first-review
-  - assessments/assignment-1
+  - sessions/02-the-three-second-test
 ---
 
-<!-- STARTER_CONTENT: replace this lecture, then remove this comment. -->
-
-Replace this page. It exists so the lectures listing sorts by week and the
-related block has more than one edge to draw.
+Covers why the subject line carries most of the triage decision, and what
+separates a subject line that describes an email from one that lets the
+reader triage without opening it.
 
 ## Outline
 
-- the first substantive material, and where it shows up in practice
-- what the first review is looking for
-- reading before next week
+- the triage decision happens before the body is read
+- descriptive vs. self-sufficient subject lines, and what "self-sufficient"
+  actually requires: relevance and urgency decidable without opening
+- why unresolved ambiguity forces the open a subject line should prevent
+- worked example: a redacted "Following up" that answers nothing, rewritten
+  to answer all three
+- what published data on "Quick question" shows about how common this is
