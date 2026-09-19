@@ -46,17 +46,18 @@ export const slopCourseMetaSchema = z
 // The code's last three digits were assigned to this repo when it was
 // provisioned, and no other course in the cohort has them. Change the first
 // digit to your course's level (and `level` to match); keep the other three.
-// STARTER_CONTENT: replace this course record, then remove this comment.
 export const courseMeta = slopCourseMetaSchema.parse({
-  code: "SLOP1089",
-  title: "Course Title Goes Here",
+  code: "SLOP3089",
+  title: "Getting Read",
   session: "Semester 1",
   year: 2027,
-  level: 1,
-  startDate: "2027-02-22",
-  endDate: "2027-05-28",
+  level: 3,
+  startDate: "2027-02-08",
+  endDate: "2027-04-26",
   description:
-    "One concise paragraph explaining what this course is, who it is for, " +
-    "and why somebody would choose to spend a semester taking it.",
-  tags: ["replace me"],
+    "Most cold emails are deleted unread. This course treats that as a " +
+    "triage problem rather than a persuasion problem, and spends twelve " +
+    "weeks on the specific writing failures that get an email ignored, " +
+    "not opened, or reported.",
+  tags: ["writing", "communication", "behavioural-design"],
 }) satisfies CourseMetaInput;
