@@ -1,30 +1,31 @@
 ---
-title: Opening lecture
+title: Why Cold Email Works (At All)
 description:
-  The first lecture — what the course is, why it is shaped this way, and what
-  happens in week 1
+  The three cold emails that worked, and the triage framing the semester
+  builds on.
 week: 1
-date: 2027-02-22
+date: 2027-02-08
 teachers:
-  - marisol-quaye
-slides: /decks/week-01/
+  - tejas-tagra
 related:
-  - sessions/01-getting-started
+  - sessions/01-why-cold-email-works
 ---
 
-<!-- STARTER_CONTENT: replace this lecture, then remove this comment. -->
-
-Replace this page. A lecture entry says what was covered and links to the pages
-that own the detail, so the lecture stays short and nothing is explained twice.
-
-The `related:` ref above is a graph edge: it renders on this page and on the
-session's, so declare a connection once, on whichever side is convenient.
-
-The page renders its `slides:` link automatically. Decks are markdown too,
-under `src/decks/`; the path is part of the lecture's API metadata.
+Opens from the exceptions, not the rule: three documented cold emails that
+got a reply, and what they had in common. Sets up the triage framing through
+contrast rather than failure, before week 2 starts naming what goes wrong.
 
 ## Outline
 
-- what the course is for
-- how the weeks are shaped
-- what to do before the first session
+- why cold email still gets used at all, despite most of it going unread
+- Ghulati → Cuban: a plain problem statement and a sizeable ask, no charm
+- Janoch → Lemkin: why the second, longer email outperformed the first
+- Field's early Figma outreach: cold email as user acquisition, not just
+  fundraising
+- what the three have in common — the reader is given enough to decide with
+- how the next eleven weeks are organised: individual failures, then the
+  reader's economics, then genre confusion, then the ethical edge
+
+Before next week: read the assessment overview. All three assessments draw
+on the taxonomy this course builds week by week, so it helps to know what
+you're building toward from the start.
