@@ -165,10 +165,14 @@ internal collection name, folder, and URLs stay `sessions`; only the display
 label in `src/site-config.ts` changes). These are two different jobs, not two
 views of the same content.
 
-**Weekly Syncs** (`src/content/sessions/`) are the tutor-led hour. Each week's
-sync page is deliberately thin and contains only:
+**Weekly Syncs** (`src/content/sessions/`) are the tutor-led hour, but no
+single sync page names a leading tutor. The three tutors each run the same
+week's sync content at a different time during the week — a student
+attends one of the three — so no individual sync belongs to one of them.
+That schedule (which tutor runs which time) lives on the homepage table,
+not on the sync page itself. Each week's sync page is deliberately thin
+and contains only:
 - a link to that week's related lecture/week
-- the tutor taking that sync
 - exactly two exercises, each scoped to about 30 minutes
 
 The Weekly Sync page does NOT carry the full teaching argument or the
@@ -177,9 +181,11 @@ Keep it short.
 
 **Lectures** (`src/content/lectures/`) are now where the deck-backed weekly
 content lives, but the page itself is deliberately thin. The deck carries
-the depth; the page is a pointer to it. Each lecture page carries, in this
-order:
-- the date and who is taking it (the lecturer)
+the depth; the page is a pointer to it. Tejas Tagra convenes and takes
+every lecture, so lecture pages don't carry a per-page instructor line
+either — that fact belongs on the People page, not repeated 12 times. Each
+lecture page carries, in this order:
+- the date
 - a short overview paragraph
 - a link to the slide deck (week 6 required; others per the deck rule above)
 - a callout reading roughly: "This is just to get a quick understanding
@@ -256,7 +262,8 @@ stay in the dry register like the rest of the site.
 - Assessment weights sum to 100%.
 - Every week's deck contains at least one concrete example (real/redacted
   or composite, per the Content rules above) built into a slide.
-- Every Weekly Sync page has exactly two exercises and names its tutor.
+- Every Weekly Sync page has exactly two exercises and names no single
+  leading tutor (the tutor/time schedule lives on the homepage table only).
 - Exactly four people entries exist (one instructor, three tutors).
 
 ## Process habits (not enforced by any check, but expected)
