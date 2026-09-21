@@ -3,6 +3,7 @@ import { getCollection } from "astro:content";
 import Card from "astro-theme-university/components/Card.astro";
 import CardGrid from "astro-theme-university/components/CardGrid.astro";
 import ContentLayout from "astro-theme-university/layouts/ContentLayout.astro";
+import { withBase } from "astro-theme-university/url";
 import heroImage from "../assets/images/hero-home.avif";
 import { courseMeta } from "../course-config";
 import { sessionLabels, siteConfig } from "../site-config";
@@ -50,10 +51,10 @@ const blocks = [...new Map(lectures.map((lecture) => [lecture.data.block, lectur
 
   <h2>Course structure</h2>
   <p>
-    Six blocks, taken in a single teaching period, available in both the
-    summer and winter teaching periods as well as the standard semester.
-    Each week pairs a one-hour lecture with a one-hour Weekly Sync. Graded
-    CRS (pass/fail); it does not count toward GPA.
+    3 credits, taken in a single teaching period. Runs in the summer and
+    winter non-standard teaching periods. Each week pairs a one-hour lecture
+    (Mondays, 11am–12pm) with a one-hour Weekly Sync — two contact hours a
+    week. Graded CRS (pass/fail); it does not count toward GPA.
   </p>
   <ol class="block-list">
     {
@@ -64,6 +65,45 @@ const blocks = [...new Map(lectures.map((lecture) => [lecture.data.block, lectur
       ))
     }
   </ol>
+
+  <p>
+    There are three assessments — see the <a href={withBase("/assessments/")}>assessment
+    page</a> for the brief, weighting, and due dates of each.
+  </p>
+
+  <h3>Weekly Sync timetable</h3>
+  <p>Each Weekly Sync is run by one of the three tutors:</p>
+  <table class="sync-timetable">
+    <thead>
+      <tr>
+        <th scope="col">Tutor</th>
+        <th scope="col">Day</th>
+        <th scope="col">Time</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href={withBase("/people/bodhi-kessler-nakamura/")}>Bodhi Kessler-Nakamura</a></td>
+        <td>Tuesday</td>
+        <td>2pm–3pm</td>
+      </tr>
+      <tr>
+        <td><a href={withBase("/people/marcus-ondieki/")}>Marcus Ondieki</a></td>
+        <td>Wednesday</td>
+        <td>10am–11am</td>
+      </tr>
+      <tr>
+        <td><a href={withBase("/people/naomi-reyes/")}>Naomi Reyes</a></td>
+        <td>Thursday</td>
+        <td>4pm–5pm</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <p>
+    For help, email <a href="mailto:SLOP3089@slop.university">SLOP3089@slop.university</a>
+    or use the Canvas page.
+  </p>
 
   <h2>Who it is for</h2>
   <p>
@@ -84,6 +124,12 @@ const blocks = [...new Map(lectures.map((lecture) => [lecture.data.block, lectur
     </Card>
     <Card title="People" href="/people/">
       <p>Who teaches the course and how to reach them.</p>
+    </Card>
+    <Card title="Lectures" href="/lectures/">
+      <p>The full teaching content, week by week.</p>
+    </Card>
+    <Card title="Policies" href="/policies/">
+      <p>Extensions, academic integrity, and the rest of the fine print.</p>
     </Card>
   </CardGrid>
 </ContentLayout>
@@ -111,5 +157,18 @@ const blocks = [...new Map(lectures.map((lecture) => [lecture.data.block, lectur
     gap: 0.5rem;
     padding-left: 1.25rem;
     margin-block: 1.5rem 2rem;
+  }
+
+  .sync-timetable {
+    width: 100%;
+    border-collapse: collapse;
+    margin-block: 1rem 2rem;
+  }
+
+  .sync-timetable th,
+  .sync-timetable td {
+    text-align: left;
+    padding: 0.5rem 0.75rem;
+    border-bottom: 1px solid var(--at-border, #d0d0d0);
   }
 </style>
