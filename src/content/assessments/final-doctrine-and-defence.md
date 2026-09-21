@@ -14,7 +14,9 @@ marking:
   description: >-
     The course is graded CRS (pass/fail) and does not count towards your
     GPA. A pass requires the two emails to be genuinely adapted to their
-    own recipient and reason, not the same email with names swapped.
+    own recipient and reason. Your submission must also be well supported,
+    with a justification that explains the choices you made for each
+    email.
 related:
   - midterm-teardown
 ---
