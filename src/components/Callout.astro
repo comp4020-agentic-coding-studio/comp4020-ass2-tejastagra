@@ -21,12 +21,21 @@ const { title, accent = "green" } = Astro.props;
 <style>
   .callout-box {
     margin-block: var(--at-spacing-lg);
-    padding: var(--at-spacing-md);
-    border: 1px solid var(--at-divider);
+    padding: var(--at-spacing-lg);
+    border-radius: 0;
     border-block-start: 3px solid var(--callout-accent, var(--at-success));
-    border-radius: var(--at-border-radius);
-    background: var(--at-bg-elevated, var(--at-bg));
-    box-shadow: var(--at-shadow-sm);
+    background: color-mix(
+      in srgb,
+      var(--callout-accent, var(--at-success)) 12%,
+      transparent
+    );
+  }
+
+  .callout-box :global(code) {
+    font-family: var(--at-font-mono, ui-monospace, monospace);
+    background: color-mix(in srgb, var(--callout-accent, var(--at-success)) 20%, transparent);
+    padding: 0.15em 0.4em;
+    border-radius: 0.25em;
   }
 
   .callout-box[data-accent="green"] {
