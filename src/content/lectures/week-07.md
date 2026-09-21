@@ -8,6 +8,7 @@ teachers:
 block: 4
 blockTitle: Persistence and Risk
 failure_mode: costly-follow-up
+slides: /decks/week-07/
 related:
   - sessions/07-the-second-email
 ---
