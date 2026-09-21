@@ -8,6 +8,7 @@ teachers:
 block: 2
 blockTitle: Pricing the Ask
 failure_mode: performed-personalisation
+slides: /decks/week-04/
 related:
   - sessions/04-the-one-that-fakes-knowing-you
 ---
