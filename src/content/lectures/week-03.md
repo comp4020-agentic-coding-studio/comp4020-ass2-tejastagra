@@ -8,6 +8,7 @@ teachers:
 block: 2
 blockTitle: Pricing the Ask
 failure_mode: vague-ask
+slides: /decks/week-03/
 related:
   - sessions/03-the-one-that-asks-for-everything
 ---
