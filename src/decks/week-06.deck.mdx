@@ -96,6 +96,27 @@ Relevance and specificity both failed. Length wasn't the problem.
 
 ---
 
+{/* _class: quote */}
+
+A composite version of the same failure, for a case you can quote directly:
+
+<div class="email-block">
+  <div class="email-block__header">
+    <p><strong>From:</strong> [Sender]</p>
+    <p><strong>To:</strong> [Recipient]</p>
+    <p><strong>Subject:</strong> Quick question about hiring</p>
+  </div>
+  <div class="email-block__body">
+    <p>Loved what you're building — really impressive traction. Any advice you can share on hiring would be hugely appreciated. Would you have 30 minutes sometime?</p>
+  </div>
+</div>
+
+Same three failures as the real case: no bounded action, no reason this
+particular reader was worth 30 minutes, and a compliment doing the work
+relevance should be doing instead.
+
+---
+
 ## What would have had to change
 
 Not a better compliment. A named, checkable reason this reader specifically
