@@ -25,7 +25,7 @@ rather than let it drift into generic "how to network" content.
 - Weekly Syncs are run by the three tutors across the week; the homepage
   carries a table of which tutor runs which sync and when.
 - Three assessment components, stated on the homepage with a link to the
-  assessment page: Assignment 01 (22%), Assignment 02 (30%), and Weekly
+  assessment page: Assignment 01 (30%), Assignment 02 (22%), and Weekly
   syncs: attendance and completion (48% in the underlying data, one
   assessment entry covering all twelve Weekly Syncs, not twelve separate
   entries). The Weekly Syncs page carries no percentage or weight on
