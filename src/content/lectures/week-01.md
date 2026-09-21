@@ -9,6 +9,7 @@ teachers:
   - tejas-tagra
 block: 1
 blockTitle: Getting Opened
+slides: /decks/week-01/
 related:
   - sessions/01-why-cold-email-works
 ---

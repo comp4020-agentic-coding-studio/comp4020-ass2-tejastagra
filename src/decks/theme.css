@@ -11,3 +11,34 @@
  * slide class you reach for (`_class: quote`), a code-heavy layout, a
  * background. */
 @import url("astro-theme-university/styles/deck.css");
+
+/* Reconstructed/composite example emails, styled to match the email-block
+ * component used on lecture pages (src/pages/lectures/[slug].astro), so an
+ * example reads the same way whether a student sees it on the page or on
+ * the slide. */
+.email-block {
+  border: 1px solid var(--at-border, #666);
+  border-radius: 6px;
+  overflow: hidden;
+  text-align: left;
+  font-size: 0.65em;
+  margin-block: 0.5em;
+}
+
+.email-block__header {
+  background: var(--at-bg-alt, rgba(255, 255, 255, 0.08));
+  padding: 0.5em 0.75em;
+  border-bottom: 1px solid var(--at-border, #666);
+}
+
+.email-block__header p {
+  margin: 0.1em 0;
+}
+
+.email-block__body {
+  padding: 0.75em;
+}
+
+.email-block__body p {
+  margin: 0;
+}
