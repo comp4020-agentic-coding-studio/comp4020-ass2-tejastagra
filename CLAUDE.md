@@ -32,7 +32,17 @@ rather than let it drift into generic "how to network" content.
   2% for completing that week's work, that everything is graded through
   Canvas, and that a missed sync can only be made up through the
   University's extenuating circumstances process.
-- Graded CRS (pass/fail), does not count toward GPA. IMPORTANT: before
+- Graded CRS (pass/fail), does not count toward GPA. The percentage weights
+  (22/30/48) stay in the frontmatter and data only because the platform's
+  schema requires a numeric weight per assessment and needs them to sum to
+  100% to build; they are not a mark the student is chasing. What actually
+  determines the pass/fail outcome, and what must be stated in plain
+  English on every assessment page and on the main Assessment page, is: a
+  student passes the course by passing Assignment 01, passing Assignment
+  02, and completing at least 8 of the 12 weekly syncs. The Weekly Syncs
+  page in particular must lead with the 8-of-12 threshold, not the
+  percentages, since that threshold is the thing that actually decides
+  whether a student passes. IMPORTANT: before
   writing this to the homepage, verify the template's fixed grading/marks
   model actually permits a CRS/pass-fail grade type. The spec says SlopU's
   "name, marks and palette stay as they arrived," so a custom grade scheme
@@ -161,7 +171,10 @@ it already exists in that week's deck, so nothing is lost in the move.
   Do not ship if they don't. Weekly syncs are graded as one assessment
   entry worth 48% overall, not as twelve separate 4% entries — the
   breakdown by week lives in that one entry's own page, not in the
-  assessment collection's structure.
+  assessment collection's structure. These weights are internal data
+  the platform needs to build; the pass/fail outcome for a student is
+  governed by the pass-Assignment-01/pass-Assignment-02/complete-8-of-12
+  rule above, not by the weights, and the assessment pages must say so.
 - Assessment descriptions must be written in plain English that a student
   understands without having seen any lecture or slide. No course jargon
   ("failure mode", "taxonomy", or other internal shorthand) on the
