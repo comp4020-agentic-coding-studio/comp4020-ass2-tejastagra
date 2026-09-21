@@ -4,15 +4,12 @@ description:
   The tutor-led hour attached to week 7's lecture on follow-ups.
 week: 7
 date: 2027-04-05
-teachers:
-  - bodhi-kessler-nakamura
 related:
   - lectures/week-07
 ---
 
 Follows the [week 7 lecture](/lectures/week-07/) on what a follow-up needs
-to justify making the reader pay attention again. This week's sync is led by Bodhi
-Kessler-Nakamura.
+to justify making the reader pay attention again.
 
 ## Exercise: name the new fact (30 min)
 

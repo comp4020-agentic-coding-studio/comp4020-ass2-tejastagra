@@ -4,15 +4,12 @@ description:
   The tutor-led hour attached to week 9's lecture on platform mismatch.
 week: 9
 date: 2027-04-19
-teachers:
-  - naomi-reyes
 related:
   - lectures/week-09
 ---
 
 Follows the [week 9 lecture](/lectures/week-09/) on how different platforms
 get skimmed.
-This week's sync is led by Naomi Reyes.
 
 ## Exercise: adapt for one platform (30 min)
 

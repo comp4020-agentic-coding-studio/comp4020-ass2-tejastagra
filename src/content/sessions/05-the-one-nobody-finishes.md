@@ -4,14 +4,11 @@ description:
   The tutor-led hour attached to week 5's lecture on length and structure.
 week: 5
 date: 2027-03-08
-teachers:
-  - marcus-ondieki
 related:
   - lectures/week-05
 ---
 
 Follows the [week 5 lecture](/lectures/week-05/) on shape as information.
-This week's sync is led by Marcus Ondieki.
 
 ## Exercise: sort the sentences (30 min)
 

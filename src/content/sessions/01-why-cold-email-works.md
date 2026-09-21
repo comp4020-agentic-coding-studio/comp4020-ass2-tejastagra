@@ -4,14 +4,12 @@ description:
   The tutor-led hour attached to week 1's lecture on the emails that worked.
 week: 1
 date: 2027-02-08
-teachers:
-  - bodhi-kessler-nakamura
 related:
   - lectures/week-01
 ---
 
 Follows the [week 1 lecture](/lectures/week-01/) on cold emails that
-worked. This week's sync is led by Bodhi Kessler-Nakamura.
+worked.
 
 ## Exercise: find the case (30 min)
 

@@ -5,15 +5,13 @@ description:
   compliance and synthesis.
 week: 12
 date: 2027-05-10
-teachers:
-  - naomi-reyes
 related:
   - lectures/week-12
 ---
 
 Follows the [week 12 lecture](/lectures/week-12/) tying the semester
-together. This week's sync is led by Naomi Reyes, and it's where the final
-assessment's doctrine starts getting drafted.
+together. This is where the final assessment's doctrine starts getting
+drafted.
 
 ## Exercise: draft the doctrine (30 min)
 

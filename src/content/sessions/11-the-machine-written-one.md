@@ -4,14 +4,12 @@ description:
   The tutor-led hour attached to week 11's lecture on automation and scale.
 week: 11
 date: 2027-05-03
-teachers:
-  - marcus-ondieki
 related:
   - lectures/week-11
 ---
 
 Follows the [week 11 lecture](/lectures/week-11/) on what a sequence trades
-away for scale. This week's sync is led by Marcus Ondieki.
+away for scale.
 
 ## Exercise: build the template (30 min)
 

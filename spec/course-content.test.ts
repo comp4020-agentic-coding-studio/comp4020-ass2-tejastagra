@@ -68,17 +68,15 @@ describe("course content promises", () => {
     }
   });
 
-  it("gives every Weekly Sync exactly one named tutor and two exercises", () => {
+  it("gives every Weekly Sync exactly two exercises and names no single leading tutor", () => {
     const sessions = byType("sessions");
     expect(sessions).toHaveLength(12);
     for (const session of sessions) {
-      const teachers = session.meta?.teachers as unknown[] | undefined;
-      expect(teachers?.length, `${session.id} does not name exactly one tutor`).toBe(1);
-
       const slug = session.id.replace(/^sessions\//, "");
       const html = readFileSync(resolve(`dist/sessions/${slug}/index.html`), "utf8");
       const exerciseHeadings = html.match(/<h2[^>]*>\s*Exercise/g) ?? [];
       expect(exerciseHeadings.length, `${session.id} does not have exactly two exercises`).toBe(2);
+      expect(html.includes("Teaching team"), `${session.id} still names a leading tutor`).toBe(false);
     }
   });
 

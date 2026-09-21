@@ -5,14 +5,12 @@ description:
   personalisation.
 week: 4
 date: 2027-03-01
-teachers:
-  - bodhi-kessler-nakamura
 related:
   - lectures/week-04
 ---
 
 Follows the [week 4 lecture](/lectures/week-04/) on the second-sentence
-tell. This week's sync is led by Bodhi Kessler-Nakamura.
+tell.
 
 ## Exercise: test a line (30 min)
 

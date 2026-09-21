@@ -3,8 +3,6 @@ title: Automation and Scale
 description: What automated sequences trade away for scale.
 week: 11
 date: 2027-05-03
-teachers:
-  - tejas-tagra
 block: 3
 blockTitle: Scale, Craft and the Law
 failure_mode: automation-flattening
@@ -13,43 +11,26 @@ related:
   - sessions/11-the-machine-written-one
 ---
 
+import Callout from "../../components/Callout.astro";
+
 Week 4 argued for specificity that would be false for a different reader.
 This lecture asks what happens to that argument at the scale automation
 makes possible.
 
-## Summary
+<Callout title="Before the lecture">
+  This is just to get a quick understanding before the lecture. The
+  examples and the rest are in the lecture, so it's advisable you attend.
+</Callout>
 
-An automated sequence can send a thousand emails in the time a one-to-one
-version takes to write one. It cannot, by construction, contain the kind of
-specificity week 4 argued for, because that specificity has to be true of
-one reader and false of the rest. A sequence merges fields into a template;
-it doesn't know anything about the recipient that a template variable
-didn't already know.
+## In brief
 
-This isn't an argument against automation. It's an argument for knowing
-what it costs: a sequence trades reply rate per email for volume of emails
-sent, and a writer who doesn't know that trade is being made will optimise
-the wrong thing.
-
-Composite example, illustrating the pattern:
-
-<div class="email-block">
-  <div class="email-block__header">
-    <p><strong>From:</strong> [Sender]</p>
-    <p><strong>To:</strong> [Recipient]</p>
-    <p><strong>Subject:</strong> Noticed what {{company}} is doing</p>
-  </div>
-  <div class="email-block__body">
-    <p>I noticed {{company}} has been doing great things in the {{industry}} space lately.</p>
-  </div>
-</div>
-
-Everything around a line like this can be competently merged; this one
-isn't, and it's the tell. A template can hold a company name and an
-industry field, but it can't know what "great things" means for one
-specific reader, so it falls back to a phrase true of none of them in
-particular. Recognising that tell is the practical skill this lecture is
-for — spotting where a sequence's economics show through the words.
+This week's failure is automation flattening: a sequence can send a
+thousand emails in the time a one-to-one version takes to write, but it
+can't hold the kind of specificity week 4 asked for, because that
+specificity has to be true of one reader and false of the rest. It
+matters because a template merging in a name and a company isn't the same
+as knowing anything about the person receiving it, and a writer who treats
+volume and reply rate as the same thing will optimise the wrong one.
 
 ## Outline
 

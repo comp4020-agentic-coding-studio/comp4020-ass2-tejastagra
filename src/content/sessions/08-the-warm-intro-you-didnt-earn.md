@@ -4,14 +4,11 @@ description:
   The tutor-led hour attached to week 8's lecture on warm-intro requests.
 week: 8
 date: 2027-04-12
-teachers:
-  - marcus-ondieki
 related:
   - lectures/week-08
 ---
 
 Follows the [week 8 lecture](/lectures/week-08/) on the connector's risk.
-This week's sync is led by Marcus Ondieki.
 
 ## Exercise: find the risk (30 min)
 

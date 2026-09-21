@@ -4,14 +4,12 @@ description:
   The tutor-led hour attached to week 2's lecture on subject lines.
 week: 2
 date: 2027-02-15
-teachers:
-  - marcus-ondieki
 related:
   - lectures/week-02
 ---
 
 Follows the [week 2 lecture](/lectures/week-02/) on subject lines as the
-pitch, not the label. This week's sync is led by Marcus Ondieki.
+pitch, not the label.
 
 ## Exercise: sort five subject lines (30 min)
 

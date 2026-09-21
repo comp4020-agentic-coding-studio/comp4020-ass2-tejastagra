@@ -5,15 +5,12 @@ description:
   reader's reply-or-ignore calculation.
 week: 6
 date: 2027-03-15
-teachers:
-  - naomi-reyes
 related:
   - lectures/week-06
 ---
 
 Follows the [week 6 lecture](/lectures/week-06/) and its slide deck on the
-relevance-specificity-length framework. This week's sync is led by Naomi
-Reyes.
+relevance-specificity-length framework.
 
 ## Exercise: score an email (30 min)
 

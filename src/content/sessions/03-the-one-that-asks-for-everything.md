@@ -4,14 +4,12 @@ description:
   The tutor-led hour attached to week 3's lecture on pricing the ask.
 week: 3
 date: 2027-02-22
-teachers:
-  - naomi-reyes
 related:
   - lectures/week-03
 ---
 
 Follows the [week 3 lecture](/lectures/week-03/) on vague asks and the
-three-question rubric. This week's sync is led by Naomi Reyes.
+three-question rubric.
 
 ## Exercise: run the rubric (30 min)
 
