@@ -12,21 +12,40 @@ fifty of these and a few seconds each. Almost every common writing failure is
 really a failure to understand that constraint, not a failure of charm or
 persuasion technique.
 
-Every week except week 1 names ONE specific, distinct failure mode of this
-kind. Week 1 sets the baseline through contrast instead — real cold emails
-that worked, and why — before week 2 starts naming what goes wrong. If a
-page doesn't clearly serve the triage framing, cut it or fold it into
-another week rather than let it drift into generic "how to network" content.
+Every week names ONE specific, distinct failure mode of this kind. If a page
+doesn't clearly serve the triage framing, cut it or fold it into another week
+rather than let it drift into generic "how to network" content.
+
+## Course structure (must appear on the homepage)
+
+- 6 units, taken in a single teaching period.
+- Available in the summer and winter teaching periods (not only the standard
+  semester).
+- Each week is a 1-hour lecture plus a 1-hour Weekly Sync.
+- Graded CRS (pass/fail), does not count toward GPA. IMPORTANT: before
+  writing this to the homepage, verify the template's fixed grading/marks
+  model actually permits a CRS/pass-fail grade type. The spec says SlopU's
+  "name, marks and palette stay as they arrived," so a custom grade scheme
+  that conflicts with the fixed university reads as ignoring the brief. If the
+  template doesn't support CRS, flag it and stop rather than inventing one.
 
 ## Content rules (apply to all generated prose)
 
+- Human academic register. The site is a real university course convened by
+  an academic, and should read like one: credible, precise, and written by a
+  person who knows the subject. This does NOT mean stiff, pompous, or hedged
+  prose, and it does not override the dry-practitioner voice or the
+  anti-slop rules below — a good academic writes clearly and concretely.
+  Think a well-written syllabus or a clear lecturer's course notes, not a
+  journal abstract full of throat-clearing. Where "academic register" and
+  "plain and dry" seem to pull apart, plain and dry wins; the academic part
+  is about credibility and care, not formality for its own sake.
 - No hype language. Banned words/phrases (non-exhaustive, extend by the same
   logic): "revolutionize", "game-changing", "unlock", "leverage" (as a verb),
   "supercharge", "seamless", "cutting-edge", "empower", "unleash", "10x",
   "disrupt", "synergy".
 - No two weeks may share a failure-mode tag, and no week may restate a prior
-  week's failure mode. Eleven weeks (2–12), eleven distinct failures; week 1
-  carries no failure_mode tag by design.
+  week's failure mode. Twelve weeks, twelve distinct failures.
 - Any claim about reply rates, open rates, or other behavioural statistics
   must be phrased directionally ("shorter emails tend to get faster replies"),
   never as a fabricated precise statistic ("73% of investors ignore emails
@@ -37,11 +56,30 @@ another week rather than let it drift into generic "how to network" content.
   (see People) — his bio and any quoted material from him is intentionally
   overblown, as contrast to the course's own register. Everything else
   (module content, assessments, the policies page) stays dry.
-- Every week's page contains at least one real or plausibly-redacted example
-  email written directly into its own prose, illustrating that week's
-  failure mode. No separate sources/examples page or collection — the
-  example lives in the session text itself, the way week 1 writes its three
-  source cases inline.
+- Every week's page includes at least one concrete example illustrating that
+  week's failure mode, written directly into the page (see Sessions vs.
+  lectures below — no separate sources page). Two kinds are both allowed,
+  and it matters which one you're using:
+  - **Real or redacted**, when the point is that this specific documented
+    thing happened (week 1's Ghulati/Janoch/Field cases). Attribute it
+    honestly, don't invent details beyond what's documented.
+  - **Composite/invented**, when the point is a pattern rather than a
+    specific person's failure (week 4's "I really enjoyed your recent talk
+    on scaling engineering teams..." line). This is fine and often clearer,
+    since it can be built to demonstrate the mechanism precisely, but it
+    must not be presented as something a real person actually sent, and
+    should read as illustrative rather than gossip about someone specific.
+  Default to composite for weeks that critique a generic failure mode;
+  reach for real/redacted only when the historical fact of what happened is
+  itself part of the point (fundraising outcomes, documented reply rates).
+- Reconstructed emails, not screenshots. When a real documented email is
+  shown (Ghulati, Janoch, Field), typeset it on the page as an email block
+  (sender, subject, body) built from publicly reported content, and label it
+  clearly as reconstructed from public reporting. Never reproduce or embed an
+  actual screenshot or image of a real email — a screenshot of a real email
+  is a copyrighted work even though the underlying facts are not. The facts
+  (who sent it, what it did, the outcome) are free to use; the original image
+  is not.
 - Prose should read like it comes from someone who has actually read cold
   emails professionally — concrete, specific, no generic career-advice
   filler.
@@ -54,66 +92,82 @@ another week rather than let it drift into generic "how to network" content.
   digit (3) is final.
 - Exactly 12 dated teaching weeks, all falling between the configured
   start/end dates.
-- All 12 weeks get a lecture page. Week 6 ("The One That Gets Ignored")
-  carries the one real `.deck.mdx` — build it as an actual content outline
-  (title slide, reader time-cost framework, worked example, recap, exercise
-  brief), not a placeholder deck.
+- All 12 weeks get a lecture page. At least one lecture MUST carry a real
+  `.deck.mdx` — week 6 ("The One That Gets Ignored") is that deck, built as an
+  actual content outline (title slide, reader time-cost framework, worked
+  example, recap, exercise brief), not a placeholder. Build a slide deck for
+  any other week that genuinely benefits from one — a week whose failure mode
+  is easier to see in slides (a framework, a before/after, a worked teardown)
+  than in prose. Not every week needs one; a week that teaches fine on the
+  page shouldn't get a deck just for symmetry, since twelve thin decks read as
+  filler and the spec rewards one strong deck the same as twelve. Judge it
+  per week. Any deck follows the same no-placeholder standard as week 6, and
+  any images it uses are reconstructed example emails or typographic slides,
+  never decorative stock photos (see the reconstructed-email rule in Content
+  rules). Sequence note: build a week's deck only after that week's lecture
+  content has passed its depth review — a deck for a week whose teaching isn't
+  solid yet is polish on sand.
 - Assessment weights must sum to exactly 100%. Do not ship if they don't.
-- People collection needs exactly two entries: Tejas Tagra (instructor) and
-  Bodhi Kessler-Nakamura (tutor). Do not invent additional staff.
+- People collection needs exactly four entries: Tejas Tagra (instructor) and
+  three tutors, one of whom is Bodhi Kessler-Nakamura. Do not invent staff
+  beyond these four. Only Bodhi's bio uses the overblown register (see
+  Content rules); Tejas and the other two tutors stay dry, or the "one
+  deliberate exception" loses its point. The two new tutors need distinct,
+  plausible practitioner backgrounds, not variations on Bodhi.
 
-## Sessions vs. lectures — what goes where
+## Weekly Syncs vs. lectures — what goes where
 
-These are two different jobs, not two views of the same content. Get this
-wrong and either the session is thin or the lecture duplicates it.
+The `sessions` collection is displayed to readers as "Weekly Syncs" (the
+internal collection name, folder, and URLs stay `sessions`; only the display
+label in `src/site-config.ts` changes). These are two different jobs, not two
+views of the same content.
 
-**Sessions** (`src/content/sessions/`) are the actual reading. This is where
-the argument lives in full: the mechanism behind the failure mode (not just
-the claim that it exists), a worked example written directly into the page,
-a rubric or framework where one genuinely fits the week's failure mode (see
-below), and the exercise. A student who only ever reads the session pages
-should come away having learned the course.
+**Weekly Syncs** (`src/content/sessions/`) are the tutor-led hour. Each week's
+sync page is deliberately thin and contains only:
+- a link to that week's related lecture/week
+- the tutor taking that sync
+- exactly two exercises, each scoped to about 30 minutes
 
-**Lectures** (`src/content/lectures/`) are the syllabus entry for the class
-where that session's argument gets delivered out loud. Fixed shape, every
-week:
-- one-line description
-- a short summary paragraph restating the session's point at a summary
-  level — never re-arguing it, never introducing new claims
-- an outline of bullet points naming the beats in delivery order (topics,
-  not conclusions — "the three jobs a vague ask hands to the reader," not
-  the explanation of what those jobs are)
-- teaching team
-- a link back to the session (via RELATED)
+The Weekly Sync page does NOT carry the full teaching argument or the
+mechanism. It is the practical hour attached to the lecture, not the reading.
+Keep it short.
 
-A lecture page must make sense as "here's what this class covers" without
-needing the session open. It must NOT contain the mechanism explanation, the
-full worked example text, or the exercise — those stay in the session. If a
-lecture bullet only makes sense after reading the session, that's fine,
-that's what the RELATED link is for. If a lecture page promises something
-(e.g. "when cold email beats a warm intro, and when it doesn't") that the
-session doesn't actually cover, that's a bug — the two pages must agree on
-what the week covers, even though only the session covers it in depth.
+**Lectures** (`src/content/lectures/`) are now where the substantive weekly
+content lives. Each lecture page carries:
+- the date
+- who is taking it (the lecturer)
+- a broad overview of the lecture
+- a slide deck reference where one exists (week 6 required; others optional
+  per the deck rule above)
+- a summary section, with NO images, covering: the goal of the lecture, what
+  students walked away with, and the important topics discussed
 
-Depth over length. There is no minimum word count for a session page, and
-padding one to seem thorough is a bug. A session is not "done enough" once a
-claim is made. It's done once the mechanism behind the claim is actually
-explained, not just asserted and moved past — see the difference between
-"vague asks fail" (assertion) and walking through why they move cost onto
-the reader and pricing the fix concretely (explanation).
+The lecture's summary section is the part a marker sampling a non-adjacent
+week will read to judge whether the week teaches something real. It must
+explain the mechanism of that week's failure mode, not just name it — the
+same depth bar that applied to session pages before now applies here. "Vague
+asks fail" (assertion) is not enough; walking through why they move cost onto
+the reader (explanation) is the standard.
 
-Not every week needs a rubric or three-question framework. Use one only
-where the failure mode is genuinely a decision-making pattern (a vague ask,
-fake personalisation). Weeks with a more mechanical failure mode (length,
-platform mismatch, follow-up timing) shouldn't be forced into the same
-rubric shape just for consistency — that produces its own version of "twelve
-weeks that repeat one another," just at the structural level.
+Depth over length. There is no minimum word count, and padding to seem
+thorough is a bug. A lecture page is done once the mechanism behind its
+week's failure mode is actually explained, not merely asserted and moved
+past.
 
-No separate sources page or reference collection, for any week. Real or
-redacted examples get written directly into the session page's own prose,
-the way week 1 writes Ghulati, Janoch, and Field inline. A closing line like
-"see the example below" should point to content already on the same page,
-never link out to a page that doesn't exist in the content model.
+Not every week needs a rubric or framework. Use one only where the failure
+mode is genuinely a decision-making pattern (a vague ask, fake
+personalisation). Weeks with a mechanical failure mode (length, platform
+mismatch, follow-up timing) shouldn't be forced into the same rubric shape
+just for consistency — that produces its own version of "twelve weeks that
+repeat one another," at the structural level.
+
+The lecture page and its Weekly Sync must agree on what the week covers. If a
+sync exercise assumes something the lecture never taught, that's a bug.
+
+No separate sources page or reference collection, for any week. Examples get
+written directly into the lecture page's own prose, the way week 1 writes
+Ghulati, Janoch, and Field inline. A line like "see the example below" points
+to content already on the same page, never to a page that doesn't exist.
 
 ## Writing like a human, not a model
 
@@ -139,18 +193,22 @@ directly:
   detail.
 
 This applies to every page except Bodhi Kessler-Nakamura's own bio and
-quoted material, which is deliberately overblown on purpose as tonal
-contrast, per the Content rules above.
+quoted material, which is deliberately overblown as tonal contrast, per the
+Content rules above. The other three people (Tejas and the two other tutors)
+stay in the dry register like the rest of the site.
 
 ## spec/ checks to implement
 
 - All 12 sessions/weeks exist, dated within range.
-- No two weeks share a failure-mode tag (weeks 2–12 each get a `failure_mode`
-  field in frontmatter; week 1 has none, by design).
+- No two weeks share a failure-mode tag (add a `failure_mode` field to each
+  week's frontmatter if the schema allows it, or enforce via a checked list).
 - At least one lecture's page links to a real `/decks/...` file.
 - Assessment weights sum to 100%.
-- Every week's page contains at least one example embedded in its own prose
-  (not a link out to a separate examples page).
+- Every week's lecture page contains at least one concrete example
+  (real/redacted or composite, per the Content rules above) written into the
+  page itself.
+- Every Weekly Sync page has exactly two exercises and names its tutor.
+- Exactly four people entries exist (one instructor, three tutors).
 
 ## Process habits (not enforced by any check, but expected)
 
@@ -158,10 +216,9 @@ contrast, per the Content rules above.
   the course-design decision behind the change, not just the mechanical
   action (e.g. "Add week 8: separate cold-ask and warm-intro genres" rather
   than "update week8.md").
-- Any change to this file (CLAUDE.md itself) gets its own commit, made
-  immediately, separate from whatever content change prompted it. The
-  harness's rules are part of the graded record — its edit history needs to
-  stand on its own, not be buried inside an unrelated content commit.
+- Commit every time CLAUDE.md changes, on its own, before moving on. A change
+  to the harness is itself a course-design decision and belongs in the
+  history as one, with a message saying what rule changed and why.
 - Keep the repo private until submission.
 - Do not editorialise tone beyond what's specified per section — e.g. the
   policies page stays dry even though Bodhi's bio doesn't.
