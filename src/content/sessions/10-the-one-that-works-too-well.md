@@ -3,7 +3,7 @@ title: Where Craft Becomes Manipulation
 description:
   The tutor-led hour attached to week 10's lecture on manipulative craft.
 week: 10
-date: 2027-04-12
+date: 2027-04-26
 teachers:
   - bodhi-kessler-nakamura
 related:

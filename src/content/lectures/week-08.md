@@ -2,7 +2,7 @@
 title: Warm-Intro Requests
 description: Why a cold ask and an intro request are different genres.
 week: 8
-date: 2027-03-29
+date: 2027-04-12
 teachers:
   - tejas-tagra
 block: 4

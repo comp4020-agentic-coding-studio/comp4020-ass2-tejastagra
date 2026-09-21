@@ -3,7 +3,7 @@ title: Warm-Intro Requests
 description:
   The tutor-led hour attached to week 8's lecture on warm-intro requests.
 week: 8
-date: 2027-03-29
+date: 2027-04-12
 teachers:
   - marcus-ondieki
 related:

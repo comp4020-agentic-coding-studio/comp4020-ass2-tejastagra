@@ -2,7 +2,7 @@
 title: Where Craft Becomes Manipulation
 description: Where the semester's own techniques tip into manipulation.
 week: 10
-date: 2027-04-12
+date: 2027-04-26
 teachers:
   - tejas-tagra
 block: 5

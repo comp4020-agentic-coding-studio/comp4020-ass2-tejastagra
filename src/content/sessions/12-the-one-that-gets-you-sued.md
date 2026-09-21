@@ -4,7 +4,7 @@ description:
   The tutor-led hour attached to week 12's closing lecture on legal
   compliance and synthesis.
 week: 12
-date: 2027-04-26
+date: 2027-05-10
 teachers:
   - naomi-reyes
 related:

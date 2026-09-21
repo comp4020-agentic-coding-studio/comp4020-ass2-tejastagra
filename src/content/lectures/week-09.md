@@ -2,7 +2,7 @@
 title: Email, LinkedIn and DMs
 description: Email, LinkedIn and DMs as different environments for being skimmed.
 week: 9
-date: 2027-04-05
+date: 2027-04-19
 teachers:
   - tejas-tagra
 block: 5

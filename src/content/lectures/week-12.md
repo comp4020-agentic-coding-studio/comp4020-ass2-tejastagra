@@ -2,7 +2,7 @@
 title: Spam Law and Consent
 description: Legal compliance, and the semester's closing synthesis.
 week: 12
-date: 2027-04-26
+date: 2027-05-10
 teachers:
   - tejas-tagra
 block: 6

@@ -3,7 +3,7 @@ title: Email, LinkedIn and DMs
 description:
   The tutor-led hour attached to week 9's lecture on platform mismatch.
 week: 9
-date: 2027-04-05
+date: 2027-04-19
 teachers:
   - naomi-reyes
 related:

@@ -53,7 +53,7 @@ export const courseMeta = slopCourseMetaSchema.parse({
   year: 2027,
   level: 3,
   startDate: "2027-02-08",
-  endDate: "2027-04-26",
+  endDate: "2027-05-10",
   description:
     "Most cold emails are deleted unread, not because they're badly " +
     "written but because the reader is skimming a full inbox in seconds. " +

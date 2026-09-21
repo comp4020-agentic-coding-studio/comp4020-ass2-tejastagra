@@ -2,7 +2,7 @@
 title: Automation and Scale
 description: What automated sequences trade away for scale.
 week: 11
-date: 2027-04-19
+date: 2027-05-03
 teachers:
   - tejas-tagra
 block: 6

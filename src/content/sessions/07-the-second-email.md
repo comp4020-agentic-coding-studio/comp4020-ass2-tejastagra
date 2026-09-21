@@ -3,7 +3,7 @@ title: Follow-Ups
 description:
   The tutor-led hour attached to week 7's lecture on follow-ups.
 week: 7
-date: 2027-03-22
+date: 2027-04-05
 teachers:
   - bodhi-kessler-nakamura
 related:

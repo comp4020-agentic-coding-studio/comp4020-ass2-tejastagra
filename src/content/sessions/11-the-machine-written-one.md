@@ -3,7 +3,7 @@ title: Automation and Scale
 description:
   The tutor-led hour attached to week 11's lecture on automation and scale.
 week: 11
-date: 2027-04-19
+date: 2027-05-03
 teachers:
   - marcus-ondieki
 related:
