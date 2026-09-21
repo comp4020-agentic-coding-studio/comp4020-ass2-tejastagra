@@ -26,12 +26,14 @@ rather than let it drift into generic "how to network" content.
   carries a table of which tutor runs which sync and when.
 - Three assessment components, stated on the homepage with a link to the
   assessment page: Assignment 01 (22%), Assignment 02 (30%), and Weekly
-  syncs: attendance and completion (48%, one assessment entry covering all
-  twelve Weekly Syncs, not twelve separate entries). Its own page explains,
-  in plain English, that each week's 4% splits into 2% for attendance and
-  2% for completing that week's work, that everything is graded through
-  Canvas, and that a missed sync can only be made up through the
-  University's extenuating circumstances process.
+  syncs: attendance and completion (48% in the underlying data, one
+  assessment entry covering all twelve Weekly Syncs, not twelve separate
+  entries). The Weekly Syncs page carries no percentage or weight on
+  screen (see the pass/fail note below): it explains, in plain English,
+  what a weekly sync actually is, that you pass one by showing up,
+  engaging and finishing the in-class task through Canvas, and that a
+  missed sync can only be made up through the University's extenuating
+  circumstances process.
 - Graded CRS (pass/fail), does not count toward GPA. The percentage weights
   (22/30/48) stay in the frontmatter and data only because the platform's
   schema requires a numeric weight per assessment and needs them to sum to
@@ -42,7 +44,10 @@ rather than let it drift into generic "how to network" content.
   02, and completing at least 8 of the 12 weekly syncs. The Weekly Syncs
   page in particular must lead with the 8-of-12 threshold, not the
   percentages, since that threshold is the thing that actually decides
-  whether a student passes. IMPORTANT: before
+  whether a student passes, and must not display a weight or a
+  percentage on the page at all, even though the weight stays in that
+  entry's frontmatter so the assessment collection's weights still sum
+  to 100% for the platform's build check. IMPORTANT: before
   writing this to the homepage, verify the template's fixed grading/marks
   model actually permits a CRS/pass-fail grade type. The spec says SlopU's
   "name, marks and palette stay as they arrived," so a custom grade scheme
