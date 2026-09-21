@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080" role="img">
+  <defs>
+    <filter id="grain1" x="0" y="0" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" stitchTiles="stitch" result="noise" />
+      <feColorMatrix in="noise" type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 0.5 0" />
+    </filter>
+
+    <g id="flap-sealed">
+      <rect x="-130" y="-84" width="260" height="168" rx="10" fill="#000000" />
+      <line x1="-130" y1="-4" x2="0" y2="56" stroke="#3a2a12" stroke-width="2" />
+      <line x1="130" y1="-4" x2="0" y2="56" stroke="#3a2a12" stroke-width="2" />
+    </g>
+
+    <g id="flap-open">
+      <rect x="-150" y="-104" width="300" height="208" rx="20" fill="#b97d1c" />
+      <polygon points="-128,-80 128,-80 0,-176" fill="#8a5c13" stroke="#000000" stroke-width="6" stroke-linejoin="round" />
+      <rect x="-128" y="-80" width="256" height="160" rx="8" fill="#b97d1c" stroke="#000000" stroke-width="6" />
+    </g>
+  </defs>
+
+  <rect x="0" y="0" width="1920" height="1080" fill="#0d0d0d" />
+
+  <g opacity="0.9">
+    <use href="#flap-sealed" transform="translate(1500,180) rotate(-6)" />
+    <use href="#flap-sealed" transform="translate(1720,420) rotate(4)" />
+    <use href="#flap-sealed" transform="translate(1420,700) rotate(-3)" />
+    <use href="#flap-sealed" transform="translate(1680,900) rotate(5)" />
+    <use href="#flap-sealed" transform="translate(1220,940) rotate(-4)" />
+  </g>
+
+  <use href="#flap-open" transform="translate(1560,600) rotate(2)" />
+
+  <rect x="0" y="0" width="1920" height="1080" fill="#000000" opacity="0.08" filter="url(#grain1)" />
+</svg>
