@@ -50,10 +50,10 @@ const blocks = [...new Map(lectures.map((lecture) => [lecture.data.block, lectur
 
   <h2>Course structure</h2>
   <p>
-    3 credits, taken in a single teaching period. Runs in the summer and
-    winter non-standard teaching periods. Each week pairs a one-hour lecture
-    (Mondays, 11am–12pm) with a one-hour Weekly Sync — two contact hours a
-    week. Graded CRS (pass/fail); it does not count toward GPA.
+    3 credits. Runs in Semester 1, 2027 only. No prerequisites. Each week
+    pairs a one-hour lecture (Mondays, 11am–12pm, Sloppy Slop Slop Building,
+    Rm 7.09) with a one-hour Weekly Sync — two contact hours a week. Graded
+    CRS (pass/fail); it does not count toward GPA.
   </p>
   <ol class="block-list">
     {
@@ -72,6 +72,12 @@ const blocks = [...new Map(lectures.map((lecture) => [lecture.data.block, lectur
 
   <h3>Weekly Sync timetable</h3>
   <p>Each Weekly Sync is run by one of the three tutors:</p>
+  <p>
+    Weekly Syncs work like tutorials: attendance is mandatory and required
+    to pass the course. The exercises done in each sync build directly on
+    that week's lecture and feed into the assessments, so keeping up with
+    them is critical to doing well.
+  </p>
   <table class="sync-timetable">
     <thead>
       <tr>
@@ -100,7 +106,7 @@ const blocks = [...new Map(lectures.map((lecture) => [lecture.data.block, lectur
   </table>
 
   <p>
-    For help, email <a href="mailto:SLOP3089@slop.university">SLOP3089@slop.university</a>
+    If you have a question, email <a href="mailto:SLOP3089@slop.university">SLOP3089@slop.university</a>{" "}
     or use the Canvas page.
   </p>
 
@@ -115,20 +121,26 @@ const blocks = [...new Map(lectures.map((lecture) => [lecture.data.block, lectur
 
   <h2>Where to go next</h2>
   <CardGrid columns={2}>
+    <Card title="Lectures" href="/lectures/">
+      <p>The full teaching content, week by week.</p>
+    </Card>
     <Card title={sessionLabels.plural} href="/sessions/">
       <p>The tutor-led hour and exercises attached to each week's lecture.</p>
     </Card>
     <Card title="Assessment" href="/assessments/">
       <p>What is marked, what it is worth, and when it is due.</p>
     </Card>
+    <Card title="Policies" href="/policies/">
+      <p>Extensions, academic integrity and the rest of the fine print.</p>
+    </Card>
     <Card title="People" href="/people/">
       <p>Who teaches the course and how to reach them.</p>
     </Card>
-    <Card title="Lectures" href="/lectures/">
-      <p>The full teaching content, week by week.</p>
-    </Card>
-    <Card title="Policies" href="/policies/">
-      <p>Extensions, academic integrity, and the rest of the fine print.</p>
+    <Card title="Students' Union" href="mailto:sa.union@slop.university">
+      <p>
+        Independent help with academic integrity issues and anything you'd
+        rather not raise with us directly.
+      </p>
     </Card>
   </CardGrid>
 </ContentLayout>
