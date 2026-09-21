@@ -48,7 +48,7 @@ export const slopCourseMetaSchema = z
 // digit to your course's level (and `level` to match); keep the other three.
 export const courseMeta = slopCourseMetaSchema.parse({
   code: "SLOP3089",
-  title: "Getting Read",
+  title: "Writing to Strangers",
   session: "Semester 1",
   year: 2027,
   level: 3,
