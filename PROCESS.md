@@ -1,9 +1,5 @@
 # Process overview
 
-<!-- TEMPLATE: this file is a shape to fill in, not a form. Replace everything
-     in it with your own overview, and delete this comment — `pnpm
-     check:evidence` will remind you if it's still here. -->
-
 Written by you, for a reader: how you got from the brief to the harness and
 agentic workflow behind this submission. Markers read this file and follow its
 citations; they don't trawl the repo for evidence you didn't point at.
@@ -14,9 +10,30 @@ is the requirement, and its
 [word counts](https://comp.anu.edu.au/courses/comp4020-agentic-coding-studio/topics/assessment/#word-counts)
 cover every deliverable.
 
+## Interim note (crit 6 retro)
+
+This is a working snapshot for the crit 6 retro, not the finished
+submission. My Assignment 2 extension (two days) doesn't carry over to the
+crit cutoff, so this file reflects the repo as it stands today, with the
+remainder of the write-up to follow before the extended deadline. The
+sections below are accurate as far as they go; "How I got here" will get
+fuller treatment once the rest of the content is in.
+
 ## What I built
 
-One paragraph: the thing, and the idea behind it.
+A course site for "Getting Read" (SLOP3089), a course that treats cold
+email as a triage problem rather than a persuasion problem: the reader has
+fifty of these and a few seconds each, and almost every common writing
+failure is really a failure to respect that constraint. Eleven of the
+twelve weeks each name one specific, distinct failure mode (a vague ask, a
+weak subject line, fake personalisation, and so on); week 1 is the
+exception by design, opening from three real documented cold emails that
+worked instead of a failure. Every session embeds its own worked example
+directly in its prose rather than linking out to a separate examples page,
+and the harness (`CLAUDE.md`) encodes the course-design rules — including
+the split between what a session argues in full and what its matching
+lecture page is allowed to restate — as decisions I had to justify to the
+agent, not just style preferences.
 
 ## How I got here
 
@@ -47,25 +64,43 @@ fixing it says more about how I actually worked than a commit history
 massaged to look clean from the start would.
 
 The rest of the account: how the work actually went, and how I knew the
-result was right, in whatever order makes it clear.
+result was right.
 
-Cite the record as you go, as links whose text is the commit hash or range and
-whose target is this repo's commit or compare URL, so a reader clicks straight
-to the evidence:
+The breakthrough worth citing here is a harness correction, not a content
+fix. Early on, each week's example email lived on its own page under
+`src/pages/examples/week-XX/`, linked from that week's session. That
+matched a literal reading of CLAUDE.md's original rule ("links to at least
+one real or plausibly-redacted example email") but produced exactly the
+kind of thing the course's own thesis argues against: a reader has to open
+a second page to find the one piece of information the session was
+building toward. I caught this by checking week 1 against the rule and
+noticing it didn't have a second page at all — its three real cases
+(Ghulati, Janoch, Field) were written straight into the session's own
+prose. Rather than let weeks 1 and 2 diverge from weeks 3–12 structurally,
+I asked the agent to confirm scope (all twelve weeks, not just the two I'd
+flagged) and rewrote CLAUDE.md's rule itself before touching content again:
+"No separate sources/examples page or collection — the example lives in
+the session text itself." That rewrite, and the twelve session pages it
+then required editing, are in
+[`c05b2b7...ab16b37`](https://github.com/comp4020-agentic-coding-studio/comp4020-ass2-tejastagra/compare/c05b2b7...ab16b37).
 
-- one commit: [`a1b2c3d`](https://github.com/YOUR-ORG/YOUR-REPO/commit/a1b2c3d)
-- a range:
-  [`a1b2c3d...e4f5a6b`](https://github.com/YOUR-ORG/YOUR-REPO/compare/a1b2c3d...e4f5a6b)
+Before: a session pointed away from itself at the exact moment it needed
+to make its case. After: the example is load-bearing prose on the same
+page, checked by
+[`spec/course-content.test.ts`](spec/course-content.test.ts)'s assertion
+that every session's built HTML contains an embedded example rather than a
+link out. The fix worked because it came from re-reading the rule against
+the one week that already violated it by accident (week 1 having no second
+page was never a deliberate exception to the sources-page structure — it
+just happened to be right), not from a general instinct that "inline is
+better."
 
-To pair a prompt with the commit it produced, quote the prompt (curated, not a
-full transcript) next to the citation:
-
-> the prompt, verbatim
-
-Screenshots are welcome where one carries the point better than a sentence does.
-Commit the file to this repo and link it with a **relative** path, which is what
-makes it render on GitHub: `![alt text](docs/before.png)`. Images don't count
-towards the word count and don't replace the citation.
+A second discipline gap worth citing plainly: a full session's worth of
+work (course config, all twelve weeks, CLAUDE.md through several
+revisions) went uncommitted before I checked the repo's own git history
+against CLAUDE.md's process rule and found nothing there. That gap, how it
+was caught, and the commits that resulted are described above and in
+[`22971b9...e873225`](https://github.com/comp4020-agentic-coding-studio/comp4020-ass2-tejastagra/compare/22971b9...e873225).
 
 ## Before you ship
 
