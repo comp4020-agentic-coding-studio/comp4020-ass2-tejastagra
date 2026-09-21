@@ -1,4 +1,5 @@
 ---
+import { Image } from "astro:assets";
 import { render } from "astro:content";
 import { getPublishedCollection } from "astro-course-university/content";
 import ContentLayout from "astro-theme-university/layouts/ContentLayout.astro";
@@ -13,16 +14,18 @@ const { person } = Astro.props;
 const { Content } = await render(person);
 
 // Map the role enum (instructor|convenor|tutor|guest|other) to display labels
-// rather than rendering the raw lowercase value.
+// rather than rendering the raw lowercase value. The frontmatter value stays
+// "instructor" (spec/course-content.test.ts checks for it); only the label
+// shown to readers reads "Course Convenor".
 const roleLabels: Record<string, string> = {
-  instructor: "Instructor",
+  instructor: "Course Convenor",
   convenor: "Convenor",
   tutor: "Tutor",
   guest: "Guest lecturer",
   other: "",
 };
 const roleLabel = person.data.role ? roleLabels[person.data.role] : undefined;
-// The instructor's contact note is a fixed office-hours slot; tutors' notes
+// The convenor's contact note is a fixed office-hours slot; tutors' notes
 // are freer-form, so the label differs even though it's the same field.
 const contactLabel = person.data.role === "instructor" ? "Office hours" : "Contact";
 // Astro's generated type does not retain the image/alt refinement relationship,
@@ -30,68 +33,170 @@ const contactLabel = person.data.role === "instructor" ? "Office hours" : "Conta
 const rawPhotoAlt = (person.data as { photoAlt?: unknown }).photoAlt;
 const photoAlt = typeof rawPhotoAlt === "string" ? rawPhotoAlt : "";
 // Every page owes a description --- it is what a search result and a shared
-// link show underneath the title.
+// link show underneath the title. It's kept for that (and for the SEO meta
+// tag BaseLayout builds from it) but not shown on the page itself; the card
+// header below carries the name and role instead.
 const description = person.data.description;
+
+// Fallback initials for people without a photo file yet, e.g. "Professor
+// Tejas Tagra" -> "TT".
+const initials = person.data.title
+  .replace(/^(Dr\.|Professor|Prof\.)\s+/, "")
+  .split(/\s+/)
+  .filter(Boolean)
+  .map((word) => word[0])
+  .filter((letter): letter is string => Boolean(letter) && /[A-Za-z]/.test(letter))
+  .slice(0, 2)
+  .join("")
+  .toUpperCase();
 ---
 
-<ContentLayout
-  title={person.data.title}
-  description={description}
-  heroImage={person.data.photo ?? undefined}
-  heroImageAlt={photoAlt}
-  {...siteConfig}
->
-  <dl>
-    {roleLabel && (
-      <>
-        <dt>Role</dt>
-        <dd>{roleLabel}</dd>
-      </>
-    )}
-    {person.data.affiliation && (
-      <>
-        <dt>Affiliation</dt>
-        <dd>{person.data.affiliation}</dd>
-      </>
-    )}
-    {person.data.email && (
-      <>
-        <dt>Email</dt>
-        <dd>
-          <a href={`mailto:${person.data.email}`}>{person.data.email}</a>
-        </dd>
-      </>
-    )}
-    {person.data.url && (
-      <>
-        <dt>Web</dt>
-        <dd>
-          <a href={person.data.url}>{person.data.url}</a>
-        </dd>
-      </>
-    )}
-    {person.data.contact && (
-      <>
-        <dt>{contactLabel}</dt>
-        <dd>{person.data.contact}</dd>
-      </>
-    )}
-  </dl>
+<ContentLayout title={person.data.title} description={description} mainAttrs={{ class: "person-page" }} {...siteConfig}>
+  <div class="person-card">
+    <div class="person-card__header">
+      {
+        person.data.photo ? (
+          <Image src={person.data.photo} alt={photoAlt} width={112} height={112} class="person-card__photo" />
+        ) : (
+          <div class="person-card__photo person-card__photo--placeholder" aria-hidden="true">
+            {initials}
+          </div>
+        )
+      }
+      <p class="person-card__name">{person.data.title}</p>
+      {roleLabel && <p class="person-card__role">{roleLabel}</p>}
+    </div>
 
-  <Content />
+    <dl class="person-card__fields">
+      {
+        person.data.affiliation && (
+          <div class="person-card__row">
+            <dt>Affiliation</dt>
+            <dd>{person.data.affiliation}</dd>
+          </div>
+        )
+      }
+      {
+        person.data.email && (
+          <div class="person-card__row">
+            <dt>Email</dt>
+            <dd>
+              <a href={`mailto:${person.data.email}`}>{person.data.email}</a>
+            </dd>
+          </div>
+        )
+      }
+      {
+        person.data.url && (
+          <div class="person-card__row">
+            <dt>Web</dt>
+            <dd>
+              <a href={person.data.url}>{person.data.url}</a>
+            </dd>
+          </div>
+        )
+      }
+      {
+        person.data.contact && (
+          <div class="person-card__row">
+            <dt>{contactLabel}</dt>
+            <dd>{person.data.contact}</dd>
+          </div>
+        )
+      }
+    </dl>
+  </div>
+
+  <div class="person-bio">
+    <Content />
+  </div>
 </ContentLayout>
 
+<style is:global>
+  /* The card header above carries the name and role visually; the h1 and
+     lead paragraph ContentLayout renders are kept for a single semantic
+     heading and the page's SEO description, but not shown twice. */
+  main.person-page > h1,
+  main.person-page > p.lead {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip-path: inset(50%);
+    white-space: nowrap;
+    border: 0;
+  }
+</style>
+
 <style>
-  dl {
-    display: grid;
-    grid-template-columns: max-content 1fr;
-    column-gap: 1.5rem;
-    row-gap: 0.6rem;
-    align-items: baseline;
-    margin-block: 1.5rem;
+  .person-card {
+    margin-block: 0 2rem;
+    overflow: hidden;
+    border: 1px solid var(--at-divider);
+    border-radius: var(--at-border-radius);
+    background: var(--at-bg-elevated);
+    box-shadow: var(--at-shadow-md);
   }
 
-  dt {
+  .person-card__header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.4rem;
+    padding: var(--at-spacing-xl) var(--at-spacing-lg) var(--at-spacing-lg);
+    text-align: center;
+  }
+
+  .person-card__photo {
+    width: 7rem;
+    height: 7rem;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+
+  .person-card__photo--placeholder {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--at-accent-soft);
+    color: var(--at-accent);
+    font-size: 1.75rem;
+    font-weight: 700;
+    letter-spacing: 0.02em;
+  }
+
+  .person-card__name {
+    margin: 0.25rem 0 0;
+    font-size: 1.3rem;
+    font-weight: 700;
+  }
+
+  .person-card__role {
+    margin: 0;
+    font-size: 0.95rem;
+    color: var(--at-text-secondary, #555);
+  }
+
+  .person-card__fields {
+    margin: 0;
+    border-top: 1px solid var(--at-divider);
+  }
+
+  .person-card__row {
+    display: grid;
+    grid-template-columns: 9rem 1fr;
+    align-items: baseline;
+    gap: 1rem;
+    padding: 0.65rem var(--at-spacing-lg);
+  }
+
+  .person-card__row:nth-child(odd) {
+    background: var(--at-accent-soft);
+  }
+
+  .person-card__row dt {
     margin: 0;
     font-weight: 700;
     font-size: 0.85rem;
@@ -101,7 +206,16 @@ const description = person.data.description;
     white-space: nowrap;
   }
 
-  dd {
+  .person-card__row dd {
     margin: 0;
+    word-break: break-word;
+  }
+
+  @media (max-width: 30rem) {
+    .person-card__row {
+      grid-template-columns: 1fr;
+      gap: 0.15rem;
+      padding-block: 0.5rem;
+    }
   }
 </style>
