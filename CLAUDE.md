@@ -25,7 +25,7 @@ rather than let it drift into generic "how to network" content.
 - Weekly Syncs are run by the three tutors across the week; the homepage
   carries a table of which tutor runs which sync and when.
 - Three assessment components, stated on the homepage with a link to the
-  assessment page: Teardown (22%), Doctrine and Defence (30%), and Weekly
+  assessment page: Assignment 01 (22%), Assignment 02 (30%), and Weekly
   syncs: attendance and completion (48%, one assessment entry covering all
   twelve Weekly Syncs, not twelve separate entries). Its own page explains,
   in plain English, that each week's 4% splits into 2% for attendance and
@@ -157,7 +157,7 @@ never includes an example, a reconstructed email, or a rubric block — those
 stay on the slides. Before removing an example from a lecture page, confirm
 it already exists in that week's deck, so nothing is lost in the move.
 - Assessment weights must sum to exactly 100% across exactly three
-  assessment components (Teardown, Doctrine and Defence, Weekly syncs).
+  assessment components (Assignment 01, Assignment 02, Weekly syncs).
   Do not ship if they don't. Weekly syncs are graded as one assessment
   entry worth 48% overall, not as twelve separate 4% entries — the
   breakdown by week lives in that one entry's own page, not in the
@@ -274,8 +274,8 @@ stay in the dry register like the rest of the site.
 - Weeks are grouped into blocks via `block` and `blockTitle` frontmatter
   fields (not "units").
 - Every lecture links a real `/decks/...` file (all 12 weeks carry a deck).
-- Exactly three assessment components exist (Teardown, Doctrine and
-  Defence, Weekly syncs) and their weights sum to 100%.
+- Exactly three assessment components exist (Assignment 01, Assignment 02,
+  Weekly syncs) and their weights sum to 100%.
 - Every week's deck contains at least one concrete example (real/redacted
   or composite, per the Content rules above) built into a slide.
 - Every Weekly Sync page has exactly two exercises and names no single
