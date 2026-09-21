@@ -34,7 +34,7 @@ sender nothing enough to decide with, fast. Three cases carry that argument.
     <p><strong>Subject:</strong> Factmata — fact-checking for ad-funded media, 15 minutes this week</p>
   </div>
   <div class="email-block__body">
-    <p>Factmata catches false and misleading content moving through ad-funded platforms. We compete directly with the fact-checking tools publishers already use, and two news groups are piloting the product now. I'd like fifteen minutes this week to walk you through where it stands — Tuesday 2pm or Thursday 10am ET.</p>
+    <p>Factmata catches false and misleading content moving through ad-funded platforms before it spreads. We compete directly with the fact-checking tools publishers already use, and two news groups are piloting the product now. The addressable market inside programmatic advertising alone runs into real money, not a slide. I'd like fifteen minutes to walk you through where it stands — I have two slots open this week, Tuesday 2pm or Thursday 10am ET.</p>
   </div>
 </div>
 
@@ -53,7 +53,7 @@ what a reader skimming fifty of these has no time for.
     <p><strong>Subject:</strong> Mapistry, two years on — where the environmental compliance problem stands now</p>
   </div>
   <div class="email-block__body">
-    <p>Two years ago I sent you a shorter version of this and you passed. Here is what changed, and why the timing is different now.</p>
+    <p>Two years ago I sent you a shorter version of this and you passed. Since then Mapistry has signed on with industrial sites that use the software to manage environmental compliance across their operations, and the regulatory load driving that demand has only gotten heavier. Here is what the product actually does now, what changed since the first email, and why I think the timing is different this time. I'd like twenty minutes to walk through it and hear where you'd push back.</p>
   </div>
 </div>
 
@@ -75,7 +75,7 @@ never length in the first place.
     <p><strong>Subject:</strong> Trying something new — want an early look?</p>
   </div>
   <div class="email-block__body">
-    <p>I'm building a design tool that runs in the browser. You came to mind from the work you were doing when we overlapped — up for a look this week?</p>
+    <p>I'm building a design tool that runs in the browser instead of as a desktop app, and I'm looking for people who design interfaces for a living to try it before anyone else does. You came to mind from the work you were doing when we overlapped — would you be up for taking a look this week and telling me where it falls apart?</p>
   </div>
 </div>
 
@@ -87,9 +87,9 @@ on its own.
 
 In each case, the reader wasn't persuaded so much as given what they needed
 to decide fast. That's the constraint the rest of the semester treats as
-fixed: the reader has a few seconds and a stack of these to get through.
-Eleven distinct failures follow, one per week, none repeating another,
-starting next week.
+fixed: the reader has a few seconds and a stack of these to get through. A subject line that hides its own point, an ask too vague to
+price, a length spent on the writer instead of the reader — eleven distinct
+ways of failing that one constraint, starting next week.
 
 ## Outline
 
