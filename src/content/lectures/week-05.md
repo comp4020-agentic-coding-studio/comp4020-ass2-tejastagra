@@ -8,6 +8,7 @@ teachers:
 block: 3
 blockTitle: The Reader's Math
 failure_mode: unstructured-length
+slides: /decks/week-05/
 related:
   - sessions/05-the-one-nobody-finishes
 ---
