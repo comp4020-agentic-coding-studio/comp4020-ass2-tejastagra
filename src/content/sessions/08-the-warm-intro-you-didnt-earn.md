@@ -1,5 +1,5 @@
 ---
-title: The Warm Intro You Didn't Earn
+title: Warm-Intro Requests
 description:
   The tutor-led hour attached to week 8's lecture on warm-intro requests.
 week: 8

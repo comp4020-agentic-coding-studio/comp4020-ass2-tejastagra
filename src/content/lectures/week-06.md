@@ -1,5 +1,5 @@
 ---
-title: The One That Gets Ignored
+title: The Reader's Reply Calculation
 description:
   The reader's cost-benefit calculation for replying, worked through as a
   framework, with the semester's one slide deck.

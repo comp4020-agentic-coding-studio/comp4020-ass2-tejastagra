@@ -1,5 +1,5 @@
 ---
-title: The One Nobody Finishes
+title: Length and Structure
 description: Length and structure as signals triaged before content.
 week: 5
 date: 2027-03-08

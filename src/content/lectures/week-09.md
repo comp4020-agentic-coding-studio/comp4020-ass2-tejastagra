@@ -1,5 +1,5 @@
 ---
-title: Same Words, Different Platform
+title: Email, LinkedIn and DMs
 description: Email, LinkedIn and DMs as different triage environments.
 week: 9
 date: 2027-04-05

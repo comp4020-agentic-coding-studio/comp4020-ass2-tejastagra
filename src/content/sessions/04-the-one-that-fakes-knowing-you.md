@@ -1,5 +1,5 @@
 ---
-title: The One That Fakes Knowing You
+title: Personalisation and Specificity
 description:
   The tutor-led hour attached to week 4's lecture on performed
   personalisation.

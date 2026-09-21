@@ -1,5 +1,5 @@
 ---
-title: The Three-Second Test
+title: Subject Lines and the Triage Decision
 description: Subject lines as the pitch, not the label.
 week: 2
 date: 2027-02-15

@@ -1,5 +1,5 @@
 ---
-title: The One That Gets You Sued
+title: Spam Law and Consent
 description: Legal compliance, and the semester's closing synthesis.
 week: 12
 date: 2027-04-26

@@ -1,5 +1,5 @@
 ---
-title: The One That Asks for Everything
+title: Pricing the Ask
 description: A vague ask moves work onto the reader. This week is about pricing the ask instead.
 week: 3
 date: 2027-02-22

@@ -1,5 +1,5 @@
 ---
-title: The Machine-Written One
+title: Automation and Scale
 description: What automated sequences trade away for scale.
 week: 11
 date: 2027-04-19

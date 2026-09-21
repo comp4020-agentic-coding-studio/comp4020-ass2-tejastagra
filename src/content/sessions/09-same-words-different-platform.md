@@ -1,5 +1,5 @@
 ---
-title: Same Words, Different Platform
+title: Email, LinkedIn and DMs
 description:
   The tutor-led hour attached to week 9's lecture on platform mismatch.
 week: 9

@@ -1,5 +1,5 @@
 ---
-title: The Second Email
+title: Follow-Ups
 description:
   The tutor-led hour attached to week 7's lecture on follow-ups.
 week: 7

@@ -1,5 +1,5 @@
 ---
-title: The One That Gets Ignored
+title: The Reader's Reply Calculation
 description:
   The tutor-led hour attached to week 6's lecture and slide deck on the
   reader's reply-or-ignore calculation.

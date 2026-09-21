@@ -1,5 +1,5 @@
 ---
-title: The Warm Intro You Didn't Earn
+title: Warm-Intro Requests
 description: Why a cold ask and an intro request are different genres.
 week: 8
 date: 2027-03-29

@@ -1,5 +1,5 @@
 ---
-title: The Machine-Written One
+title: Automation and Scale
 description:
   The tutor-led hour attached to week 11's lecture on automation and scale.
 week: 11

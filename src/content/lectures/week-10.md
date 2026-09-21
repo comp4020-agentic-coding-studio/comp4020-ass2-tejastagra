@@ -1,5 +1,5 @@
 ---
-title: The One That Works Too Well
+title: Where Craft Becomes Manipulation
 description: Where the semester's own techniques tip into manipulation.
 week: 10
 date: 2027-04-12

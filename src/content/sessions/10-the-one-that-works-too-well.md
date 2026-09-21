@@ -1,5 +1,5 @@
 ---
-title: The One That Works Too Well
+title: Where Craft Becomes Manipulation
 description:
   The tutor-led hour attached to week 10's lecture on manipulative craft.
 week: 10

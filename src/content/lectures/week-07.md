@@ -1,5 +1,5 @@
 ---
-title: The Second Email
+title: Follow-Ups
 description: Follow-ups as either new information or a second free cost.
 week: 7
 date: 2027-03-22

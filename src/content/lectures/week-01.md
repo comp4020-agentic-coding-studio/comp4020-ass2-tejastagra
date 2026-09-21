@@ -1,5 +1,5 @@
 ---
-title: Why Cold Email Works (At All)
+title: Why Cold Email Works
 description:
   The three cold emails that worked, and the triage framing the semester
   builds on.

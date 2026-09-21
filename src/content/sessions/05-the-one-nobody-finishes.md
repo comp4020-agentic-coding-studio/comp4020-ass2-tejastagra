@@ -1,5 +1,5 @@
 ---
-title: The One Nobody Finishes
+title: Length and Structure
 description:
   The tutor-led hour attached to week 5's lecture on length and structure.
 week: 5

@@ -1,5 +1,5 @@
 ---
-title: The Three-Second Test
+title: Subject Lines and the Triage Decision
 description:
   The tutor-led hour attached to week 2's lecture on subject lines.
 week: 2

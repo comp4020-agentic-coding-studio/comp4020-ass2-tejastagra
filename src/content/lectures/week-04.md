@@ -1,5 +1,5 @@
 ---
-title: The One That Fakes Knowing You
+title: Personalisation and Specificity
 description: Performed personalisation vs. real specificity.
 week: 4
 date: 2027-03-01

@@ -1,5 +1,5 @@
 ---
-title: The One That Gets You Sued
+title: Spam Law and Consent
 description:
   The tutor-led hour attached to week 12's closing lecture on legal
   compliance and synthesis.

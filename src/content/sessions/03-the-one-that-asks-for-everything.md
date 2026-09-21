@@ -1,5 +1,5 @@
 ---
-title: The One That Asks for Everything
+title: Pricing the Ask
 description:
   The tutor-led hour attached to week 3's lecture on pricing the ask.
 week: 3

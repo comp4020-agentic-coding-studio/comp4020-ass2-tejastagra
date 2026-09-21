@@ -1,5 +1,5 @@
 ---
-title: Why Cold Email Works (At All)
+title: Why Cold Email Works
 description:
   The tutor-led hour attached to week 1's lecture on the emails that worked.
 week: 1
