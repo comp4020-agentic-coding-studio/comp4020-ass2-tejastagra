@@ -63,11 +63,17 @@ const initials = person.data.title
           </div>
         )
       }
-      <p class="person-card__name">{person.data.title}</p>
-      {roleLabel && <p class="person-card__role">{roleLabel}</p>}
     </div>
 
     <dl class="person-card__fields">
+      {
+        roleLabel && (
+          <div class="person-card__row">
+            <dt>Role</dt>
+            <dd>{roleLabel}</dd>
+          </div>
+        )
+      }
       {
         person.data.affiliation && (
           <div class="person-card__row">
@@ -113,10 +119,11 @@ const initials = person.data.title
 </ContentLayout>
 
 <style is:global>
-  /* The card header above carries the name and role visually; the h1 and
-     lead paragraph ContentLayout renders are kept for a single semantic
-     heading and the page's SEO description, but not shown twice. */
-  main.person-page > h1,
+  /* The page's own h1 (the person's name) is the single visible heading;
+     the card below no longer repeats it. The auto-rendered lead paragraph
+     is kept for the SEO description meta tag but not shown on the page,
+     since the role (in the fields below) and the bio already say what the
+     one-line description would have said. */
   main.person-page > p.lead {
     position: absolute;
     width: 1px;
@@ -142,11 +149,8 @@ const initials = person.data.title
 
   .person-card__header {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 0.4rem;
-    padding: var(--at-spacing-xl) var(--at-spacing-lg) var(--at-spacing-lg);
-    text-align: center;
+    justify-content: center;
+    padding: var(--at-spacing-lg);
   }
 
   .person-card__photo {
@@ -165,18 +169,6 @@ const initials = person.data.title
     font-size: 1.75rem;
     font-weight: 700;
     letter-spacing: 0.02em;
-  }
-
-  .person-card__name {
-    margin: 0.25rem 0 0;
-    font-size: 1.3rem;
-    font-weight: 700;
-  }
-
-  .person-card__role {
-    margin: 0;
-    font-size: 0.95rem;
-    color: var(--at-text-secondary, #555);
   }
 
   .person-card__fields {
