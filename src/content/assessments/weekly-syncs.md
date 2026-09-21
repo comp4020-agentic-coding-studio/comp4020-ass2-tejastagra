@@ -16,9 +16,7 @@ marking:
   description: >-
     The course is graded CRS (pass/fail) and does not count towards your
     GPA. You pass a weekly sync by showing up, engaging, and finishing
-    the in-class task within class time, submitted through Canvas. To
-    pass the course overall, you must pass at least 8 of the 12 weekly
-    syncs.
+    the in-class task within class time, submitted through Canvas.
 related:
   - midterm-teardown
   - final-doctrine-and-defence
