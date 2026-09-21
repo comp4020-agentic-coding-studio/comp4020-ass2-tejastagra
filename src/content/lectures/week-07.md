@@ -5,16 +5,44 @@ week: 7
 date: 2027-03-22
 teachers:
   - tejas-tagra
+unit: 4
+unitTitle: Persistence and Risk
+failure_mode: costly-follow-up
 related:
   - sessions/07-the-second-email
 ---
 
-Covers what a follow-up needs to contain to justify a second triage cost, and
-why persistence without new information reads as pressure rather than
-diligence.
+The reader's math from last week doesn't reset when a first email goes
+unanswered — it gets asked again. This lecture is about what a second
+email needs to contain to justify asking it a second time.
+
+## Summary
+
+"Just bumping this to the top of your inbox" is not a follow-up. It's a
+second copy of the original triage cost with none of the original
+content's chance of being useful. A follow-up that works adds something the
+first email didn't have — a new fact, a narrower ask, a deadline that's now
+real — rather than just asking the reader to reconsider a decision they
+already made once.
+
+Persistence is not free for the reader even when it's free for the writer.
+The second email either earns its place or spends goodwill the first one
+built.
+
+Composite example, illustrating the pattern:
+
+> Just bumping this to the top of your inbox in case it got buried! Would
+> still love to connect whenever you have a moment.
+
+Nothing here tells the reader anything the first email didn't. It reimposes
+the same triage cost a second time and asks them to reconsider a decision
+they may have already made, on no new grounds. A follow-up that earned its
+place would replace "just bumping this" with the one fact that's actually
+changed since the first email — and if nothing has changed, the honest
+conclusion is that it isn't time to follow up yet.
 
 ## Outline
 
 - what a follow-up costs the reader that the first email didn't
 - new information vs. repeated urgency
-- deciding whether to send a follow-up at all
+- deciding whether to send a follow-up at all, or wait

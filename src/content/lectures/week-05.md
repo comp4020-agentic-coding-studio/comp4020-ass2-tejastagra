@@ -5,15 +5,45 @@ week: 5
 date: 2027-03-08
 teachers:
   - tejas-tagra
+unit: 3
+unitTitle: The Reader's Math
+failure_mode: unstructured-length
 related:
   - sessions/05-the-one-nobody-finishes
 ---
 
-Covers how shape — paragraph length, visible structure, a clear ending —
-signals cost to a reader before a single sentence is read for content.
+The last two weeks looked at what an email asks for and how it pretends to
+know the reader. This week is about something a reader judges before
+either of those registers at all: the shape of the email on the screen.
+
+## Summary
+
+A reader deciding whether to keep reading looks at the shape of the email
+before its content — how long the paragraphs are, whether there's a
+visible ask, whether it ends or just trails into a signature. A long email
+organised around one clear ask reads faster than a short one that rambles
+toward it, because shape is itself information about how much of the
+reader's time this will cost. Shorter, clearly structured emails tend to
+get read further and answered faster than long, undifferentiated ones — a
+pattern worth testing on your own inbox, not a fixed word count to write to.
+
+Composite example, illustrating the pattern:
+
+Five paragraphs of company background, market context, and personal
+introduction can precede the actual request, which then arrives as a
+single clause at the end of paragraph four:
+
+> ...so if you had a few minutes to chat that would be amazing.
+
+A reader deciding whether to keep reading sees an unbroken block of text
+with no visible ask, which is itself the signal to stop — before the ask is
+even reached. The fix here isn't cutting content at random; it's moving the
+ask to where a skimming reader will actually see it, and cutting whatever
+paragraph turns out not to change the reader's decision if it's removed.
 
 ## Outline
 
 - shape as information, independent of content
 - why a long, structured email can read faster than a short, rambling one
+- what "clearly structured" actually looks like on the page
 - cutting an email by half without losing its ask
