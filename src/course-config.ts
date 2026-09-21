@@ -55,9 +55,9 @@ export const courseMeta = slopCourseMetaSchema.parse({
   startDate: "2027-02-08",
   endDate: "2027-04-26",
   description:
-    "Most cold emails are deleted unread. This course treats that as a " +
-    "triage problem rather than a persuasion problem, and spends twelve " +
-    "weeks on the specific writing failures that get an email ignored, " +
-    "not opened, or reported.",
+    "Most cold emails are deleted unread, not because they're badly " +
+    "written but because the reader is skimming a full inbox in seconds. " +
+    "This course spends twelve weeks on the specific failures that get " +
+    "an email ignored, unopened, or reported.",
   tags: ["writing", "communication", "behavioural-design"],
 }) satisfies CourseMetaInput;

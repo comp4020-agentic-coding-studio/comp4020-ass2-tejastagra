@@ -10,7 +10,8 @@ related:
   - lectures/week-09
 ---
 
-Follows the [week 9 lecture](/lectures/week-09/) on triage environments.
+Follows the [week 9 lecture](/lectures/week-09/) on how different platforms
+get skimmed.
 This week's sync is led by Naomi Reyes.
 
 ## Exercise: adapt for one platform (30 min)

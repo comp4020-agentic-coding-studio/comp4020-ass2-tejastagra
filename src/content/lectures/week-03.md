@@ -31,8 +31,9 @@ on Thursday to see if X is worth building" costs the reader one decision,
 not three, even though it's asking for exactly the same thing.
 
 This is easy to miss because a vague ask often feels more polite to write.
-"No pressure, whenever works" reads as considerate. To a reader triaging
-fifty emails, it reads as an open-ended commitment with no shape, which is
+"No pressure, whenever works" reads as considerate. To a reader working
+through fifty emails in a few seconds each, it reads as an open-ended
+commitment with no shape, which is
 harder to say yes to than a small, bounded one. Politeness and cost aren't
 the same axis, and the mistake this week names is confusing them.
 

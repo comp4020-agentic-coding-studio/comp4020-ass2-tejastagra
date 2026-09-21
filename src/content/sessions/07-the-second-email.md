@@ -11,7 +11,7 @@ related:
 ---
 
 Follows the [week 7 lecture](/lectures/week-07/) on what a follow-up needs
-to justify a second triage cost. This week's sync is led by Bodhi
+to justify making the reader pay attention again. This week's sync is led by Bodhi
 Kessler-Nakamura.
 
 ## Exercise: name the new fact (30 min)

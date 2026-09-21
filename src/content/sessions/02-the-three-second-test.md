@@ -1,5 +1,5 @@
 ---
-title: Subject Lines and the Triage Decision
+title: Subject Lines and the Open Decision
 description:
   The tutor-led hour attached to week 2's lecture on subject lines.
 week: 2
@@ -13,10 +13,10 @@ related:
 Follows the [week 2 lecture](/lectures/week-02/) on subject lines as the
 pitch, not the label. This week's sync is led by Marcus Ondieki.
 
-## Exercise: triage five subject lines (30 min)
+## Exercise: sort five subject lines (30 min)
 
 Take five subject lines from real cold emails you've received or sent.
-For each, decide whether a reader could correctly triage it without
+For each, decide whether a reader could correctly sort it without
 opening the message — whether it concerns them, and whether it's
 time-sensitive. Mark each pass or fail.
 

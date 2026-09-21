@@ -1,5 +1,5 @@
 ---
-title: Subject Lines and the Triage Decision
+title: Subject Lines and the Open Decision
 description: Subject lines as the pitch, not the label.
 week: 2
 date: 2027-02-15
@@ -24,7 +24,7 @@ sometimes only argument.
 The mechanism: a subject line that describes the email ("Following up",
 "Quick question") asks the reader to open it to find out what it's for. A
 subject line that states the specific, checkable thing inside lets the
-reader triage correctly without opening anything — which, for the emails
+reader decide correctly without opening anything — which, for the emails
 that shouldn't be opened, is a courtesy to the reader, not a loss to the
 sender.
 
@@ -36,7 +36,7 @@ act correctly on it without opening the message at all. Most writers know
 this in the abstract and still write descriptive subject lines, because the
 specific fact usually lives three sentences into the body, and moving it up
 feels like giving away the pitch before it's made. It isn't a pitch. It's
-the one piece of information the reader needs to triage correctly, and
+the one piece of information the reader needs to decide correctly, and
 burying it costs the sender more than showing it ever would.
 
 "Survives on its own" means something specific: a reader can decide two
@@ -65,7 +65,8 @@ existed without adding anything the reader can act on — not what it's
 about, not why it's relevant now, not what happens if they don't reply.
 "Following up: still looking for 10 minutes on the Q2 pricing proposal
 before Friday" answers all three; "Following up" alone answers none of
-them, so the reader has no way to triage it except by opening it.
+them, so the reader has no way to decide what to do with it except by
+opening it.
 
 It's also worth noting how common this failure is. Subject lines that name
 a category rather than a fact — "Quick question" is the standard example —
@@ -76,7 +77,7 @@ in the language.
 
 ## Outline
 
-- the triage decision happens before the body is read
+- the open-or-skip decision happens before the body is read
 - descriptive vs. self-sufficient subject lines, and what "self-sufficient"
   actually requires: relevance and urgency decidable without opening
 - why unresolved ambiguity forces the open a subject line should prevent

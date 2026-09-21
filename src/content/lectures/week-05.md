@@ -1,6 +1,6 @@
 ---
 title: Length and Structure
-description: Length and structure as signals triaged before content.
+description: Length and structure as signals read before content.
 week: 5
 date: 2027-03-08
 teachers:

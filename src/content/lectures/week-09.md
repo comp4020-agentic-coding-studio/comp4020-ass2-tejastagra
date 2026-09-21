@@ -1,6 +1,6 @@
 ---
 title: Email, LinkedIn and DMs
-description: Email, LinkedIn and DMs as different triage environments.
+description: Email, LinkedIn and DMs as different environments for being skimmed.
 week: 9
 date: 2027-04-05
 teachers:
@@ -19,7 +19,7 @@ lecture asks what happens when the same message moves somewhere else.
 
 ## Summary
 
-A LinkedIn message is triaged inside a feed the reader didn't choose to
+A LinkedIn message gets skimmed inside a feed the reader didn't choose to
 open right now. A DM arrives inside a channel with its own social
 expectations about response time. Copying a cold email into either of
 these and expecting it to read the same way ignores the environment it now
@@ -52,7 +52,7 @@ purely on platform grounds.
 
 ## Outline
 
-- triage constraints specific to email, feeds, and DM threads
+- skimming constraints specific to email, feeds, and DM threads
 - which failure modes carry across platforms unchanged, and which don't
 - what has to change beyond length: tone, cadence, acceptable asks
 - adapting one message across three platforms

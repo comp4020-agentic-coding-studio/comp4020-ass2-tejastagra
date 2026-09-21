@@ -1,7 +1,7 @@
 ---
 title: Why Cold Email Works
 description:
-  The three cold emails that worked, and the triage framing the semester
+  The three cold emails that worked, and the constraint the semester
   builds on.
 week: 1
 date: 2027-02-08
@@ -43,7 +43,7 @@ Cuban invested $500,000 off it.
 Nothing about that pitch was charming. Coverage at the time described it as
 data-rich and low on drama, which is an odd thing to say about a message
 that landed half a million dollars — until you notice that drama is exactly
-what a triaging reader has no time for.
+what a reader skimming fifty of these has no time for.
 
 <p class="email-block__note">Reconstructed from public reporting on Allie Janoch's second Mapistry pitch, sent two years after a shorter first attempt went nowhere; wording below is illustrative, not verbatim.</p>
 <div class="email-block">
@@ -61,8 +61,8 @@ That second attempt reportedly reached a 33% reply rate across the investors it 
 
 Length wasn't the variable that changed between the two attempts. What
 changed was whether the email gave the reader enough to decide with — and a
-longer email that answers the triage question beats a shorter one that
-doesn't. Students walk away from this case with a specific correction to a
+longer email that gives the reader enough to decide with beats a shorter one
+that doesn't. Students walk away from this case with a specific correction to a
 common instinct: cutting an email is not automatically the fix, and adding
 substance can outperform cutting length when the first draft's problem was
 never length in the first place.
@@ -87,8 +87,7 @@ on its own.
 
 In each case, the reader wasn't persuaded so much as given what they needed
 to decide fast. That's the constraint the rest of the semester treats as
-fixed: the reader is triaging, with a few seconds and a stack of these to
-get through. A subject line that hides its own point, an ask too vague to
+fixed: the reader has a few seconds and a stack of these to get through. A subject line that hides its own point, an ask too vague to
 price, a length spent on the writer instead of the reader — eleven distinct
 ways of failing that one constraint, starting next week.
 

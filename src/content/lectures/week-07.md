@@ -20,7 +20,7 @@ email needs to contain to justify asking it a second time.
 ## Summary
 
 "Just bumping this to the top of your inbox" is not a follow-up. It's a
-second copy of the original triage cost with none of the original
+second copy of the original cost of being read, with none of the original
 content's chance of being useful. A follow-up that works adds something the
 first email didn't have — a new fact, a narrower ask, a deadline that's now
 real — rather than just asking the reader to reconsider a decision they
@@ -43,9 +43,9 @@ Composite example, illustrating the pattern:
   </div>
 </div>
 
-Nothing here tells the reader anything the first email didn't. It reimposes
-the same triage cost a second time and asks them to reconsider a decision
-they may have already made, on no new grounds. A follow-up that earned its
+Nothing here tells the reader anything the first email didn't. It makes
+them pay the same cost of attention a second time and asks them to
+reconsider a decision they may have already made, on no new grounds. A follow-up that earned its
 place would replace "just bumping this" with the one fact that's actually
 changed since the first email — and if nothing has changed, the honest
 conclusion is that it isn't time to follow up yet.
