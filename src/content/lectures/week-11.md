@@ -32,8 +32,16 @@ the wrong thing.
 
 Composite example, illustrating the pattern:
 
-> I noticed {{company}} has been doing great things in the {{industry}}
-> space lately.
+<div class="email-block">
+  <div class="email-block__header">
+    <p><strong>From:</strong> [Sender]</p>
+    <p><strong>To:</strong> [Recipient]</p>
+    <p><strong>Subject:</strong> Noticed what {{company}} is doing</p>
+  </div>
+  <div class="email-block__body">
+    <p>I noticed {{company}} has been doing great things in the {{industry}} space lately.</p>
+  </div>
+</div>
 
 Everything around a line like this can be competently merged; this one
 isn't, and it's the tell. A template can hold a company name and an

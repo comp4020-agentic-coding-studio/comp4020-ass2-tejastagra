@@ -33,7 +33,16 @@ Five paragraphs of company background, market context, and personal
 introduction can precede the actual request, which then arrives as a
 single clause at the end of paragraph four:
 
-> ...so if you had a few minutes to chat that would be amazing.
+<div class="email-block">
+  <div class="email-block__header">
+    <p><strong>From:</strong> [Sender]</p>
+    <p><strong>To:</strong> [Recipient]</p>
+    <p><strong>Subject:</strong> Introduction and a bit about what we're building</p>
+  </div>
+  <div class="email-block__body">
+    <p>...so if you had a few minutes to chat that would be amazing.</p>
+  </div>
+</div>
 
 A reader deciding whether to keep reading sees an unbroken block of text
 with no visible ask, which is itself the signal to stop — before the ask is

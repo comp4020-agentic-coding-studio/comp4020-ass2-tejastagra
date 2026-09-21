@@ -25,21 +25,38 @@ The goal of this lecture is to establish, before naming a single failure
 mode, what a cold email actually has to do: give a reader who owes the
 sender nothing enough to decide with, fast. Three cases carry that argument.
 
-> Reconstructed from public reporting. Dhruv Ghulati's email to Mark Cuban
-> pitching Factmata: a plain statement of the problem, named competitors and
-> customers instead of "enterprise clients," a real market-size figure, and
-> a request sized down to two specific time slots. Cuban invested $500,000
-> off it.
+<p class="email-block__note">Reconstructed from public reporting on Dhruv Ghulati's pitch to Mark Cuban; wording below is illustrative, not verbatim.</p>
+<div class="email-block">
+  <div class="email-block__header">
+    <p><strong>From:</strong> Dhruv Ghulati, Factmata</p>
+    <p><strong>To:</strong> Mark Cuban</p>
+    <p><strong>Subject:</strong> Factmata — fact-checking for ad-funded media, 15 minutes this week</p>
+  </div>
+  <div class="email-block__body">
+    <p>Factmata catches false and misleading content moving through ad-funded platforms before it spreads. We compete directly with the fact-checking tools publishers already use, and two news groups are piloting the product now. The addressable market inside programmatic advertising alone runs into real money, not a slide. I'd like fifteen minutes to walk you through where it stands — I have two slots open this week, Tuesday 2pm or Thursday 10am ET.</p>
+  </div>
+</div>
+
+Cuban invested $500,000 off it.
 
 Nothing about that pitch was charming. Coverage at the time described it as
 data-rich and low on drama, which is an odd thing to say about a message
 that landed half a million dollars — until you notice that drama is exactly
 what a triaging reader has no time for.
 
-> Reconstructed from public reporting. Allie Janoch's first email pitching
-> Mapistry undersold the product and went nowhere. A second attempt, sent
-> two years later, was longer and led with substance instead of charm, and
-> reportedly reached a 33% reply rate across the investors it went to.
+<p class="email-block__note">Reconstructed from public reporting on Allie Janoch's second Mapistry pitch, sent two years after a shorter first attempt went nowhere; wording below is illustrative, not verbatim.</p>
+<div class="email-block">
+  <div class="email-block__header">
+    <p><strong>From:</strong> Allie Janoch, Mapistry</p>
+    <p><strong>To:</strong> [Investor]</p>
+    <p><strong>Subject:</strong> Mapistry, two years on — where the environmental compliance problem stands now</p>
+  </div>
+  <div class="email-block__body">
+    <p>Two years ago I sent you a shorter version of this and you passed. Since then Mapistry has signed on with industrial sites that use the software to manage environmental compliance across their operations, and the regulatory load driving that demand has only gotten heavier. Here is what the product actually does now, what changed since the first email, and why I think the timing is different this time. I'd like twenty minutes to walk through it and hear where you'd push back.</p>
+  </div>
+</div>
+
+That second attempt reportedly reached a 33% reply rate across the investors it went to.
 
 Length wasn't the variable that changed between the two attempts. What
 changed was whether the email gave the reader enough to decide with — and a
@@ -49,9 +66,17 @@ common instinct: cutting an email is not automatically the fix, and adding
 substance can outperform cutting length when the first draft's problem was
 never length in the first place.
 
-> Reconstructed from public reporting. Dylan Field's early outreach for
-> Figma wasn't a funding ask. He emailed former colleagues from LinkedIn and
-> Flipboard directly to find the product's first users.
+<p class="email-block__note">Reconstructed from public reporting on Dylan Field's early Figma outreach; wording below is illustrative, not verbatim.</p>
+<div class="email-block">
+  <div class="email-block__header">
+    <p><strong>From:</strong> Dylan Field</p>
+    <p><strong>To:</strong> [Former colleague, LinkedIn/Flipboard]</p>
+    <p><strong>Subject:</strong> Trying something new — want an early look?</p>
+  </div>
+  <div class="email-block__body">
+    <p>I'm building a design tool that runs in the browser instead of as a desktop app, and I'm looking for people who design interfaces for a living to try it before anyone else does. You came to mind from the work you were doing when we overlapped — would you be up for taking a look this week and telling me where it falls apart?</p>
+  </div>
+</div>
 
 This case does two jobs: it shows cold email covering more ground than
 fundraising, and it shows that the coldest emails that actually work often

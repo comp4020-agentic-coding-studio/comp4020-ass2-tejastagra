@@ -59,7 +59,7 @@ describe("course content promises", () => {
     for (const lecture of lectures) {
       const slug = lecture.id.replace(/^lectures\//, "");
       const html = readFileSync(resolve(`dist/lectures/${slug}/index.html`), "utf8");
-      const hasQuotedExample = /<blockquote>/.test(html);
+      const hasQuotedExample = /class="email-block"/.test(html);
       const isIntroWeekWithNamedSources = slug === "week-01" && html.includes("Ghulati");
       expect(
         hasQuotedExample || isIntroWeekWithNamedSources,

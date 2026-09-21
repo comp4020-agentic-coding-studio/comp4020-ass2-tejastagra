@@ -32,9 +32,16 @@ straight to the pitch.
 
 Composite example, illustrating the pattern:
 
-> I really enjoyed your recent talk on scaling engineering teams — it's
-> clear you know this space inside and out. I wanted to reach out because I
-> think our product could be a great fit for what you're building.
+<div class="email-block">
+  <div class="email-block__header">
+    <p><strong>From:</strong> [Sender]</p>
+    <p><strong>To:</strong> [Recipient]</p>
+    <p><strong>Subject:</strong> Loved your talk on scaling eng teams</p>
+  </div>
+  <div class="email-block__body">
+    <p>I really enjoyed your recent talk on scaling engineering teams — it's clear you know this space inside and out. I wanted to reach out because I think our product could be a great fit for what you're building.</p>
+  </div>
+</div>
 
 The first sentence could describe any talk by any engineering leader. The
 second drops the reader entirely and pivots to a generic pitch. Real

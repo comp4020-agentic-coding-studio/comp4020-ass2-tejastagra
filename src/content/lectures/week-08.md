@@ -32,8 +32,16 @@ way for the connector to say no without it being awkward.
 
 Composite example, illustrating the pattern:
 
-> Would you be open to connecting me with [Name]? I think what I'm working
-> on could be really relevant to them.
+<div class="email-block">
+  <div class="email-block__header">
+    <p><strong>From:</strong> [Sender]</p>
+    <p><strong>To:</strong> [Connector]</p>
+    <p><strong>Subject:</strong> Would you mind an intro?</p>
+  </div>
+  <div class="email-block__body">
+    <p>Would you be open to connecting me with [Name]? I think what I'm working on could be really relevant to them.</p>
+  </div>
+</div>
 
 This is addressed to the connector but reads identically to a cold email
 addressed to the stranger — no mention of what the connector would say on

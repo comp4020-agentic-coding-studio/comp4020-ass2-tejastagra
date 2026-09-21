@@ -38,9 +38,16 @@ costs to find that out.
 
 Composite example, illustrating the pattern:
 
-> Loved what you're building — really impressive traction. Any advice you
-> can share on hiring would be hugely appreciated. Would you have 30
-> minutes sometime?
+<div class="email-block">
+  <div class="email-block__header">
+    <p><strong>From:</strong> [Sender]</p>
+    <p><strong>To:</strong> [Recipient]</p>
+    <p><strong>Subject:</strong> Quick question about hiring</p>
+  </div>
+  <div class="email-block__body">
+    <p>Loved what you're building — really impressive traction. Any advice you can share on hiring would be hugely appreciated. Would you have 30 minutes sometime?</p>
+  </div>
+</div>
 
 Four months, no reply. Length is fine — the email is short. Specificity is
 weak: "any advice" has no bounded action. Relevance is what actually

@@ -54,14 +54,29 @@ Composite example, illustrating the pattern:
 
 Vague version:
 
-> Would love to get your thoughts on what we're building whenever you have
-> a moment — no rush at all!
+<div class="email-block">
+  <div class="email-block__header">
+    <p><strong>From:</strong> [Sender]</p>
+    <p><strong>To:</strong> [Recipient]</p>
+    <p><strong>Subject:</strong> Quick chat?</p>
+  </div>
+  <div class="email-block__body">
+    <p>Would love to get your thoughts on what we're building whenever you have a moment — no rush at all!</p>
+  </div>
+</div>
 
 Priced version:
 
-> Fifteen minutes this week on whether the pricing model in [specific link]
-> would work for a team your size — happy to send three times that suit
-> you.
+<div class="email-block">
+  <div class="email-block__header">
+    <p><strong>From:</strong> [Sender]</p>
+    <p><strong>To:</strong> [Recipient]</p>
+    <p><strong>Subject:</strong> 15 minutes on whether our pricing model fits a team your size</p>
+  </div>
+  <div class="email-block__body">
+    <p>Fifteen minutes this week on whether the pricing model in [specific link] would work for a team your size — happy to send three times that suit you.</p>
+  </div>
+</div>
 
 The second version answers all three rubric questions before the reader
 has to ask them. It's not shorter out of virtue; it's shorter because

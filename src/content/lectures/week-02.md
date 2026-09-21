@@ -48,7 +48,16 @@ subject line; it forces the open it was meant to make unnecessary.
 
 Composite example, illustrating the pattern rather than a specific sender:
 
-> Subject: Following up
+<div class="email-block">
+  <div class="email-block__header">
+    <p><strong>From:</strong> [Sender]</p>
+    <p><strong>To:</strong> [Recipient]</p>
+    <p><strong>Subject:</strong> Following up</p>
+  </div>
+  <div class="email-block__body">
+    <p>Just wanted to follow up on my last email — let me know if you had a chance to look it over.</p>
+  </div>
+</div>
 
 Sent as a second attempt after silence, this restates that a first email
 existed without adding anything the reader can act on — not what it's

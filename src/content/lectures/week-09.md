@@ -32,9 +32,16 @@ in a DM thread would read as aggressive sent as email.
 
 Composite example, illustrating the pattern:
 
-> Hi [Name], I hope this message finds you well. I wanted to reach out
-> regarding a potential opportunity to collaborate. Please find my
-> availability below for a call this week.
+<div class="email-block">
+  <div class="email-block__header">
+    <p><strong>From:</strong> [Sender]</p>
+    <p><strong>To:</strong> [Recipient, sent as a LinkedIn DM]</p>
+    <p><strong>Subject:</strong> Potential opportunity to collaborate</p>
+  </div>
+  <div class="email-block__body">
+    <p>Hi [Name], I hope this message finds you well. I wanted to reach out regarding a potential opportunity to collaborate. Please find my availability below for a call this week.</p>
+  </div>
+</div>
 
 Sent as a LinkedIn DM, this reads as noticeably more formal than the
 channel expects, and its length assumes an inbox the reader chose to check

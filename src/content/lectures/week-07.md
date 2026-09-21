@@ -31,8 +31,16 @@ built.
 
 Composite example, illustrating the pattern:
 
-> Just bumping this to the top of your inbox in case it got buried! Would
-> still love to connect whenever you have a moment.
+<div class="email-block">
+  <div class="email-block__header">
+    <p><strong>From:</strong> [Sender]</p>
+    <p><strong>To:</strong> [Recipient]</p>
+    <p><strong>Subject:</strong> Re: Following up</p>
+  </div>
+  <div class="email-block__body">
+    <p>Just bumping this to the top of your inbox in case it got buried! Would still love to connect whenever you have a moment.</p>
+  </div>
+</div>
 
 Nothing here tells the reader anything the first email didn't. It reimposes
 the same triage cost a second time and asks them to reconsider a decision

@@ -28,8 +28,16 @@ thousand companies is not research, even if it's accurate.
 
 Composite example, illustrating the pattern:
 
-> I'm closing out this round by Friday, so wanted to see if you'd be
-> interested in getting in before then.
+<div class="email-block">
+  <div class="email-block__header">
+    <p><strong>From:</strong> [Sender]</p>
+    <p><strong>To:</strong> [Recipient]</p>
+    <p><strong>Subject:</strong> Closing the round Friday</p>
+  </div>
+  <div class="email-block__body">
+    <p>I'm closing out this round by Friday, so wanted to see if you'd be interested in getting in before then.</p>
+  </div>
+</div>
 
 The round in question had no fixed close date; the deadline existed only
 in this email, invented to move the reader faster than the facts justified.

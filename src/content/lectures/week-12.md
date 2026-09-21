@@ -29,9 +29,16 @@ scraped addresses does.
 
 Composite example, illustrating the pattern:
 
-> Hi [Name], I got your details from the [Conference] attendee list and
-> wanted to reach out — no unsubscribe link needed, just reply "no thanks"
-> if this isn't relevant.
+<div class="email-block">
+  <div class="email-block__header">
+    <p><strong>From:</strong> [Sender]</p>
+    <p><strong>To:</strong> [Recipient]</p>
+    <p><strong>Subject:</strong> Following up from [Conference]</p>
+  </div>
+  <div class="email-block__body">
+    <p>Hi [Name], I got your details from the [Conference] attendee list and wanted to reach out — no unsubscribe link needed, just reply "no thanks" if this isn't relevant.</p>
+  </div>
+</div>
 
 A specific ask, a real reason for reaching out, a short and well-structured
 body, no manufactured urgency: this passes weeks 1 through 10 cleanly. The
