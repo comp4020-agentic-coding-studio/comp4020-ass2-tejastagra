@@ -8,6 +8,7 @@ teachers:
 block: 5
 blockTitle: Context and Craft
 failure_mode: platform-mismatch
+slides: /decks/week-09/
 related:
   - sessions/09-same-words-different-platform
 ---
