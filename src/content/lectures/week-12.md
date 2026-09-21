@@ -8,6 +8,7 @@ teachers:
 block: 6
 blockTitle: Scale and the Law
 failure_mode: legal-noncompliance
+slides: /decks/week-12/
 related:
   - sessions/12-the-one-that-gets-you-sued
 ---
