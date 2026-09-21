@@ -1,0 +1,56 @@
+---
+export type CalloutAccent = "green" | "gold" | "neutral";
+
+export interface Props {
+  /** Heading rendered above the callout body. Omit for an unlabelled callout. */
+  title?: string;
+  /** Colour of the top accent rule. Defaults to green. */
+  accent?: CalloutAccent;
+}
+
+const { title, accent = "green" } = Astro.props;
+---
+
+<div class="callout-box" data-accent={accent}>
+  {title && <p class="callout-box__title">{title}</p>}
+  <div class="callout-box__body">
+    <slot />
+  </div>
+</div>
+
+<style>
+  .callout-box {
+    margin-block: var(--at-spacing-lg);
+    padding: var(--at-spacing-md);
+    border: 1px solid var(--at-divider);
+    border-block-start: 3px solid var(--callout-accent, var(--at-success));
+    border-radius: var(--at-border-radius);
+    background: var(--at-bg-elevated, var(--at-bg));
+    box-shadow: var(--at-shadow-sm);
+  }
+
+  .callout-box[data-accent="green"] {
+    --callout-accent: var(--at-success);
+  }
+
+  .callout-box[data-accent="gold"] {
+    --callout-accent: var(--at-primary);
+  }
+
+  .callout-box[data-accent="neutral"] {
+    --callout-accent: var(--at-divider);
+  }
+
+  .callout-box__title {
+    font-weight: 600;
+    margin-block: 0 var(--at-spacing-xs);
+  }
+
+  .callout-box__body > :first-child {
+    margin-block-start: 0;
+  }
+
+  .callout-box__body > :last-child {
+    margin-block-end: 0;
+  }
+</style>
