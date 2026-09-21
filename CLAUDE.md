@@ -25,7 +25,7 @@ rather than let it drift into generic "how to network" content.
 - Weekly Syncs are run by the three tutors across the week; the homepage
   carries a table of which tutor runs which sync and when.
 - Three assessment components, stated on the homepage with a link to the
-  assessment page: Assignment 01 (30%), Assignment 02 (22%), and Weekly
+  assessment page: Assignment 1 (30%), Assignment 2 (22%), and Weekly
   syncs: attendance and completion (48% in the underlying data, one
   assessment entry covering all twelve Weekly Syncs, not twelve separate
   entries). The Weekly Syncs page carries no percentage or weight on
@@ -40,8 +40,8 @@ rather than let it drift into generic "how to network" content.
   100% to build; they are not a mark the student is chasing. What actually
   determines the pass/fail outcome, and what must be stated in plain
   English on every assessment page and on the main Assessment page, is: a
-  student passes the course by passing Assignment 01, passing Assignment
-  02, and completing at least 8 of the 12 weekly syncs. The Weekly Syncs
+  student passes the course by passing Assignment 1, passing Assignment
+  2, and completing at least 8 of the 12 weekly syncs. The Weekly Syncs
   page in particular must lead with the 8-of-12 threshold, not the
   percentages, since that threshold is the thing that actually decides
   whether a student passes, and must not display a weight or a
@@ -172,13 +172,13 @@ never includes an example, a reconstructed email, or a rubric block — those
 stay on the slides. Before removing an example from a lecture page, confirm
 it already exists in that week's deck, so nothing is lost in the move.
 - Assessment weights must sum to exactly 100% across exactly three
-  assessment components (Assignment 01, Assignment 02, Weekly syncs).
+  assessment components (Assignment 1, Assignment 2, Weekly syncs).
   Do not ship if they don't. Weekly syncs are graded as one assessment
   entry worth 48% overall, not as twelve separate 4% entries — the
   breakdown by week lives in that one entry's own page, not in the
   assessment collection's structure. These weights are internal data
   the platform needs to build; the pass/fail outcome for a student is
-  governed by the pass-Assignment-01/pass-Assignment-02/complete-8-of-12
+  governed by the pass-Assignment-1/pass-Assignment-2/complete-8-of-12
   rule above, not by the weights, and the assessment pages must say so.
 - Assessment descriptions must be written in plain English that a student
   understands without having seen any lecture or slide. No course jargon
@@ -292,7 +292,7 @@ stay in the dry register like the rest of the site.
 - Weeks are grouped into blocks via `block` and `blockTitle` frontmatter
   fields (not "units").
 - Every lecture links a real `/decks/...` file (all 12 weeks carry a deck).
-- Exactly three assessment components exist (Assignment 01, Assignment 02,
+- Exactly three assessment components exist (Assignment 1, Assignment 2,
   Weekly syncs) and their weights sum to 100%.
 - Every week's deck contains at least one concrete example (real/redacted
   or composite, per the Content rules above) built into a slide.
