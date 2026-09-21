@@ -7,12 +7,13 @@ week: 12
 due: 2027-04-26T12:00:00+10:00
 weight: 40
 marking:
-  mode: weighted
-  criteria:
-    - name: Coherence of the doctrine
-      weight: 50
-    - name: Rigour of the defence
-      weight: 50
+  mode: holistic
+  description: >-
+    Pass/fail. A pass requires a doctrine that actually synthesises the
+    semester rather than restating individual weeks, and a defence that
+    finds real tension against the doctrine rather than picking an email
+    chosen because it obviously clears the bar. Either failing on its own
+    is enough to withhold a pass.
 spec:
   - a one-page doctrine that synthesises the semester rather than restating individual weeks
   - one real email defended against the doctrine, naming where it falls short if it does

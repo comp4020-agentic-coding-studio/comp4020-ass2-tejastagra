@@ -7,12 +7,13 @@ week: 8
 due: 2027-03-29T12:00:00+11:00
 weight: 30
 marking:
-  mode: weighted
-  criteria:
-    - name: Accuracy of diagnosis
-      weight: 60
-    - name: Quality and specificity of the proposed fix
-      weight: 40
+  mode: holistic
+  description: >-
+    Pass/fail. A pass requires every diagnosis to name the specific line or
+    structural choice responsible, not just the correct failure mode by
+    guess, and every fix to be specific enough that the sender would know
+    exactly what to change. A submission with accurate failure-mode labels
+    but vague or generic fixes does not pass on labels alone.
 spec:
   - ten emails audited, each assigned exactly one failure mode from weeks 1–7
   - each diagnosis is justified in the email's own text, not asserted
