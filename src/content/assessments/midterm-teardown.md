@@ -9,7 +9,6 @@ indexSummary: Diagnose ten real cold emails, then redraft each one to fix what y
 week: 8
 due: 2027-05-10T17:00:00+10:00
 weight: 30
-hideWeight: true
 marking:
   mode: holistic
   description: >-
