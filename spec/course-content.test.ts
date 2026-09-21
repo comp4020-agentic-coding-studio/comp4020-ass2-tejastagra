@@ -54,16 +54,16 @@ describe("course content promises", () => {
     expect(withSlides.length).toBeGreaterThanOrEqual(1);
   });
 
-  it("embeds a real or redacted example directly in every week's lecture page", () => {
+  it("embeds a real or redacted example directly in every week's deck", () => {
     const lectures = byType("lectures");
     for (const lecture of lectures) {
       const slug = lecture.id.replace(/^lectures\//, "");
-      const html = readFileSync(resolve(`dist/lectures/${slug}/index.html`), "utf8");
+      const html = readFileSync(resolve(`dist/decks/${slug}/index.html`), "utf8");
       const hasQuotedExample = /class="email-block"/.test(html);
       const isIntroWeekWithNamedSources = slug === "week-01" && html.includes("Ghulati");
       expect(
         hasQuotedExample || isIntroWeekWithNamedSources,
-        `${lecture.id} has no example embedded in its own page`,
+        `${lecture.id} has no example embedded in its deck`,
       ).toBe(true);
     }
   });

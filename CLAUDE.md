@@ -62,10 +62,11 @@ rather than let it drift into generic "how to network" content.
   (see People) — his bio and any quoted material from him is intentionally
   overblown, as contrast to the course's own register. Everything else
   (module content, assessments, the policies page) stays dry.
-- Every week's page includes at least one concrete example illustrating that
-  week's failure mode, written directly into the page (see Sessions vs.
-  lectures below — no separate sources page). Two kinds are both allowed,
-  and it matters which one you're using:
+- Every week's deck includes at least one concrete example illustrating that
+  week's failure mode, built directly into a slide (see Sessions vs.
+  lectures below — no separate sources page). The lecture page itself is a
+  short recap and does not carry the example; the deck is where it lives.
+  Two kinds are both allowed, and it matters which one you're using:
   - **Real or redacted**, when the point is that this specific documented
     thing happened (week 1's Ghulati/Janoch/Field cases). Attribute it
     honestly, don't invent details beyond what's documented.
@@ -142,11 +143,13 @@ rather than let it drift into generic "how to network" content.
 
 ### Summary / lecture-page consistency rule
 
-The lecture page's summary section can never contain anything that isn't also
-in that week's deck. The deck is the full teaching content; the summary is a
-subset of it. If a point appears in the summary, it must also appear on a
-slide. The summary never exceeds the deck in scope — never the other way
-around.
+The deck is the full teaching content, including the worked example. The
+lecture page's "In brief" section is a short recap only, not a subset
+transcript of the deck's detail: it names the week's failure mode, states
+its mechanism in one line, and says why it matters, in 3-4 sentences. It
+never includes an example, a reconstructed email, or a rubric block — those
+stay on the slides. Before removing an example from a lecture page, confirm
+it already exists in that week's deck, so nothing is lost in the move.
 - Assessment weights must sum to exactly 100%. Do not ship if they don't.
 - People collection needs exactly four entries: Tejas Tagra (instructor) and
   three tutors, one of whom is Bodhi Kessler-Nakamura. Do not invent staff
@@ -172,29 +175,31 @@ The Weekly Sync page does NOT carry the full teaching argument or the
 mechanism. It is the practical hour attached to the lecture, not the reading.
 Keep it short.
 
-**Lectures** (`src/content/lectures/`) are now where the substantive weekly
-content lives. Each lecture page carries:
-- the date
-- who is taking it (the lecturer)
-- a broad overview of the lecture
-- a slide deck reference where one exists (week 6 required; others optional
-  per the deck rule above)
-- a summary section, with NO images, covering: the goal of the lecture, what
-  students walked away with, and the important topics discussed
+**Lectures** (`src/content/lectures/`) are now where the deck-backed weekly
+content lives, but the page itself is deliberately thin. The deck carries
+the depth; the page is a pointer to it. Each lecture page carries, in this
+order:
+- the date and who is taking it (the lecturer)
+- a short overview paragraph
+- a link to the slide deck (week 6 required; others per the deck rule above)
+- a callout reading roughly: "This is just to get a quick understanding
+  before the lecture. The examples and the rest are in the lecture, so it's
+  advisable you attend."
+- an "In brief" section: 3-4 sentences naming the week's failure mode,
+  stating its mechanism in one line, and saying why it matters. No example,
+  no reconstructed email, no rubric block — see the Summary / lecture-page
+  consistency rule above.
+- the Outline
+- a link to that week's Weekly Sync (already satisfied automatically by
+  `related` frontmatter and the platform's own related-content rendering;
+  no separate link needs to be hand-built)
 
-The lecture's summary section is the part a marker sampling a non-adjacent
-week will read to judge whether the week teaches something real. It must
-explain the mechanism of that week's failure mode, not just name it — the
-same depth bar that applied to session pages before now applies here. "Vague
-asks fail" (assertion) is not enough; walking through why they move cost onto
-the reader (explanation) is the standard. The summary is always a subset of
-the week's deck: nothing in the summary that isn't also on a slide (see the
-deck rules above).
-
-Depth over length. There is no minimum word count, and padding to seem
-thorough is a bug. A lecture page is done once the mechanism behind its
-week's failure mode is actually explained, not merely asserted and moved
-past.
+The depth bar that used to apply to the lecture page's summary now applies
+to the deck: the deck is what a marker reads to judge whether the week
+teaches something real, and it must explain the mechanism of that week's
+failure mode, not just name it. "Vague asks fail" (assertion) is not enough;
+walking through why they move cost onto the reader (explanation) is the
+standard, and that explanation belongs on the slides.
 
 Not every week needs a rubric or framework. Use one only where the failure
 mode is genuinely a decision-making pattern (a vague ask, fake
@@ -207,9 +212,10 @@ The lecture page and its Weekly Sync must agree on what the week covers. If a
 sync exercise assumes something the lecture never taught, that's a bug.
 
 No separate sources page or reference collection, for any week. Examples get
-written directly into the lecture page's own prose, the way week 1 writes
-Ghulati, Janoch, and Field inline. A line like "see the example below" points
-to content already on the same page, never to a page that doesn't exist.
+built directly into that week's deck as slides, the way week 1's deck
+carries Ghulati, Janoch, and Field. A line like "see the example below" only
+ever points to content already in the same deck, never to a page that
+doesn't exist.
 
 ## Writing like a human, not a model
 
@@ -248,9 +254,8 @@ stay in the dry register like the rest of the site.
   fields (not "units").
 - Every lecture links a real `/decks/...` file (all 12 weeks carry a deck).
 - Assessment weights sum to 100%.
-- Every week's lecture page contains at least one concrete example
-  (real/redacted or composite, per the Content rules above) written into the
-  page itself.
+- Every week's deck contains at least one concrete example (real/redacted
+  or composite, per the Content rules above) built into a slide.
 - Every Weekly Sync page has exactly two exercises and names its tutor.
 - Exactly four people entries exist (one instructor, three tutors).
 
