@@ -49,3 +49,39 @@ const { Content } = await render(assessment);
   {assessment.data.marking && <MarkingModel marking={assessment.data.marking} />}
   <RelatedContent entry={assessment} collections={graphCollections} />
 </ContentLayout>
+
+<style is:global>
+  .email-block {
+    border: 1px solid var(--at-border, #d0d0d0);
+    border-radius: 6px;
+    margin-block: 1.5rem;
+    overflow: hidden;
+    background: var(--at-bg, #fff);
+  }
+
+  .email-block__header {
+    background: var(--at-bg-alt);
+    padding: 0.75rem 1rem;
+    border-bottom: 1px solid var(--at-border, #d0d0d0);
+    font-size: 0.92rem;
+  }
+
+  .email-block__header p {
+    margin: 0.15rem 0;
+  }
+
+  .email-block__body {
+    padding: 1rem;
+  }
+
+  .email-block__body p {
+    margin: 0;
+  }
+
+  .email-block__note {
+    margin: 0 0 0.75rem;
+    font-size: 0.85rem;
+    font-style: italic;
+    color: var(--at-text-secondary);
+  }
+</style>
