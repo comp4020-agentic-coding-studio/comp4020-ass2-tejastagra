@@ -5,8 +5,8 @@ week: 9
 date: 2027-04-19
 teachers:
   - tejas-tagra
-block: 5
-blockTitle: Context and Craft
+block: 3
+blockTitle: Scale, Craft and the Law
 failure_mode: platform-mismatch
 slides: /decks/week-09/
 related:

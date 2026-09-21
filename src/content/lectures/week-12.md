@@ -5,8 +5,8 @@ week: 12
 date: 2027-05-10
 teachers:
   - tejas-tagra
-block: 6
-blockTitle: Scale and the Law
+block: 3
+blockTitle: Scale, Craft and the Law
 failure_mode: legal-noncompliance
 slides: /decks/week-12/
 related:

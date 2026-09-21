@@ -5,8 +5,8 @@ week: 10
 date: 2027-04-26
 teachers:
   - tejas-tagra
-block: 5
-blockTitle: Context and Craft
+block: 3
+blockTitle: Scale, Craft and the Law
 failure_mode: manipulative-craft
 slides: /decks/week-10/
 related:

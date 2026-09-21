@@ -5,8 +5,8 @@ week: 4
 date: 2027-03-01
 teachers:
   - tejas-tagra
-block: 2
-blockTitle: Pricing the Ask
+block: 1
+blockTitle: First Principles
 failure_mode: performed-personalisation
 slides: /decks/week-04/
 related:

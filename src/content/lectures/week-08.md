@@ -5,8 +5,8 @@ week: 8
 date: 2027-04-12
 teachers:
   - tejas-tagra
-block: 4
-blockTitle: Persistence and Risk
+block: 2
+blockTitle: The Reader's Economics
 failure_mode: genre-confusion-warm-intro
 slides: /decks/week-08/
 related:

@@ -55,15 +55,26 @@ const blocks = [...new Map(lectures.map((lecture) => [lecture.data.block, lectur
     Rm 7.09) with a one-hour Weekly Sync — two contact hours a week. Graded
     CRS (pass/fail); it does not count toward GPA.
   </p>
-  <ol class="block-list">
-    {
-      blocks.map((b) => (
-        <li>
-          <strong>Block {b.block}: {b.blockTitle}</strong> — weeks {b.firstWeek}–{b.lastWeek}
-        </li>
-      ))
-    }
-  </ol>
+  <table class="block-table">
+    <thead>
+      <tr>
+        <th scope="col">Block</th>
+        <th scope="col">Theme</th>
+        <th scope="col">Weeks</th>
+      </tr>
+    </thead>
+    <tbody>
+      {
+        blocks.map((b) => (
+          <tr>
+            <td>{b.block}</td>
+            <td>{b.blockTitle}</td>
+            <td>{b.firstWeek}–{b.lastWeek}</td>
+          </tr>
+        ))
+      }
+    </tbody>
+  </table>
 
   <p>
     There are three assessments — see the <a href={withBase("/assessments/")}>assessment
@@ -163,23 +174,22 @@ const blocks = [...new Map(lectures.map((lecture) => [lecture.data.block, lectur
     font-size: 0.9rem;
   }
 
-  .block-list {
-    display: grid;
-    gap: 0.5rem;
-    padding-left: 1.25rem;
-    margin-block: 1.5rem 2rem;
-  }
-
+  .block-table,
   .sync-timetable {
     width: 100%;
     border-collapse: collapse;
     margin-block: 1rem 2rem;
+    display: block;
+    overflow-x: auto;
   }
 
+  .block-table th,
+  .block-table td,
   .sync-timetable th,
   .sync-timetable td {
     text-align: left;
     padding: 0.5rem 0.75rem;
     border-bottom: 1px solid var(--at-border, #d0d0d0);
+    white-space: nowrap;
   }
 </style>

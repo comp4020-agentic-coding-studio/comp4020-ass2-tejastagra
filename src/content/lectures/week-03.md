@@ -5,8 +5,8 @@ week: 3
 date: 2027-02-22
 teachers:
   - tejas-tagra
-block: 2
-blockTitle: Pricing the Ask
+block: 1
+blockTitle: First Principles
 failure_mode: vague-ask
 slides: /decks/week-03/
 related:

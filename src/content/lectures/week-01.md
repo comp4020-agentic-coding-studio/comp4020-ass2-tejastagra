@@ -8,7 +8,7 @@ date: 2027-02-08
 teachers:
   - tejas-tagra
 block: 1
-blockTitle: Getting Opened
+blockTitle: First Principles
 slides: /decks/week-01/
 related:
   - sessions/01-why-cold-email-works

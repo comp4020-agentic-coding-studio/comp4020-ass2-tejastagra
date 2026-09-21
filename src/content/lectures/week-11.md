@@ -5,8 +5,8 @@ week: 11
 date: 2027-05-03
 teachers:
   - tejas-tagra
-block: 6
-blockTitle: Scale and the Law
+block: 3
+blockTitle: Scale, Craft and the Law
 failure_mode: automation-flattening
 slides: /decks/week-11/
 related:

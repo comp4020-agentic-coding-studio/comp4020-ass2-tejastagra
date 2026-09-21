@@ -6,7 +6,7 @@ date: 2027-02-15
 teachers:
   - tejas-tagra
 block: 1
-blockTitle: Getting Opened
+blockTitle: First Principles
 failure_mode: weak-subject-line
 slides: /decks/week-02/
 related:

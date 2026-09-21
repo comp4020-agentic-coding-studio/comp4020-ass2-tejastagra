@@ -5,8 +5,8 @@ week: 5
 date: 2027-03-08
 teachers:
   - tejas-tagra
-block: 3
-blockTitle: The Reader's Math
+block: 2
+blockTitle: The Reader's Economics
 failure_mode: unstructured-length
 slides: /decks/week-05/
 related:
