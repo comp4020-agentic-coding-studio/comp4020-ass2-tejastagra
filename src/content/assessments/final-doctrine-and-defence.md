@@ -1,11 +1,11 @@
 ---
-title: "Assignment 01"
+title: "Assignment 1"
 description: >-
   You write two cold emails to two real people, for two clearly different
   reasons. One email involves an ask, such as a job or an introduction.
   The other does not need to ask for anything.
 indexSummary: Write two cold emails to two real people, for two clearly different reasons.
-week: 12
+week: 8
 due: 2027-03-29T12:00:00+11:00
 weight: 22
 hideWeight: true

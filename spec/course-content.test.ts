@@ -35,7 +35,7 @@ describe("course content promises", () => {
 
   it("weights the three assessment components to exactly 100% overall", () => {
     const assessments = byType("assessments");
-    expect(assessments, "expected exactly three assessment components: Assignment 01, Assignment 02, Weekly syncs").toHaveLength(3);
+    expect(assessments, "expected exactly three assessment components: Assignment 1, Assignment 2, Weekly syncs").toHaveLength(3);
     const total = assessments.reduce((sum, node) => sum + Number(node.meta?.weight ?? 0), 0);
     expect(total).toBe(100);
   });

@@ -1,14 +1,15 @@
 ---
-title: "Assignment 02"
+title: "Assignment 2"
 description: >-
   You are given ten real cold emails. For each one, you explain what is
   wrong with it and why, using what the course has taught so far. This
   tests whether you can spot the problems yourself, not just fix ones you
   are handed.
 indexSummary: Diagnose ten real cold emails, then redraft each one to fix what you found.
-week: 8
+week: 12
 due: 2027-05-10T17:00:00+10:00
 weight: 30
+hideWeight: true
 marking:
   mode: holistic
   description: >-
