@@ -1,43 +1,27 @@
 ---
 title: The One That Gets You Sued
 description:
-  Spam law, harvested addresses and consent as the semester's final failure
-  mode, and the closing synthesis of everything before it.
+  The tutor-led hour attached to week 12's closing lecture on legal
+  compliance and synthesis.
 week: 12
 date: 2027-04-26
 teachers:
-  - tejas-tagra
-failure_mode: legal-noncompliance
+  - naomi-reyes
 related:
   - lectures/week-12
 ---
 
-Every failure mode this course has named so far costs you a reply. This one
-can cost you a fine or a lawsuit: sending unsolicited commercial email
-without the disclosures the law requires, harvesting addresses from a source
-you don't have permission to email, or ignoring an unsubscribe request. It's
-a different category of failure — not "this got ignored" but "this was
-illegal to send" — and it applies at the exact moment good craft turns into
-volume, which is why it closes the semester rather than opening it.
+Follows the [week 12 lecture](/lectures/week-12/) tying the semester
+together. This week's sync is led by Naomi Reyes, and it's where the final
+assessment's doctrine starts getting drafted.
 
-The final session ties the eleven failure modes together rather than
-introducing a twelfth one in isolation: a legally compliant email that still
-fails weeks 1 through 11 is still a bad email, and a well-crafted one that
-ignores this week is still a liability.
+## Exercise: draft the doctrine (30 min)
 
-> Hi [Name], I got your details from the [Conference] attendee list and
-> wanted to reach out — no unsubscribe link needed, just reply "no thanks"
-> if this isn't relevant.
+State, in one page, what makes an email worth sending, drawing on every
+week of the semester rather than restating them individually.
 
-A specific ask, a real reason for reaching out, a short and well-structured
-body, no manufactured urgency: this passes weeks 1 through 10 cleanly. The
-address came from a conference attendee list the sender had no relationship
-to and no consent to email, and "just reply no thanks" is not a lawful
-unsubscribe mechanism. Good craft doesn't offset the absence of a lawful
-basis to send it at all.
+## Exercise: defend one real email (30 min)
 
-## Exercise
-
-This is where the final assessment's doctrine gets written: state, in one
-page, what makes an email worth sending, drawing on every week of the
-semester, then defend one real email against your own doctrine.
+Take one real email (yours, redacted if needed) and defend it against the
+doctrine drafted in the first exercise, naming honestly where it falls
+short if it does.
