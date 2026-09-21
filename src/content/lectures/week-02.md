@@ -5,8 +5,8 @@ week: 2
 date: 2027-02-15
 teachers:
   - tejas-tagra
-unit: 1
-unitTitle: Getting Opened
+block: 1
+blockTitle: Getting Opened
 failure_mode: weak-subject-line
 related:
   - sessions/02-the-three-second-test

@@ -5,8 +5,8 @@ week: 3
 date: 2027-02-22
 teachers:
   - tejas-tagra
-unit: 2
-unitTitle: Pricing the Ask
+block: 2
+blockTitle: Pricing the Ask
 failure_mode: vague-ask
 related:
   - sessions/03-the-one-that-asks-for-everything

@@ -5,8 +5,8 @@ week: 10
 date: 2027-04-12
 teachers:
   - tejas-tagra
-unit: 5
-unitTitle: Context and Craft
+block: 5
+blockTitle: Context and Craft
 failure_mode: manipulative-craft
 related:
   - sessions/10-the-one-that-works-too-well

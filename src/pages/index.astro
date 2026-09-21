@@ -12,13 +12,13 @@ import { sessionLabels, siteConfig } from "../site-config";
 
 const lectures = (await getCollection("lectures")).sort((a, b) => a.data.week - b.data.week);
 
-const units = [...new Map(lectures.map((lecture) => [lecture.data.unit, lecture.data.unitTitle])).entries()]
+const blocks = [...new Map(lectures.map((lecture) => [lecture.data.block, lecture.data.blockTitle])).entries()]
   .sort(([a], [b]) => Number(a) - Number(b))
-  .map(([unit, unitTitle]) => {
-    const weeks = lectures.filter((lecture) => lecture.data.unit === unit);
+  .map(([block, blockTitle]) => {
+    const weeks = lectures.filter((lecture) => lecture.data.block === block);
     return {
-      unit,
-      unitTitle,
+      block,
+      blockTitle,
       firstWeek: weeks[0].data.week,
       lastWeek: weeks[weeks.length - 1].data.week,
     };
@@ -50,16 +50,16 @@ const units = [...new Map(lectures.map((lecture) => [lecture.data.unit, lecture.
 
   <h2>Course structure</h2>
   <p>
-    Six units, taken in a single teaching period, available in both the
+    Six blocks, taken in a single teaching period, available in both the
     summer and winter teaching periods as well as the standard semester.
     Each week pairs a one-hour lecture with a one-hour Weekly Sync. Graded
     CRS (pass/fail); it does not count toward GPA.
   </p>
-  <ol class="unit-list">
+  <ol class="block-list">
     {
-      units.map((u) => (
+      blocks.map((b) => (
         <li>
-          <strong>Unit {u.unit}: {u.unitTitle}</strong> — weeks {u.firstWeek}–{u.lastWeek}
+          <strong>Block {b.block}: {b.blockTitle}</strong> — weeks {b.firstWeek}–{b.lastWeek}
         </li>
       ))
     }
@@ -106,7 +106,7 @@ const units = [...new Map(lectures.map((lecture) => [lecture.data.unit, lecture.
     font-size: 0.9rem;
   }
 
-  .unit-list {
+  .block-list {
     display: grid;
     gap: 0.5rem;
     padding-left: 1.25rem;

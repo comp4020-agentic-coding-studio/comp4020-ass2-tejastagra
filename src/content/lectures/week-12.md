@@ -5,8 +5,8 @@ week: 12
 date: 2027-04-26
 teachers:
   - tejas-tagra
-unit: 6
-unitTitle: Scale and the Law
+block: 6
+blockTitle: Scale and the Law
 failure_mode: legal-noncompliance
 related:
   - sessions/12-the-one-that-gets-you-sued

@@ -5,8 +5,8 @@ week: 9
 date: 2027-04-05
 teachers:
   - tejas-tagra
-unit: 5
-unitTitle: Context and Craft
+block: 5
+blockTitle: Context and Craft
 failure_mode: platform-mismatch
 related:
   - sessions/09-same-words-different-platform

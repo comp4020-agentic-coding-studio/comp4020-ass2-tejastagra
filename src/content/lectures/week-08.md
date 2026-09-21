@@ -5,8 +5,8 @@ week: 8
 date: 2027-03-29
 teachers:
   - tejas-tagra
-unit: 4
-unitTitle: Persistence and Risk
+block: 4
+blockTitle: Persistence and Risk
 failure_mode: genre-confusion-warm-intro
 related:
   - sessions/08-the-warm-intro-you-didnt-earn

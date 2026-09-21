@@ -5,8 +5,8 @@ week: 7
 date: 2027-03-22
 teachers:
   - tejas-tagra
-unit: 4
-unitTitle: Persistence and Risk
+block: 4
+blockTitle: Persistence and Risk
 failure_mode: costly-follow-up
 related:
   - sessions/07-the-second-email

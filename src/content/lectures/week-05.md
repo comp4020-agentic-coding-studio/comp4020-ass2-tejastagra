@@ -5,8 +5,8 @@ week: 5
 date: 2027-03-08
 teachers:
   - tejas-tagra
-unit: 3
-unitTitle: The Reader's Math
+block: 3
+blockTitle: The Reader's Math
 failure_mode: unstructured-length
 related:
   - sessions/05-the-one-nobody-finishes

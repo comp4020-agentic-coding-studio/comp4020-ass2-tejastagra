@@ -5,8 +5,8 @@ week: 11
 date: 2027-04-19
 teachers:
   - tejas-tagra
-unit: 6
-unitTitle: Scale and the Law
+block: 6
+blockTitle: Scale and the Law
 failure_mode: automation-flattening
 related:
   - sessions/11-the-machine-written-one

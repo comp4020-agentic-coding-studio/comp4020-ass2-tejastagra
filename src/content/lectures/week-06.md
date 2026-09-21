@@ -7,8 +7,8 @@ week: 6
 date: 2027-03-15
 teachers:
   - tejas-tagra
-unit: 3
-unitTitle: The Reader's Math
+block: 3
+blockTitle: The Reader's Math
 failure_mode: no-reply-incentive
 slides: /decks/week-06/
 related:

@@ -7,8 +7,8 @@ week: 1
 date: 2027-02-08
 teachers:
   - tejas-tagra
-unit: 1
-unitTitle: Getting Opened
+block: 1
+blockTitle: Getting Opened
 related:
   - sessions/01-why-cold-email-works
 ---

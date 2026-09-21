@@ -5,8 +5,8 @@ week: 4
 date: 2027-03-01
 teachers:
   - tejas-tagra
-unit: 2
-unitTitle: Pricing the Ask
+block: 2
+blockTitle: Pricing the Ask
 failure_mode: performed-personalisation
 related:
   - sessions/04-the-one-that-fakes-knowing-you
