@@ -100,13 +100,53 @@ rather than let it drift into generic "how to network" content.
 - Exactly 12 dated teaching weeks, all falling between the configured
   start/end dates.
 - All 12 weeks get a lecture page, and every week carries a full, polished
-  `.deck.mdx` slide deck linked from its lecture page. Week 6 ("The One That
-  Gets Ignored") is the reference for quality and structure: title slide, the
-  week's failure mode, the worked example (using the email-block style where
-  an email is shown), the fix, and a recap. All 12 decks stay visually
-  consistent with each other. No placeholder decks. Any images are
-  reconstructed example emails or typographic slides, never decorative stock
-  photos (see the reconstructed-email and email-block rules in Content rules).
+  `.deck.mdx` slide deck linked from its lecture page. Week 6 ("The Reader's
+  Reply Calculation") is the reference for quality. All 12 decks stay visually
+  consistent with each other. No placeholder decks.
+
+### Deck construction rules (every deck must follow these)
+
+- **No content may overflow a slide.** If an email, quote, or block of text
+  doesn't fit on one slide, split it across slides (continue it on the next
+  slide) or shorten it. A slide with text cut off at the edge is a bug, not a
+  style choice. This is the single most common current fault — check every
+  slide renders fully at both viewports before considering a deck done.
+- **Title slide:** full-bleed background artwork (a randomly-generated /
+  hand-built SVG in the SlopU gold-and-black risograph palette is permitted
+  and encouraged), with the week number and week title over it. Never a plain
+  flat coloured rectangle with text — that reads as unfinished.
+- **Section-divider slides:** break each deck into parts with big statement
+  slides that carry one short line (the reference deck uses "the spec is the
+  contract" as a full-slide statement). Use these as dividers between the
+  deck's main movements, and place some of them in the MIDDLE of the deck, not
+  only at the start. These divider/statement slides may use the same
+  full-bleed SVG-art treatment as the title slide.
+- **An agenda slide near the top** ("what this lecture covers" / today's
+  beats): a few bullets naming the beats in order.
+- **In-class discussion / activity slides in every deck.** Every deck must
+  include recurring audience-participation slides: a "now you try" or
+  "talk to your neighbour" prompt, often as a fill-in-the-blank the room
+  completes (the reference deck uses "One thing this plan is still missing is
+  ______"), a "predict, then watch" prompt, or "look this up" activities.
+  These are what make it a lecture rather than a wall of text. At least two
+  per deck, spread through it.
+- **No exercises at the end of the lecture deck.** The two 30-minute exercises
+  live in that week's Weekly Sync, not the lecture. The lecture deck ends on a
+  recap / synthesis slide, not an exercise brief. (In-class discussion prompts
+  above are NOT exercises — those stay.)
+- **Emails on slides use the email-block component** (From/To/Subject header,
+  body below), and must fit the slide — split a long email across two slides
+  rather than letting it clip.
+- **One idea per slide, short dry headings**, matching the site's register and
+  the reference deck's rhythm.
+
+### Summary / lecture-page consistency rule
+
+The lecture page's summary section can never contain anything that isn't also
+in that week's deck. The deck is the full teaching content; the summary is a
+subset of it. If a point appears in the summary, it must also appear on a
+slide. The summary never exceeds the deck in scope — never the other way
+around.
 - Assessment weights must sum to exactly 100%. Do not ship if they don't.
 - People collection needs exactly four entries: Tejas Tagra (instructor) and
   three tutors, one of whom is Bodhi Kessler-Nakamura. Do not invent staff
@@ -147,7 +187,9 @@ week will read to judge whether the week teaches something real. It must
 explain the mechanism of that week's failure mode, not just name it — the
 same depth bar that applied to session pages before now applies here. "Vague
 asks fail" (assertion) is not enough; walking through why they move cost onto
-the reader (explanation) is the standard.
+the reader (explanation) is the standard. The summary is always a subset of
+the week's deck: nothing in the summary that isn't also on a slide (see the
+deck rules above).
 
 Depth over length. There is no minimum word count, and padding to seem
 thorough is a bug. A lecture page is done once the mechanism behind its
