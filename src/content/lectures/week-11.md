@@ -8,6 +8,7 @@ teachers:
 block: 6
 blockTitle: Scale and the Law
 failure_mode: automation-flattening
+slides: /decks/week-11/
 related:
   - sessions/11-the-machine-written-one
 ---

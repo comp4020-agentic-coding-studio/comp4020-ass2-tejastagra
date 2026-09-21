@@ -1,0 +1,76 @@
+---
+title: The Machine-Written One
+description: What automated sequences trade away for scale.
+---
+
+{/* _class: impact */}
+
+# The Machine-Written One
+
+Week 4 argued for specificity that would be false for a different reader.
+What happens to that argument at scale?
+
+---
+
+## The trade
+
+An automated sequence can send a thousand emails in the time a one-to-one
+version takes to write one.
+
+It cannot, by construction, contain week 4's specificity — that
+specificity has to be true of one reader and false of the rest. A
+sequence merges fields into a template; it doesn't know anything about the
+recipient a variable didn't already know.
+
+---
+
+## Not an argument against automation
+
+It's an argument for knowing what it costs.
+
+A sequence trades reply rate per email for volume of emails sent. A writer
+who doesn't know that trade is happening will optimise the wrong thing.
+
+---
+
+{/* _class: quote */}
+
+<div class="email-block">
+  <div class="email-block__header">
+    <p><strong>From:</strong> [Sender]</p>
+    <p><strong>To:</strong> [Recipient]</p>
+    <p><strong>Subject:</strong> Noticed what {"{{company}}"} is doing</p>
+  </div>
+  <div class="email-block__body">
+    <p>I noticed {"{{company}}"} has been doing great things in the {"{{industry}}"} space lately.</p>
+  </div>
+</div>
+
+Everything around this line can be competently merged. This can't — a
+template holds a company name and an industry field, but not what "great
+things" means for one specific reader, so it falls back to a phrase true
+of none of them in particular.
+
+---
+
+## The tell
+
+Language a template falls back on when it has nothing specific left to
+merge. Recognising it is the practical skill this week is for.
+
+---
+
+## Recap
+
+- reply rate per email vs. volume of emails sent is the trade being made
+- a template can't hold week 4's kind of specificity, only merge fields
+- the tell: vague filler exactly where specificity should be
+
+---
+
+{/* _class: centered */}
+
+## Exercise
+
+Turn a one-to-one email into a template. Find the sentence that breaks
+first — where does specificity turn into merge-field filler?
