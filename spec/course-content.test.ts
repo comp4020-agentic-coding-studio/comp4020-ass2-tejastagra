@@ -33,8 +33,9 @@ describe("course content promises", () => {
     expect(new Set(failureModes).size, "two weeks share a failure mode").toBe(failureModes.length);
   });
 
-  it("weights every assessment to exactly 100% overall", () => {
+  it("weights the three assessment components to exactly 100% overall", () => {
     const assessments = byType("assessments");
+    expect(assessments, "expected exactly three assessment components: Teardown, Doctrine and Defence, Weekly syncs").toHaveLength(3);
     const total = assessments.reduce((sum, node) => sum + Number(node.meta?.weight ?? 0), 0);
     expect(total).toBe(100);
   });
