@@ -24,8 +24,14 @@ rather than let it drift into generic "how to network" content.
   Sync: two contact hours per week.
 - Weekly Syncs are run by the three tutors across the week; the homepage
   carries a table of which tutor runs which sync and when.
-- Three assessments, stated on the homepage with a link to the assessment
-  page.
+- Three assessment components, stated on the homepage with a link to the
+  assessment page: Teardown (22%), Doctrine and Defence (30%), and Weekly
+  syncs: attendance and completion (48%, one assessment entry covering all
+  twelve Weekly Syncs, not twelve separate entries). Its own page explains,
+  in plain English, that each week's 4% splits into 2% for attendance and
+  2% for completing that week's work, that everything is graded through
+  Canvas, and that a missed sync can only be made up through the
+  University's extenuating circumstances process.
 - Graded CRS (pass/fail), does not count toward GPA. IMPORTANT: before
   writing this to the homepage, verify the template's fixed grading/marks
   model actually permits a CRS/pass-fail grade type. The spec says SlopU's
@@ -150,7 +156,16 @@ its mechanism in one line, and says why it matters, in 3-4 sentences. It
 never includes an example, a reconstructed email, or a rubric block — those
 stay on the slides. Before removing an example from a lecture page, confirm
 it already exists in that week's deck, so nothing is lost in the move.
-- Assessment weights must sum to exactly 100%. Do not ship if they don't.
+- Assessment weights must sum to exactly 100% across exactly three
+  assessment components (Teardown, Doctrine and Defence, Weekly syncs).
+  Do not ship if they don't. Weekly syncs are graded as one assessment
+  entry worth 48% overall, not as twelve separate 4% entries — the
+  breakdown by week lives in that one entry's own page, not in the
+  assessment collection's structure.
+- Assessment descriptions must be written in plain English that a student
+  understands without having seen any lecture or slide. No course jargon
+  ("failure mode", "taxonomy", or other internal shorthand) on the
+  assessment pages themselves.
 - People collection needs exactly four entries: Tejas Tagra (instructor) and
   three tutors, one of whom is Bodhi Kessler-Nakamura. Do not invent staff
   beyond these four. Only Bodhi's bio uses the overblown register (see
@@ -259,7 +274,8 @@ stay in the dry register like the rest of the site.
 - Weeks are grouped into blocks via `block` and `blockTitle` frontmatter
   fields (not "units").
 - Every lecture links a real `/decks/...` file (all 12 weeks carry a deck).
-- Assessment weights sum to 100%.
+- Exactly three assessment components exist (Teardown, Doctrine and
+  Defence, Weekly syncs) and their weights sum to 100%.
 - Every week's deck contains at least one concrete example (real/redacted
   or composite, per the Content rules above) built into a slide.
 - Every Weekly Sync page has exactly two exercises and names no single
