@@ -18,16 +18,22 @@ rather than let it drift into generic "how to network" content.
 
 ## Course structure (must appear on the homepage)
 
-- 6 units, taken in a single teaching period.
-- Available in the summer and winter teaching periods (not only the standard
-  semester).
-- Each week is a 1-hour lecture plus a 1-hour Weekly Sync.
+- 3 credits.
+- Runs in the summer and winter non-standard teaching periods.
+- Each week is a 1-hour lecture (Mondays 11am–12pm) plus a 1-hour Weekly
+  Sync: two contact hours per week.
+- Weekly Syncs are run by the three tutors across the week; the homepage
+  carries a table of which tutor runs which sync and when.
+- Three assessments, stated on the homepage with a link to the assessment
+  page.
 - Graded CRS (pass/fail), does not count toward GPA. IMPORTANT: before
   writing this to the homepage, verify the template's fixed grading/marks
   model actually permits a CRS/pass-fail grade type. The spec says SlopU's
   "name, marks and palette stay as they arrived," so a custom grade scheme
   that conflicts with the fixed university reads as ignoring the brief. If the
   template doesn't support CRS, flag it and stop rather than inventing one.
+- Homepage help line: for help, email SLOP3089@slop.university or use the
+  Canvas page.
 
 ## Content rules (apply to all generated prose)
 
@@ -73,13 +79,14 @@ rather than let it drift into generic "how to network" content.
   reach for real/redacted only when the historical fact of what happened is
   itself part of the point (fundraising outcomes, documented reply rates).
 - Reconstructed emails, not screenshots. When a real documented email is
-  shown (Ghulati, Janoch, Field), typeset it on the page as an email block
-  (sender, subject, body) built from publicly reported content, and label it
-  clearly as reconstructed from public reporting. Never reproduce or embed an
-  actual screenshot or image of a real email — a screenshot of a real email
-  is a copyrighted work even though the underlying facts are not. The facts
-  (who sent it, what it did, the outcome) are free to use; the original image
-  is not.
+  shown (Ghulati, Janoch, Field), typeset it on the page using the email-block
+  component (bordered block with bold From/To/Subject header lines and the
+  body below, styled to read like an email client), built from publicly
+  reported content, and label it clearly as reconstructed from public
+  reporting. Never reproduce or embed an actual screenshot or image of a real
+  email — a screenshot of a real email is a copyrighted work even though the
+  underlying facts are not. Composite/invented example emails use the same
+  email-block component so they read as emails, not as body prose.
 - Prose should read like it comes from someone who has actually read cold
   emails professionally — concrete, specific, no generic career-advice
   filler.
@@ -92,21 +99,14 @@ rather than let it drift into generic "how to network" content.
   digit (3) is final.
 - Exactly 12 dated teaching weeks, all falling between the configured
   start/end dates.
-- All 12 weeks get a lecture page. At least one lecture MUST carry a real
-  `.deck.mdx` — week 6 ("The One That Gets Ignored") is that deck, built as an
-  actual content outline (title slide, reader time-cost framework, worked
-  example, recap, exercise brief), not a placeholder. Build a slide deck for
-  any other week that genuinely benefits from one — a week whose failure mode
-  is easier to see in slides (a framework, a before/after, a worked teardown)
-  than in prose. Not every week needs one; a week that teaches fine on the
-  page shouldn't get a deck just for symmetry, since twelve thin decks read as
-  filler and the spec rewards one strong deck the same as twelve. Judge it
-  per week. Any deck follows the same no-placeholder standard as week 6, and
-  any images it uses are reconstructed example emails or typographic slides,
-  never decorative stock photos (see the reconstructed-email rule in Content
-  rules). Sequence note: build a week's deck only after that week's lecture
-  content has passed its depth review — a deck for a week whose teaching isn't
-  solid yet is polish on sand.
+- All 12 weeks get a lecture page, and every week carries a full, polished
+  `.deck.mdx` slide deck linked from its lecture page. Week 6 ("The One That
+  Gets Ignored") is the reference for quality and structure: title slide, the
+  week's failure mode, the worked example (using the email-block style where
+  an email is shown), the fix, and a recap. All 12 decks stay visually
+  consistent with each other. No placeholder decks. Any images are
+  reconstructed example emails or typographic slides, never decorative stock
+  photos (see the reconstructed-email and email-block rules in Content rules).
 - Assessment weights must sum to exactly 100%. Do not ship if they don't.
 - People collection needs exactly four entries: Tejas Tagra (instructor) and
   three tutors, one of whom is Bodhi Kessler-Nakamura. Do not invent staff
@@ -202,7 +202,9 @@ stay in the dry register like the rest of the site.
 - All 12 sessions/weeks exist, dated within range.
 - No two weeks share a failure-mode tag (add a `failure_mode` field to each
   week's frontmatter if the schema allows it, or enforce via a checked list).
-- At least one lecture's page links to a real `/decks/...` file.
+- Weeks are grouped into blocks via `block` and `blockTitle` frontmatter
+  fields (not "units").
+- Every lecture links a real `/decks/...` file (all 12 weeks carry a deck).
 - Assessment weights sum to 100%.
 - Every week's lecture page contains at least one concrete example
   (real/redacted or composite, per the Content rules above) written into the
