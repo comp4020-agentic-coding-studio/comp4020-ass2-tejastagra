@@ -8,6 +8,7 @@ teachers:
 block: 4
 blockTitle: Persistence and Risk
 failure_mode: genre-confusion-warm-intro
+slides: /decks/week-08/
 related:
   - sessions/08-the-warm-intro-you-didnt-earn
 ---
