@@ -1,0 +1,13 @@
+---
+import ContentLayout from "astro-theme-university/layouts/ContentLayout.astro";
+import AssessmentsGrid from "../../components/AssessmentsGrid.astro";
+import { siteConfig } from "../../site-config";
+---
+
+<ContentLayout
+  title="Assessment"
+  description="Every piece of graded work in the course, what it is worth and when it is due."
+  {...siteConfig}
+>
+  <AssessmentsGrid />
+</ContentLayout>
