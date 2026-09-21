@@ -8,6 +8,7 @@ teachers:
 block: 1
 blockTitle: Getting Opened
 failure_mode: weak-subject-line
+slides: /decks/week-02/
 related:
   - sessions/02-the-three-second-test
 ---
