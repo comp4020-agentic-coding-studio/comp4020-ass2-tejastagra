@@ -1,5 +1,5 @@
 ---
-title: "Assignment 02"
+title: "Assignment 01"
 description: >-
   You write one page setting out your own view of what makes a cold email
   worth sending. Then you take a real email you would actually send and
@@ -7,14 +7,13 @@ description: >-
   short.
 indexSummary: State your own doctrine for cold email, then defend one real email against it.
 week: 12
-due: 2027-05-10T17:00:00+10:00
-weight: 30
+due: 2027-03-29T12:00:00+11:00
+weight: 22
 marking:
   mode: holistic
   description: >-
     The course is graded CRS (pass/fail) and does not count towards your
-    GPA. The 30% weight above is how the platform structures the course
-    internally, not a mark out of 100. A pass requires a doctrine that
+    GPA. A pass requires a doctrine that
     actually pulls the semester together rather than restating individual
     weeks, and a defence that finds real tension against the doctrine
     rather than picking an email chosen because it obviously clears the

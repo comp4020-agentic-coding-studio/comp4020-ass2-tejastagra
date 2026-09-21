@@ -1,5 +1,5 @@
 ---
-title: "Assignment 01"
+title: "Assignment 02"
 description: >-
   You are given ten real cold emails. For each one, you explain what is
   wrong with it and why, using what the course has taught so far. This
@@ -7,8 +7,8 @@ description: >-
   are handed.
 indexSummary: Diagnose ten real cold emails, then redraft each one to fix what you found.
 week: 8
-due: 2027-03-29T12:00:00+11:00
-weight: 22
+due: 2027-05-10T17:00:00+10:00
+weight: 30
 hideWeight: true
 marking:
   mode: holistic
