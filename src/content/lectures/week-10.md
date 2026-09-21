@@ -8,6 +8,7 @@ teachers:
 block: 5
 blockTitle: Context and Craft
 failure_mode: manipulative-craft
+slides: /decks/week-10/
 related:
   - sessions/10-the-one-that-works-too-well
 ---
