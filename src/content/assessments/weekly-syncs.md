@@ -1,9 +1,12 @@
 ---
 title: "Weekly Syncs: Attendance and Completion"
 description: >-
-  There are twelve weekly syncs, each worth 4% of your final mark: 2% for
-  turning up and following your tutor's lead, and 2% for completing that
-  week's work. All of it is graded through Canvas.
+  To pass the course you must complete at least 8 of the 12 weekly syncs.
+  That threshold, not the percentage weight below, is what decides
+  whether you pass.
+indexSummary: >-
+  Twelve weekly syncs, attendance and completion; complete at least 8 of
+  12 to pass.
 week: 1
 due: 2027-05-10T23:59:00+10:00
 dueLabel: "Weekly, in class"
@@ -11,8 +14,12 @@ weight: 48
 marking:
   mode: holistic
   description: >-
-    Pass/fail per mark, recorded through Canvas. Attendance and completion
-    are marked separately each week, as described above.
+    The course is graded CRS (pass/fail) and does not count towards your
+    GPA. Each sync is worth two marks, recorded through Canvas: 2% for
+    attending and following your tutor's lead, and 2% for completing that
+    week's work. The 48% weight is how the platform structures the course
+    internally, not a score to chase; the 8-of-12 threshold above is what
+    decides your pass.
 related:
   - midterm-teardown
   - final-doctrine-and-defence
