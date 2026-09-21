@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" width="1600" height="900" role="img">
+  <defs>
+    <filter id="grain" x="0" y="0" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.85" numOctaves="2" stitchTiles="stitch" result="noise" />
+      <feColorMatrix in="noise" type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 0.6 0" />
+    </filter>
+
+    <g id="envelope-sealed">
+      <rect x="-110" y="-70" width="220" height="140" rx="8" fill="#000000" opacity="0.82" />
+      <line x1="-110" y1="-2" x2="0" y2="46" stroke="#f7f2e8" stroke-opacity="0.12" stroke-width="2" />
+      <line x1="110" y1="-2" x2="0" y2="46" stroke="#f7f2e8" stroke-opacity="0.12" stroke-width="2" />
+    </g>
+
+    <g id="envelope-open">
+      <rect x="-130" y="-92" width="260" height="184" rx="18" fill="#b97d1c" opacity="0.16" />
+      <polygon points="-110,-70 110,-70 0,-152" fill="#8a5c13" stroke="#000000" stroke-width="5" stroke-linejoin="round" />
+      <rect x="-110" y="-70" width="220" height="140" rx="8" fill="#b97d1c" stroke="#000000" stroke-width="5" />
+      <line x1="-72" y1="-18" x2="70" y2="-18" stroke="#f7f2e8" stroke-width="7" stroke-linecap="round" />
+      <line x1="-72" y1="8" x2="40" y2="8" stroke="#f7f2e8" stroke-width="7" stroke-linecap="round" />
+      <line x1="-72" y1="34" x2="58" y2="34" stroke="#f7f2e8" stroke-width="7" stroke-linecap="round" />
+    </g>
+  </defs>
+
+  <!-- Paper ground, warm off-white in the same hue family as the primary gold. -->
+  <rect x="0" y="0" width="1600" height="900" fill="#f7f2e8" />
+
+  <!-- Inbox as a triage scene: most envelopes sealed and face-down (flat
+       black), scattered at slightly uneven angles like an unsorted pile.
+       Two are turned face-up and opened, picked out in gold, so the eye
+       lands on the read ones among the ignored many. -->
+  <g>
+    <use href="#envelope-sealed" transform="translate(240,220) rotate(-4)" />
+    <use href="#envelope-sealed" transform="translate(520,220) rotate(3)" />
+    <use href="#envelope-sealed" transform="translate(1080,220) rotate(-2)" />
+    <use href="#envelope-sealed" transform="translate(1360,220) rotate(5)" />
+
+    <use href="#envelope-sealed" transform="translate(240,450) rotate(2)" />
+    <use href="#envelope-sealed" transform="translate(520,450) rotate(-5)" />
+    <use href="#envelope-sealed" transform="translate(800,450) rotate(4)" />
+    <use href="#envelope-sealed" transform="translate(1360,450) rotate(-3)" />
+
+    <use href="#envelope-sealed" transform="translate(240,680) rotate(-3)" />
+    <use href="#envelope-sealed" transform="translate(520,680) rotate(2)" />
+    <use href="#envelope-sealed" transform="translate(800,680) rotate(-5)" />
+    <use href="#envelope-sealed" transform="translate(1080,680) rotate(3)" />
+    <use href="#envelope-sealed" transform="translate(1360,680) rotate(-2)" />
+
+    <use href="#envelope-open" transform="translate(800,220)" />
+    <use href="#envelope-open" transform="translate(1080,450)" />
+  </g>
+
+  <!-- Subtle risograph grain, uniform over the whole plate. -->
+  <rect x="0" y="0" width="1600" height="900" fill="#000000" opacity="0.05" filter="url(#grain)" />
+</svg>
