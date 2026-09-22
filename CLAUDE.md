@@ -205,7 +205,12 @@ That schedule (which tutor runs which time) lives on the homepage table,
 not on the sync page itself. Each week's sync page is deliberately thin
 and contains only:
 - a link to that week's related lecture/week
-- exactly two exercises, each scoped to about 30 minutes
+- at least two exercises that fit inside the hour between them. Most
+  weeks split cleanly into two roughly 30-minute halves; some weeks'
+  material genuinely separates into three or four shorter tasks instead.
+  The count is decided by what that week's material actually supports,
+  not fixed at two for its own sake — don't pad a week to raise its count
+  or merge distinct tasks to lower it.
 
 The Weekly Sync page does NOT carry the full teaching argument or the
 mechanism. It is the practical hour attached to the lecture, not the reading.
@@ -295,7 +300,7 @@ stay in the dry register like the rest of the site.
   Weekly syncs) and their weights sum to 100%.
 - Every week's deck contains at least one concrete example (real/redacted
   or composite, per the Content rules above) built into a slide.
-- Every Weekly Sync page has exactly two exercises and names no single
+- Every Weekly Sync page has at least two exercises and names no single
   leading tutor (the tutor/time schedule lives on the homepage table only).
 - Exactly four people entries exist (one instructor, three tutors).
 
