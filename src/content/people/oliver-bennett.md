@@ -4,7 +4,7 @@ description:
   Tutor and final-year undergraduate studying a Bachelor of Communications
   and Business.
 role: tutor
-affiliation: SU School of Communications
+affiliation: Sloppiest Institute for Slop
 email: oliver.bennett@slop.university
 ---
 

@@ -3,7 +3,7 @@ title: Tucker Vance
 description:
   Tutor and Masters student studying a Master of Business.
 role: tutor
-affiliation: SU School of Business
+affiliation: Sloppy School of Management
 email: tucker.vance@slop.university
 ---
 
