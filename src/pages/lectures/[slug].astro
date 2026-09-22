@@ -1,10 +1,11 @@
 ---
 import { render } from "astro:content";
-import { getPublishedCollection } from "astro-course-university/content";
-import RelatedContent from "astro-course-university/components/RelatedContent.astro";
+import { getPublishedCollection, getRelatedEntries } from "astro-course-university/content";
+import type { GraphEntry } from "astro-course-university/content";
 import ContentLayout from "astro-theme-university/layouts/ContentLayout.astro";
 import { withBase } from "astro-theme-university/url";
 import { formatCourseDate } from "../../lib/dates";
+import { relatedLinkText } from "../../lib/related";
 import { graphCollections, siteConfig } from "../../site-config";
 
 export async function getStaticPaths() {
@@ -15,13 +16,27 @@ export async function getStaticPaths() {
 const { lecture } = Astro.props;
 const { Content } = await render(lecture);
 const title = `Week ${lecture.data.week}: ${lecture.data.title}`;
+const related = await getRelatedEntries(lecture, graphCollections);
 ---
 
 <ContentLayout title={title} description={lecture.data.description} {...siteConfig}>
   <p><strong>{formatCourseDate(lecture.data.date)}</strong></p>
   {lecture.data.slides && <p><a href={withBase(lecture.data.slides)}>Open the slides</a></p>}
   <Content />
-  <RelatedContent entry={lecture} collections={graphCollections} />
+  {
+    related.length > 0 && (
+      <aside class="related-content" aria-label="Related">
+        <h2>Related</h2>
+        <ul>
+          {related.map((e: GraphEntry) => (
+            <li>
+              <a href={withBase(`/${e.collection}/${e.id}/`)}>{relatedLinkText(e)}</a>
+            </li>
+          ))}
+        </ul>
+      </aside>
+    )
+  }
 </ContentLayout>
 
 <style is:global>
@@ -57,5 +72,27 @@ const title = `Week ${lecture.data.week}: ${lecture.data.title}`;
     font-size: 0.85rem;
     font-style: italic;
     color: var(--at-text-secondary);
+  }
+</style>
+
+<style>
+  .related-content {
+    margin-block-start: 3rem;
+    padding-block-start: 1rem;
+    border-block-start: 1px solid color-mix(in srgb, currentColor 20%, transparent);
+  }
+
+  .related-content h2 {
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+  }
+
+  .related-content ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem 1.5rem;
   }
 </style>
