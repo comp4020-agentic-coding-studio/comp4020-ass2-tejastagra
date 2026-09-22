@@ -1,8 +1,13 @@
+## Established course facts (do not let an edit contradict these)
+
+- The course is titled "Writing to Strangers" (SLOP3089). The homepage
+  states it is more informally known as "Nobody Owes You a Reply."
+
 ## Course structure (must appear on the homepage)
 
-- Runs in the summer and winter non-standard teaching periods.
-- Each week is a 1-hour lecture (Mondays 11am–12pm) plus a 1-hour Weekly
-  Sync: two contact hours per week.
+- Runs in Semester 1, 2027 only. No prerequisites.
+- Each week is a 1-hour lecture (Mondays 11am–12pm, Sloppy Slop Slop
+  Building, Rm 7.09) plus a 1-hour Weekly Sync: two contact hours per week.
 - Weekly Syncs are run by the three tutors across the week; the homepage
   carries a table of which tutor runs which sync and when.
 - Three assessment components, stated on the homepage with a link to the
@@ -38,6 +43,11 @@
   template doesn't support CRS, flag it and stop rather than inventing one.
 - Homepage help line: for help, email SLOP3089@slop.university or use the
   Canvas page.
+- Homepage "Where to go next" section: six boxes, in this order: Lectures,
+  Weekly Syncs, Assessment, Policies, People, Students' Union. The
+  Students' Union box links `sa.union@slop.university` and is described as
+  independent help for academic integrity concerns or anything a student
+  would rather not raise with the course directly.
 
 ## Summary / lecture-page consistency rule
 
@@ -64,14 +74,38 @@ it already exists in that week's deck, so nothing is lost in the move.
   assessment pages themselves.
 - All three assessment entries (Assignment 1, Assignment 2, Weekly syncs),
   not only Weekly syncs, hide their weight on screen (`hideWeight: true`
-  in frontmatter). No assessment page or index shows a percentage; the
-  weight stays in the data only for the platform's sum-to-100 build check.
+  in frontmatter). No assessment page or index shows a percentage or
+  weight on screen, anywhere; the weight stays in the data only for the
+  platform's sum-to-100 build check.
+- The pass rule, stated plainly wherever assessment is discussed: a
+  student passes the course by passing Assignment 1, passing Assignment 2,
+  and completing at least 8 of the 12 Weekly Syncs. State the real rule in
+  plain English in place of a percentage every time a page would otherwise
+  reach for one.
 - People collection needs exactly four entries: Tejas Tagra (instructor) and
   three tutors, one of whom is Tucker Vance. Do not invent staff
   beyond these four. Only Tucker's bio uses the overblown register (see
   docs/content-style.md); Tejas and the other two tutors stay dry, or the
   "one deliberate exception" loses its point. The two new tutors need
   distinct, plausible practitioner backgrounds, not variations on Tucker.
+
+## Feedback, appeals and extensions
+
+- Feedback for an assessment is returned within 14 days of submitting it.
+  A late submission may get feedback later than the rest of the class,
+  since the 14 days runs from that student's own submission, not the
+  class due date.
+- Students can raise a result informally by emailing the course. A formal
+  appeal is against the overall course result, not a single assessment,
+  must be lodged within 20 working days, and follows the University's
+  Coursework policies and procedures.
+- Late submissions are not accepted without a previously approved
+  extension (email the course; no documentation required in the first
+  instance). All work is submitted through Canvas, never by email.
+  Extensions up to 10 working days are handled by the course directly;
+  beyond 10 working days requires a formal Extenuating Circumstances
+  Application (ECA) through the University's Exams, Graduations and
+  Prizes office, a process the course convenor does not manage.
 
 ## Weekly Syncs vs. lectures — what goes where
 
@@ -87,7 +121,6 @@ attends one of the three — so no individual sync belongs to one of them.
 That schedule (which tutor runs which time) lives on the homepage table,
 not on the sync page itself. Each week's sync page is deliberately thin
 and contains only:
-- a link to that week's related lecture/week
 - at least two exercises that fit inside the hour between them. Most
   weeks split cleanly into two roughly 30-minute halves; some weeks'
   material genuinely separates into three or four shorter tasks instead.
@@ -97,7 +130,9 @@ and contains only:
 
 The Weekly Sync page does NOT carry the full teaching argument or the
 mechanism. It is the practical hour attached to the lecture, not the reading.
-Keep it short.
+Keep it short. It also does not carry an inline link to that week's lecture
+at the top of the page: that link lives only in the RELATED block at the
+bottom, so the lecture isn't linked twice on one page.
 
 **Lectures** (`src/content/lectures/`) are now where the deck-backed weekly
 content lives, but the page itself is deliberately thin. The deck carries
@@ -155,15 +190,24 @@ future page or component, not just the ones that happened to introduce them.
   a link to a Weekly Sync is prefixed `"Weekly Sync: "`, and a link to
   anything else (an assessment, a person) carries no prefix. This keys off
   the destination's collection (see `src/lib/related.ts`), not the page it
-  appears on, so it applies uniformly wherever a RELATED block is built.
+  appears on, so it applies uniformly wherever a RELATED block is built. A
+  lecture page's RELATED block links that week's Weekly Sync. A Weekly
+  Sync page's RELATED block links that week's lecture AND the main
+  Assessment page: the Assessment link appears only here, nowhere else in
+  RELATED.
 - **People contact-card layout:** a circular photo, or an initials fallback
   when no photo file exists yet; the person's name appears once, as the
-  page's own heading, and is not repeated inside the card; Role,
-  Affiliation, Email, Office hours (or Contact for tutors), and Web render
-  as zebra-striped label/value rows. Affiliation is shown both on the
-  People index cards (under the role label) and on each person's detail
-  page, from the same `affiliation` field, so the two views cannot drift
-  apart.
+  page's own heading, and is not repeated inside the card (the card header
+  serves as the page's heading, so name and title each appear exactly once
+  per page); Role, Affiliation, Email, Office hours (or Contact for
+  tutors), and Web render as zebra-striped label/value rows. Office hours
+  read "N/A" for tutors; only the convenor has real office hours. The
+  convenor is always listed first, on both the index and in the People
+  collection's display order. Affiliation is shown both on the People
+  index cards (under the role label) and on each person's detail page,
+  from the same `affiliation` field, so the two views cannot drift apart.
+  Index cards show name, title, and affiliation only, no bio blurb: the
+  full bio lives only on that person's own detail page.
 - **Index pages render a visible heading via `ContentLayout`.** The People,
   Assessment, and Weekly Syncs index pages are plain `.astro` pages using
   `ContentLayout` for this reason, not MDX pages relying on the site's
@@ -171,6 +215,8 @@ future page or component, not just the ones that happened to introduce them.
   heading on the page itself.
 - **The header must fit the logo, nav links, and search on one row at
   desktop widths (≥640px), never wrapping to a second row.** If a change
-  makes it wrap, fix the gap via the theme's `brandCss` layering hook (an
-  additional, unlayered stylesheet loaded alongside the theme's own), never
-  by editing the fixed `astro-theme-university` package directly.
+  makes it wrap, fix it via spacing, not by changing the header's height or
+  breaking the mobile collapse behaviour (below 640px): tighten the gap via
+  the theme's `brandCss` layering hook (an additional, unlayered stylesheet
+  loaded alongside the theme's own), never by editing the fixed
+  `astro-theme-university` package directly.

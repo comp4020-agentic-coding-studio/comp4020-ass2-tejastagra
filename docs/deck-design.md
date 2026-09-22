@@ -4,6 +4,21 @@
   `.deck.mdx` slide deck linked from its lecture page. Week 6 ("The Reader's
   Reply Calculation") is the reference for quality. All 12 decks stay visually
   consistent with each other. No placeholder decks.
+- **Depth consistency, not length consistency.** Every deck must teach its
+  week to the same standard as the others: the mechanism explained rather
+  than just asserted, a real worked example, the fix walked through. Slide
+  counts may differ, since weeks genuinely differ in how much there is to
+  teach. Do not pad a thin week to match a fuller one's slide count, and do
+  not trim a fuller week to match a thin one's. The standard is fixed; the
+  length is not.
+- **Deck titles must always match that week's current lecture page title
+  exactly.** When a lecture title changes, update the matching deck's title
+  slide in the same change. These drifted out of sync once already, so this
+  is now a checked-by-eye rule on every title edit, not an assumption.
+- **Week 1's deck alone carries a short course-orientation intro** (what the
+  course is, how it runs, how it's assessed, in 3-5 slides) before its own
+  content begins. No other week's deck gets this: it belongs once, at the
+  start of the course, not repeated or echoed in later weeks.
 
 ## Deck construction rules (every deck must follow these)
 

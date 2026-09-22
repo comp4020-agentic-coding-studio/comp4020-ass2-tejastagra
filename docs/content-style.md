@@ -34,7 +34,34 @@
 - Any claim about reply rates, open rates, or other behavioural statistics
   must be phrased directionally ("shorter emails tend to get faster replies"),
   never as a fabricated precise statistic ("73% of investors ignore emails
-  over 150 words") unless a real source is cited.
+  over 150 words") unless a real source is cited. This is not just a rule
+  about reply rates: no content anywhere on the site, including a
+  composite/illustrative example, states a fabricated precise statistic of
+  any kind. Directional claims only, unless a real source is cited.
+- No repetition within a single page. A section must not restate what
+  another section on the same page already said. If two sections are
+  saying the same thing, cut one or merge them rather than let both stand.
+- Index-page card descriptions (Lectures, Weekly Syncs, Assessment, People)
+  must not share a repeated sentence formula across entries. Each
+  description should read as genuinely about that specific item, not a
+  template with the topic swapped in.
+- "Taxonomy" and "failure taxonomy" are banned words anywhere on the site,
+  including People bios. Say what it means in plain terms instead of
+  reaching for the shorthand.
+- "Triage" is avoided as a visible word on the site. The underlying idea
+  behind the course (the reader skims a full inbox fast and decides in
+  seconds) stays central and must still come through, but express it in
+  plain language rather than the word itself, with the single exception of
+  the one homepage sentence already granted the "not X but Y" exception
+  above.
+- No stock photos and no fabricated or AI-generated photos of real-seeming
+  people, anywhere on the site. Fictional people (the convenor, the tutors)
+  are represented with an initials circle or hand-built SVG illustration,
+  never a photo standing in for a person who doesn't exist.
+- Tutor bios stay short (one to three lines), name a real plausible degree,
+  and never describe what the tutor does in the course (no "marks the
+  portfolio", no "reviews weekly work", no other grading language). What a
+  tutor does belongs on the assessment pages, not in the person's bio.
 - Voice is plain, dry, and sincere — closer to a practitioner's memo than a
   self-help blog. Precision is the source of any humour, not winking at the
   reader. The one deliberate exception is Tucker Vance's own voice
