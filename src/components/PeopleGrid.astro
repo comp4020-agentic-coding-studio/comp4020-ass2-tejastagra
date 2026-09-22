@@ -51,9 +51,21 @@ const visible = people.sort((a, b) => {
         {person.data.role && roleLabels[person.data.role] && (
           <p>
             <small>{roleLabels[person.data.role]}</small>
+            {person.data.affiliation && (
+              <>
+                <br />
+                <small class="affiliation">{person.data.affiliation}</small>
+              </>
+            )}
           </p>
         )}
       </Card>
     ))
   }
 </CardGrid>
+
+<style>
+  .affiliation {
+    color: var(--at-text-muted);
+  }
+</style>
