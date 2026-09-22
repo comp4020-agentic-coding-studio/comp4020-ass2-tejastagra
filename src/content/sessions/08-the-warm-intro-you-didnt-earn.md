@@ -17,8 +17,12 @@ Find an intro request you've sent or received that reads like a cold email
 with a name swapped in. Name, specifically, what risk it asks the
 connector to take on without acknowledging it.
 
-## Exercise: rewrite it (30 min)
+## Exercise: rewrite the ask (20 min)
 
-Rewrite the request to name the connector's risk explicitly and give them
-a clean way to decline. Draft the actual introduction sentence for the
-connector to copy rather than leaving that work to them.
+Rewrite the request itself to name the connector's risk explicitly and
+give them a clean way to decline.
+
+## Exercise: draft the intro (10 min)
+
+Write the actual introduction sentence the connector could copy and send,
+rather than leaving that work to them.

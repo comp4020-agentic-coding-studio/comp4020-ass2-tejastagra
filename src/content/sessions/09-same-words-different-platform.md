@@ -12,14 +12,17 @@ related:
 Follows the [week 9 lecture](/lectures/week-09/) on how different platforms
 get skimmed.
 
-## Exercise: adapt for one platform (30 min)
+## Exercise: adapt for LinkedIn (20 min)
 
 Take one message you've written for email and adapt it, deliberately, for
 LinkedIn. Name what had to change beyond length — tone, cadence, or what
 counts as an acceptable ask.
 
-## Exercise: adapt for a second platform (30 min)
+## Exercise: adapt for a DM thread (20 min)
 
-Adapt the same original message for a DM thread instead. Compare the two
-adapted versions and note which of the changes were platform-specific and
-which would apply to either.
+Adapt the same original message again, this time for a DM thread.
+
+## Exercise: compare all three (20 min)
+
+Line up the email, the LinkedIn version and the DM version. Note which
+changes were platform-specific and which would apply to either.
