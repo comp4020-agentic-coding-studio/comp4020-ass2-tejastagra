@@ -30,7 +30,7 @@ rather than let it drift into generic "how to network" content.
 
 ## The rest of the harness
 
-The full set of rules this file used to hold in one piece now lives in four
+The full set of rules this file used to hold in one piece now lives in five
 topic files, imported below so every session still loads all of it:
 
 - @docs/content-style.md — the writing rules: human register, no em dashes,
@@ -44,3 +44,8 @@ topic files, imported below so every session still loads all of it:
   rules.
 - @docs/spec-and-process.md — the spec/ checklist and the commit-discipline
   process habits.
+- @docs/decision-scaffolding.md — not content or design rules, but the
+  decision-making patterns behind how this site gets built: verify before
+  deleting, surface spec conflicts instead of editing them away, small
+  verified changes, reuse established components, and why every rule here
+  needs a traceable reason.
