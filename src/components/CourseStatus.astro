@@ -1,0 +1,170 @@
+---
+// Where-you-are-in-the-course status strip. Reads the visitor's device date
+// client-side and shows only what's relevant to that date, on the same
+// triage principle the course teaches: give the reader what matters now,
+// not everything at once.
+import { getCollection } from "astro:content";
+import { courseMeta } from "../course-config";
+
+const lectures = (await getCollection("lectures")).sort((a, b) => a.data.week - b.data.week);
+const sessions = await getCollection("sessions");
+const assessments = await getCollection("assessments");
+
+const dateOnly = (date: Date) => date.toISOString().slice(0, 10);
+
+const data = {
+  courseCode: courseMeta.code,
+  session: courseMeta.session,
+  year: courseMeta.year,
+  startDate: courseMeta.startDate,
+  endDate: courseMeta.endDate,
+  lectures: lectures.map((lecture) => ({
+    week: lecture.data.week,
+    title: lecture.data.title,
+    date: dateOnly(lecture.data.date),
+    slides: lecture.data.slides ?? null,
+  })),
+  sessions: sessions.map((session) => ({
+    week: session.data.week,
+    description: session.data.description,
+  })),
+  assessments: assessments.map((assessment) => ({
+    title: assessment.data.title,
+    due: assessment.data.due.toISOString(),
+  })),
+  programsUrl: "https://www.slop.university/programs-and-courses",
+};
+---
+
+<div class="course-status" id="course-status">
+  <p class="course-status__line">
+    {courseMeta.code} runs in {courseMeta.session}, {courseMeta.year}.
+  </p>
+</div>
+<script type="application/json" id="course-status-data" set:html={JSON.stringify(data)} />
+
+<script>
+  import { formatCourseDate } from "../lib/dates";
+
+  const container = document.getElementById("course-status");
+  const dataEl = document.getElementById("course-status-data");
+
+  const parseDateOnly = (value: string) => {
+    const [year, month, day] = value.split("-").map(Number);
+    return new Date(year, month - 1, day);
+  };
+
+  const line = (text: string, muted = false) => {
+    const el = document.createElement("p");
+    el.className = muted ? "course-status__line course-status__line--muted" : "course-status__line";
+    el.textContent = text;
+    return el;
+  };
+
+  const linkLine = (before: string, href: string, linkText: string, after = "") => {
+    const el = document.createElement("p");
+    el.className = "course-status__line course-status__line--muted";
+    const link = document.createElement("a");
+    link.href = href;
+    link.textContent = linkText;
+    el.append(before, link, after);
+    return el;
+  };
+
+  try {
+    if (!container || !dataEl?.textContent) throw new Error("course status data missing");
+    const data = JSON.parse(dataEl.textContent);
+
+    const today = new Date();
+    today.setHours(0, 0, 0, 0);
+
+    const start = parseDateOnly(data.startDate);
+    const end = parseDateOnly(data.endDate);
+    const lectures = [...data.lectures].sort(
+      (a, b) => parseDateOnly(a.date).getTime() - parseDateOnly(b.date).getTime(),
+    );
+
+    const nodes: HTMLElement[] = [];
+
+    if (today < start) {
+      const firstLecture = lectures[0];
+      nodes.push(
+        line(`${data.courseCode} hasn't started yet. It runs in ${data.session}, ${data.year}.`),
+        line(
+          `First lecture: ${formatCourseDate(data.startDate)}${firstLecture ? ` — ${firstLecture.title}` : ""}.`,
+          true,
+        ),
+      );
+    } else if (today > end) {
+      nodes.push(
+        line("This course is not currently on offer."),
+        linkLine("See the ", data.programsUrl, "SlopU programs and courses", " page for future offerings."),
+      );
+    } else {
+      let current = lectures[0];
+      for (const lecture of lectures) {
+        if (parseDateOnly(lecture.date).getTime() <= today.getTime()) current = lecture;
+        else break;
+      }
+
+      const session = data.sessions.find((s: { week: number }) => s.week === current.week);
+
+      nodes.push(line(`Week ${current.week} of 12: ${current.title}.`));
+      if (session) nodes.push(line(`This week's sync: ${session.description}`, true));
+      if (current.slides) {
+        nodes.push(linkLine("This week's deck: ", current.slides, `Week ${current.week} slides`, "."));
+      }
+
+      const msPerDay = 24 * 60 * 60 * 1000;
+      const dueSoon = data.assessments
+        .map((a: { title: string; due: string }) => ({ title: a.title, dueDate: new Date(a.due) }))
+        .filter((a: { dueDate: Date }) => {
+          const days = (a.dueDate.getTime() - today.getTime()) / msPerDay;
+          return days >= 0 && days <= 10;
+        })
+        .sort((a: { dueDate: Date }, b: { dueDate: Date }) => a.dueDate.getTime() - b.dueDate.getTime());
+
+      if (dueSoon.length > 0) {
+        const summary = dueSoon
+          .map((a: { title: string; dueDate: Date }) => `${a.title} (${formatCourseDate(a.dueDate)})`)
+          .join("; ");
+        const el = document.createElement("p");
+        el.className = "course-status__line course-status__due";
+        el.textContent = `Due soon: ${summary}.`;
+        nodes.push(el);
+      }
+    }
+
+    container.replaceChildren(...nodes);
+  } catch {
+    // Leave the static fallback line rendered above in place.
+  }
+</script>
+
+<style>
+  .course-status {
+    margin-block: 0 2rem;
+    padding: var(--at-spacing-lg, 1rem) var(--at-spacing-lg, 1.5rem);
+    border: 1px solid var(--at-border, var(--at-divider));
+    border-inline-start: 3px solid var(--at-primary);
+    background: var(--at-bg-alt);
+  }
+
+  .course-status__line {
+    margin: 0;
+    font-size: 0.95rem;
+    line-height: 1.5;
+  }
+
+  .course-status__line + .course-status__line {
+    margin-block-start: 0.35rem;
+  }
+
+  .course-status__line--muted {
+    color: var(--at-text-secondary);
+  }
+
+  .course-status__due {
+    font-weight: 600;
+  }
+</style>
