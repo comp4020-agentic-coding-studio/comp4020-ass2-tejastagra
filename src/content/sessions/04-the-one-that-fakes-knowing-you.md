@@ -1,8 +1,8 @@
 ---
 title: Personalisation and Specificity
 description:
-  The tutor-led hour attached to week 4's lecture on performed
-  personalisation.
+  Test whether a "personalised" line still holds true for ten other
+  readers, then write one that only holds for this one.
 week: 4
 date: 2027-03-01
 related:

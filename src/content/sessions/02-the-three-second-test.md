@@ -1,7 +1,8 @@
 ---
 title: Subject Lines and the Open Decision
 description:
-  The tutor-led hour attached to week 2's lecture on subject lines.
+  Sort five real subject lines by whether a reader could act on them
+  unopened, then rewrite the ones that fail.
 week: 2
 date: 2027-02-15
 related:

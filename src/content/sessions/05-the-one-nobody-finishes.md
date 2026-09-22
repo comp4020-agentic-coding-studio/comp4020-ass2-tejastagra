@@ -1,7 +1,8 @@
 ---
 title: Length and Structure
 description:
-  The tutor-led hour attached to week 5's lecture on length and structure.
+  Sort a real email's sentences into load-bearing or throat-clearing, then
+  cut it by half.
 week: 5
 date: 2027-03-08
 related:

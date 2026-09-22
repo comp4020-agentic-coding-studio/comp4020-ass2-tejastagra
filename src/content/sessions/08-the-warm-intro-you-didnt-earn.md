@@ -1,7 +1,8 @@
 ---
 title: Warm-Intro Requests
 description:
-  The tutor-led hour attached to week 8's lecture on warm-intro requests.
+  Find an intro request that hides the connector's risk, then rewrite it
+  to name that risk and offer an easy way to decline.
 week: 8
 date: 2027-04-12
 related:

@@ -1,8 +1,8 @@
 ---
 title: Spam Law and Consent
 description:
-  The tutor-led hour attached to week 12's closing lecture on legal
-  compliance and synthesis.
+  Draft a one-page doctrine of what makes an email worth sending, then
+  defend a real email against it.
 week: 12
 date: 2027-05-10
 related:

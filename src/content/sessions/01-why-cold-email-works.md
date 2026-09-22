@@ -1,7 +1,8 @@
 ---
 title: Why Cold Email Works
 description:
-  The tutor-led hour attached to week 1's lecture on the emails that worked.
+  Find a cold email that actually worked, then test whether it would have
+  survived at twice the length.
 week: 1
 date: 2027-02-08
 related:

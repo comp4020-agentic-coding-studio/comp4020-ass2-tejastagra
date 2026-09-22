@@ -1,7 +1,8 @@
 ---
 title: Pricing the Ask
 description:
-  The tutor-led hour attached to week 3's lecture on pricing the ask.
+  Run three real asks through the pricing rubric, then reprice the ones
+  that fail it.
 week: 3
 date: 2027-02-22
 related:

@@ -1,7 +1,8 @@
 ---
 title: Where Craft Becomes Manipulation
 description:
-  The tutor-led hour attached to week 10's lecture on manipulative craft.
+  Write an honest version of an email using an earlier week's technique,
+  then write a version that crosses into manipulation.
 week: 10
 date: 2027-04-26
 related:

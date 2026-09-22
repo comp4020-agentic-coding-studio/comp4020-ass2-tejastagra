@@ -1,8 +1,8 @@
 ---
 title: The Reader's Reply Calculation
 description:
-  The tutor-led hour attached to week 6's lecture and slide deck on the
-  reader's reply-or-ignore calculation.
+  Score an unanswered email on relevance, specificity and length, then
+  rewrite only its weakest term.
 week: 6
 date: 2027-03-15
 related:

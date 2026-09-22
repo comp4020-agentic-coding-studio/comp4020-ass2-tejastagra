@@ -1,7 +1,8 @@
 ---
 title: Follow-Ups
 description:
-  The tutor-led hour attached to week 7's lecture on follow-ups.
+  Name the one new fact a follow-up would add before drafting it, then
+  write the follow-up around that fact.
 week: 7
 date: 2027-04-05
 related:
