@@ -1,0 +1,11 @@
+/* Tighten the desktop nav gap so the search button fits on the same row as
+   the logo and nav links, instead of wrapping to its own row. Only the
+   horizontal gap changes here; nav height, content offset, hero and the
+   mobile menu behaviour (below 640px) are untouched. Unlayered, so it wins
+   over the theme's `@layer at.components` rule of the same specificity
+   without needing `!important` (see the theme's brandCss doc comment). */
+@media (width >= 640px) {
+  .at-nav-inner {
+    gap: 0 var(--at-spacing-sm);
+  }
+}
