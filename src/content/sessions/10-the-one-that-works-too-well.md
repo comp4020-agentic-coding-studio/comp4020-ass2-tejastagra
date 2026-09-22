@@ -11,8 +11,9 @@ related:
 
 ## Exercise: write the honest version (30 min)
 
-Take a technique from an earlier week — specificity, a stated deadline,
-personalisation — and write an honest version of an email using it.
+Take a technique from an earlier week, such as specificity, a stated
+deadline, or personalisation, and write an honest version of an email
+using it.
 
 ## Exercise: write the version that crosses the line (30 min)
 

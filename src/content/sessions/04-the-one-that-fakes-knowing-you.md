@@ -17,6 +17,6 @@ recipients. If you can, it wasn't personalisation.
 
 ## Exercise: make it fail the test (30 min)
 
-Write a version of the same line that would be false for anyone else —
+Write a version of the same line that would be false for anyone else,
 committing to a detail specific enough that it couldn't be sent to a
 different reader without becoming wrong.

@@ -12,7 +12,7 @@ related:
 ## Exercise: adapt for LinkedIn (20 min)
 
 Take one message you've written for email and adapt it, deliberately, for
-LinkedIn. Name what had to change beyond length — tone, cadence, or what
+LinkedIn. Name what had to change beyond length: tone, cadence, or what
 counts as an acceptable ask.
 
 ## Exercise: adapt for a DM thread (20 min)

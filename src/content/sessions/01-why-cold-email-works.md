@@ -11,7 +11,7 @@ related:
 
 ## Exercise: find the case (30 min)
 
-Find one cold email in your own history — sent or received — that actually
+Find one cold email in your own history, sent or received, that actually
 worked. Write two sentences on exactly what it gave the reader to decide
 with, in the terms the lecture used for Ghulati, Janoch, and Field.
 
@@ -19,5 +19,5 @@ with, in the terms the lecture used for Ghulati, Janoch, and Field.
 
 Take the email from the first exercise and ask whether it would still have
 worked if it were twice as long. If yes, length wasn't doing the work in
-the first place — name what was. If no, identify the specific point where
+the first place. Name what was instead. If no, identify the specific point where
 more length would have started costing the reader rather than helping them.

@@ -16,6 +16,6 @@ with two variables. Mark which sentences survive the merge without change.
 
 ## Exercise: audit what broke (30 min)
 
-For every sentence that didn't survive the merge, write down exactly why —
+For every sentence that didn't survive the merge, write down exactly why:
 what made it true of one specific reader and false, or empty, once
 templated.

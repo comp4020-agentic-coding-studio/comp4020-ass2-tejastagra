@@ -13,7 +13,7 @@ related:
 
 Take five subject lines from real cold emails you've received or sent.
 For each, decide whether a reader could correctly sort it without
-opening the message — whether it concerns them, and whether it's
+opening the message: whether it concerns them, and whether it's
 time-sensitive. Mark each pass or fail.
 
 ## Exercise: rewrite the failures (30 min)

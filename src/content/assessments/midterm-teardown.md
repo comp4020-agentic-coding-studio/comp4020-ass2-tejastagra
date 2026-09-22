@@ -29,7 +29,7 @@ Don't just say "it's too pushy" or "it doesn't feel personal".
 
 The second is repair. Can you turn that diagnosis into a redrafted email
 that actually resolves it. A correct diagnosis with no working redraft
-is only half the assignment. A redraft that reads better but doesn't fix
+is only half the assignment. A redraft that reads better without fixing
 what you diagnosed is not a pass either.
 
 There is no fixed formula here. Each of the ten emails fails for its own

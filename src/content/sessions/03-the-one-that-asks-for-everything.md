@@ -18,5 +18,5 @@ three-question rubric and mark which questions each one fails.
 ## Exercise: reprice the failures (30 min)
 
 For any ask that failed a question, rewrite it so it passes all three,
-without changing what's actually being requested — only how it's priced.
+without changing what's actually being requested, only how it's priced.
 Compare the before and after side by side.
