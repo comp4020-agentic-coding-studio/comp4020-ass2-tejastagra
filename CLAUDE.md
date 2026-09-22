@@ -72,6 +72,22 @@ rather than let it drift into generic "how to network" content.
   logic): "revolutionize", "game-changing", "unlock", "leverage" (as a verb),
   "supercharge", "seamless", "cutting-edge", "empower", "unleash", "10x",
   "disrupt", "synergy".
+- No em dashes anywhere on the site, ever, including em dashes and en dashes
+  used as em dashes (a spaced en dash standing in for one). This applies to
+  every deck, every lecture and Weekly Sync page, the homepage, the policies
+  page, assessment pages, and people bios, not just prose pages. Rewrite as
+  a full stop, a comma, or a colon, whichever the sentence actually needs.
+  En dashes used for genuine numeric or time ranges with no surrounding
+  spaces (`11am–12pm`, `2pm–3pm`, a week range) are not em dashes and stay.
+- No "not X but Y" rhetorical construction, and no "X, but Y" sentence used
+  for rhetorical contrast rather than a plain conjunction. Reword into
+  direct sentences instead. This applies everywhere on the site, including
+  decks, with exactly one exception: the homepage course-description
+  sentence in `src/course-config.ts` ("not because they're badly written
+  but because the reader is skimming a full inbox in seconds"), which was
+  deliberately kept. Ordinary, non-rhetorical uses of "but" (idioms like
+  "nothing but forward", compound descriptions like "true but generic") are
+  not the banned construction and don't need rewording.
 - No two weeks may share a failure-mode tag, and no week may restate a prior
   week's failure mode. Twelve weeks, twelve distinct failures.
 - Any claim about reply rates, open rates, or other behavioural statistics
