@@ -1,18 +1,23 @@
+## Voice
+
+Dry, plain, and sincere: closer to a practitioner's memo than a self-help
+blog. Precision is the source of any humour, not winking at the reader. The
+site is also a real university course convened by an academic, so it should
+read like credible, precise notes from a person who knows the subject: a
+well-written syllabus or a clear lecturer's course notes, not a journal
+abstract full of throat-clearing, and not stiff, pompous, or hedged prose
+either. Where "academic register" and "plain and dry" seem to pull apart,
+plain and dry wins; the academic part is about credibility and care, not
+formality for its own sake.
+
+The one deliberate exception is Tucker Vance's own voice (see
+docs/course-structure.md): his bio and any quoted material from him is
+intentionally overblown, as contrast to the course's own register.
+Everything else (module content, assessments, the policies page, and the
+other three people, Tejas and the two other tutors) stays dry.
+
 ## Content rules (apply to all generated prose)
 
-- Human academic register. The site is a real university course convened by
-  an academic, and should read like one: credible, precise, and written by a
-  person who knows the subject. This does NOT mean stiff, pompous, or hedged
-  prose, and it does not override the dry-practitioner voice or the
-  anti-slop rules below — a good academic writes clearly and concretely.
-  Think a well-written syllabus or a clear lecturer's course notes, not a
-  journal abstract full of throat-clearing. Where "academic register" and
-  "plain and dry" seem to pull apart, plain and dry wins; the academic part
-  is about credibility and care, not formality for its own sake.
-- No hype language. Banned words/phrases (non-exhaustive, extend by the same
-  logic): "revolutionize", "game-changing", "unlock", "leverage" (as a verb),
-  "supercharge", "seamless", "cutting-edge", "empower", "unleash", "10x",
-  "disrupt", "synergy".
 - No em dashes anywhere on the site, ever, including em dashes and en dashes
   used as em dashes (a spaced en dash standing in for one). This applies to
   every deck, every lecture and Weekly Sync page, the homepage, the policies
@@ -45,15 +50,6 @@
   must not share a repeated sentence formula across entries. Each
   description should read as genuinely about that specific item, not a
   template with the topic swapped in.
-- "Taxonomy" and "failure taxonomy" are banned words anywhere on the site,
-  including People bios. Say what it means in plain terms instead of
-  reaching for the shorthand.
-- "Triage" is avoided as a visible word on the site. The underlying idea
-  behind the course (the reader skims a full inbox fast and decides in
-  seconds) stays central and must still come through, but express it in
-  plain language rather than the word itself, with the single exception of
-  the one homepage sentence already granted the "not X but Y" exception
-  above.
 - No stock photos and no fabricated or AI-generated photos of real-seeming
   people, anywhere on the site. Fictional people (the convenor, the tutors)
   are represented with an initials circle or hand-built SVG illustration,
@@ -62,13 +58,6 @@
   and never describe what the tutor does in the course (no "marks the
   portfolio", no "reviews weekly work", no other grading language). What a
   tutor does belongs on the assessment pages, not in the person's bio.
-- Voice is plain, dry, and sincere — closer to a practitioner's memo than a
-  self-help blog. Precision is the source of any humour, not winking at the
-  reader. The one deliberate exception is Tucker Vance's own voice
-  (see docs/course-structure.md) — his bio and any quoted material from him
-  is intentionally overblown, as contrast to the course's own register.
-  Everything else (module content, assessments, the policies page) stays
-  dry.
 - Every week's deck includes at least one concrete example illustrating that
   week's failure mode, built directly into a slide (see
   docs/course-structure.md — no separate sources page). The lecture page
@@ -100,6 +89,22 @@
   emails professionally — concrete, specific, no generic career-advice
   filler.
 
+## Banned and avoided vocabulary
+
+- No hype language. Banned words/phrases (non-exhaustive, extend by the same
+  logic): "revolutionize", "game-changing", "unlock", "leverage" (as a verb),
+  "supercharge", "seamless", "cutting-edge", "empower", "unleash", "10x",
+  "disrupt", "synergy".
+- "Taxonomy" and "failure taxonomy" are banned words anywhere on the site,
+  including People bios. Say what it means in plain terms instead of
+  reaching for the shorthand.
+- "Triage" is avoided as a visible word on the site. The underlying idea
+  behind the course (the reader skims a full inbox fast and decides in
+  seconds) stays central and must still come through, but express it in
+  plain language rather than the word itself, with the single exception of
+  the one homepage sentence already granted the "not X but Y" exception
+  in Content rules above.
+
 ## Mechanism over assertion (the depth bar)
 
 The depth bar that used to apply to the lecture page's summary now applies
@@ -117,8 +122,8 @@ If the `humanizer` skill is available in this environment, run every page of
 prose through it before committing. If it isn't available, apply these rules
 directly:
 
-- No "not X, but Y" contrasts used just to add weight. State the point
-  directly.
+- No "not X but Y" contrasts (see the full rule and its one exception in
+  Content rules above).
 - No one-line closers that restate the paragraph above them ("That's the
   real lesson.").
 - No staged run-ups ("Let's break this down", "Here's the thing").
@@ -132,7 +137,5 @@ directly:
 - Keep specific, odd, concrete detail. Cut generic filler before cutting
   detail.
 
-This applies to every page except Tucker Vance's own bio and
-quoted material, which is deliberately overblown as tonal contrast, per the
-Content rules above. The other three people (Tejas and the two other tutors)
-stay in the dry register like the rest of the site.
+This applies to every page except Tucker Vance's own material; see the
+Voice section above for that exception.
