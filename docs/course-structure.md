@@ -62,6 +62,10 @@ it already exists in that week's deck, so nothing is lost in the move.
   understands without having seen any lecture or slide. No course jargon
   ("failure mode", "taxonomy", or other internal shorthand) on the
   assessment pages themselves.
+- All three assessment entries (Assignment 1, Assignment 2, Weekly syncs),
+  not only Weekly syncs, hide their weight on screen (`hideWeight: true`
+  in frontmatter). No assessment page or index shows a percentage; the
+  weight stays in the data only for the platform's sum-to-100 build check.
 - People collection needs exactly four entries: Tejas Tagra (instructor) and
   three tutors, one of whom is Tucker Vance. Do not invent staff
   beyond these four. Only Tucker's bio uses the overblown register (see
@@ -131,3 +135,42 @@ built directly into that week's deck as slides, the way week 1's deck
 carries Ghulati, Janoch, and Field. A line like "see the example below" only
 ever points to content already in the same deck, never to a page that
 doesn't exist.
+
+## Site component conventions
+
+These conventions were established while building the site and apply to any
+future page or component, not just the ones that happened to introduce them.
+
+- **Callout component:** a flat rectangle, never rounded (`border-radius: 0`),
+  no border, with a 3px accent-coloured rule along the top edge. The
+  background is the accent colour itself blended in at 12% opacity via
+  `color-mix()`, so it stays legible and adapts automatically in both light
+  and dark themes without a separate dark-mode override. Three accent
+  variants: green, gold, neutral. Inline code inside a callout gets a faint
+  accent-tinted highlight rather than the page's normal inline-code style.
+  Callouts are used site-wide (the lecture attend-note, the homepage help
+  line, assessment and policy notes), not just on one page, so any new
+  callout use follows this same styling rather than a bespoke one.
+- **RELATED block labeling:** a link to a lecture is prefixed `"Lecture: "`,
+  a link to a Weekly Sync is prefixed `"Weekly Sync: "`, and a link to
+  anything else (an assessment, a person) carries no prefix. This keys off
+  the destination's collection (see `src/lib/related.ts`), not the page it
+  appears on, so it applies uniformly wherever a RELATED block is built.
+- **People contact-card layout:** a circular photo, or an initials fallback
+  when no photo file exists yet; the person's name appears once, as the
+  page's own heading, and is not repeated inside the card; Role,
+  Affiliation, Email, Office hours (or Contact for tutors), and Web render
+  as zebra-striped label/value rows. Affiliation is shown both on the
+  People index cards (under the role label) and on each person's detail
+  page, from the same `affiliation` field, so the two views cannot drift
+  apart.
+- **Index pages render a visible heading via `ContentLayout`.** The People,
+  Assessment, and Weekly Syncs index pages are plain `.astro` pages using
+  `ContentLayout` for this reason, not MDX pages relying on the site's
+  default layout, which sets the document title but renders no visible
+  heading on the page itself.
+- **The header must fit the logo, nav links, and search on one row at
+  desktop widths (≥640px), never wrapping to a second row.** If a change
+  makes it wrap, fix the gap via the theme's `brandCss` layering hook (an
+  additional, unlayered stylesheet loaded alongside the theme's own), never
+  by editing the fixed `astro-theme-university` package directly.
