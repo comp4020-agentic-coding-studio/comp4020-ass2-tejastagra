@@ -9,23 +9,18 @@ email: tejas.tagra@slop.university
 contact: Friday 3pm to 5pm, Sloppy Building, Rm 3.05.
 ---
 
-Spent over a decade in enterprise sales and revenue operations before
-moving into research on how cold outreach actually works, rather than how
-it is usually taught. Built and audited outbound programmes across several
-sales organisations, and trained reps to write to people who had never
-heard of them.
+Spent several years as Chief Commercial Officer at a startup, learning
+firsthand how many good products die of unopened email, then moved into
+venture investing, where he read pitches instead of writing them and
+found the failure rate roughly the same either way.
 
 Joined Slop University in 2023 as Honorary Professor, invited on the
-strength of that operating experience translating into something
-teachable. Has since published several papers on cold outreach and reader
-attention, contributing to a small but growing academic literature on why
-some messages get read and most get deleted.
+strength of that operating experience rather than any academic record. He
+brings a background in startups and venture, not a research background,
+and has only recently started publishing on the subject, so the course
+is built on what he has seen work and fail up close rather than on a
+body of prior papers.
 
-Researches and teaches the same question from both ends: what makes a
-stranger open an email and what makes them reply. The course grew out of
-that research, treating each week's failure as a specific, describable
-reason a message went unanswered rather than a matter of charm or luck.
-
-Office hours are for questions about a specific email you are stuck on.
-Questions about the course itself are better put to the weekly sync or
-sent by email.
+Teaches the course as a practitioner's account of a problem he has spent
+a career on both sides of: writing the email that needs a reply, and
+being the person deciding whether to send one.

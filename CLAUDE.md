@@ -78,7 +78,7 @@ rather than let it drift into generic "how to network" content.
   over 150 words") unless a real source is cited.
 - Voice is plain, dry, and sincere — closer to a practitioner's memo than a
   self-help blog. Precision is the source of any humour, not winking at the
-  reader. The one deliberate exception is Bodhi Kessler-Nakamura's own voice
+  reader. The one deliberate exception is Tucker Vance's own voice
   (see People) — his bio and any quoted material from him is intentionally
   overblown, as contrast to the course's own register. Everything else
   (module content, assessments, the policies page) stays dry.
@@ -184,11 +184,11 @@ it already exists in that week's deck, so nothing is lost in the move.
   ("failure mode", "taxonomy", or other internal shorthand) on the
   assessment pages themselves.
 - People collection needs exactly four entries: Tejas Tagra (instructor) and
-  three tutors, one of whom is Bodhi Kessler-Nakamura. Do not invent staff
-  beyond these four. Only Bodhi's bio uses the overblown register (see
+  three tutors, one of whom is Tucker Vance. Do not invent staff
+  beyond these four. Only Tucker's bio uses the overblown register (see
   Content rules); Tejas and the other two tutors stay dry, or the "one
   deliberate exception" loses its point. The two new tutors need distinct,
-  plausible practitioner backgrounds, not variations on Bodhi.
+  plausible practitioner backgrounds, not variations on Tucker.
 
 ## Weekly Syncs vs. lectures — what goes where
 
@@ -283,7 +283,7 @@ directly:
 - Keep specific, odd, concrete detail. Cut generic filler before cutting
   detail.
 
-This applies to every page except Bodhi Kessler-Nakamura's own bio and
+This applies to every page except Tucker Vance's own bio and
 quoted material, which is deliberately overblown as tonal contrast, per the
 Content rules above. The other three people (Tejas and the two other tutors)
 stay in the dry register like the rest of the site.
@@ -315,4 +315,4 @@ stay in the dry register like the rest of the site.
   history as one, with a message saying what rule changed and why.
 - Keep the repo private until submission.
 - Do not editorialise tone beyond what's specified per section — e.g. the
-  policies page stays dry even though Bodhi's bio doesn't.
+  policies page stays dry even though Tucker's bio doesn't.

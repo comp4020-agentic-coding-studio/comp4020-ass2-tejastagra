@@ -6,15 +6,17 @@ import CardGrid from "astro-theme-university/components/CardGrid.astro";
 const people = await getPublishedCollection("people");
 
 const roleOrder: Record<string, number> = {
+  instructor: 0,
   convenor: 0,
   tutor: 1,
   guest: 2,
   other: 3,
 };
 
-// Map the role enum (convenor|tutor|guest|other) to display labels rather than
-// rendering the raw lowercase value.
+// Map the role enum (instructor|convenor|tutor|guest|other) to display labels
+// rather than rendering the raw lowercase value.
 const roleLabels: Record<string, string> = {
+  instructor: "Course Convenor",
   convenor: "Convenor",
   tutor: "Tutor",
   guest: "Guest lecturer",
