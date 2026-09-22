@@ -4,6 +4,7 @@
 // triage principle the course teaches: give the reader what matters now,
 // not everything at once.
 import { getCollection } from "astro:content";
+import { withBase } from "astro-theme-university/url";
 import { courseMeta } from "../course-config";
 
 const lectures = (await getCollection("lectures")).sort((a, b) => a.data.week - b.data.week);
@@ -22,11 +23,12 @@ const data = {
     week: lecture.data.week,
     title: lecture.data.title,
     date: dateOnly(lecture.data.date),
-    slides: lecture.data.slides ?? null,
+    slides: lecture.data.slides ? withBase(lecture.data.slides) : null,
   })),
   sessions: sessions.map((session) => ({
     week: session.data.week,
     description: session.data.description,
+    url: withBase(`/sessions/${session.id}/`),
   })),
   assessments: assessments.map((assessment) => ({
     title: assessment.data.title,
@@ -54,21 +56,27 @@ const data = {
     return new Date(year, month - 1, day);
   };
 
-  const line = (text: string, muted = false) => {
+  const line = (text: string, variant?: "muted" | "lead") => {
     const el = document.createElement("p");
-    el.className = muted ? "course-status__line course-status__line--muted" : "course-status__line";
+    el.className = variant ? `course-status__line course-status__line--${variant}` : "course-status__line";
     el.textContent = text;
     return el;
   };
 
   const linkLine = (before: string, href: string, linkText: string, after = "") => {
     const el = document.createElement("p");
-    el.className = "course-status__line course-status__line--muted";
+    el.className = "course-status__line";
     const link = document.createElement("a");
     link.href = href;
     link.textContent = linkText;
     el.append(before, link, after);
     return el;
+  };
+
+  const dueWording = (days: number) => {
+    if (days === 0) return "due today";
+    if (days === 1) return "due tomorrow";
+    return `due in ${days} days`;
   };
 
   try {
@@ -89,15 +97,15 @@ const data = {
     if (today < start) {
       const firstLecture = lectures[0];
       nodes.push(
-        line(`${data.courseCode} hasn't started yet. It runs in ${data.session}, ${data.year}.`),
+        line(`${data.courseCode} hasn't started yet. It runs in ${data.session}, ${data.year}.`, "lead"),
         line(
           `First lecture: ${formatCourseDate(data.startDate)}${firstLecture ? ` — ${firstLecture.title}` : ""}.`,
-          true,
+          "muted",
         ),
       );
     } else if (today > end) {
       nodes.push(
-        line("This course is not currently on offer."),
+        line("This course is not currently on offer.", "lead"),
         linkLine("See the ", data.programsUrl, "SlopU programs and courses", " page for future offerings."),
       );
     } else {
@@ -109,29 +117,28 @@ const data = {
 
       const session = data.sessions.find((s: { week: number }) => s.week === current.week);
 
-      nodes.push(line(`Week ${current.week} of 12: ${current.title}.`));
-      if (session) nodes.push(line(`This week's sync: ${session.description}`, true));
+      nodes.push(line(`Week ${current.week} of 12: ${current.title}.`, "lead"));
+
       if (current.slides) {
         nodes.push(linkLine("This week's deck: ", current.slides, `Week ${current.week} slides`, "."));
+      }
+
+      if (session) {
+        nodes.push(linkLine("This week's sync: ", session.url, "the Weekly Sync page", ` — ${session.description}`));
       }
 
       const msPerDay = 24 * 60 * 60 * 1000;
       const dueSoon = data.assessments
         .map((a: { title: string; due: string }) => ({ title: a.title, dueDate: new Date(a.due) }))
-        .filter((a: { dueDate: Date }) => {
-          const days = (a.dueDate.getTime() - today.getTime()) / msPerDay;
-          return days >= 0 && days <= 10;
-        })
-        .sort((a: { dueDate: Date }, b: { dueDate: Date }) => a.dueDate.getTime() - b.dueDate.getTime());
+        .map((a: { title: string; dueDate: Date }) => ({
+          ...a,
+          days: Math.round((a.dueDate.getTime() - today.getTime()) / msPerDay),
+        }))
+        .filter((a: { days: number }) => a.days >= 0 && a.days <= 14)
+        .sort((a: { days: number }, b: { days: number }) => a.days - b.days);
 
-      if (dueSoon.length > 0) {
-        const summary = dueSoon
-          .map((a: { title: string; dueDate: Date }) => `${a.title} (${formatCourseDate(a.dueDate)})`)
-          .join("; ");
-        const el = document.createElement("p");
-        el.className = "course-status__line course-status__due";
-        el.textContent = `Due soon: ${summary}.`;
-        nodes.push(el);
+      for (const assessment of dueSoon) {
+        nodes.push(line(`${assessment.title}: ${dueWording(assessment.days)}.`));
       }
     }
 
@@ -145,9 +152,8 @@ const data = {
   .course-status {
     margin-block: 0 2rem;
     padding: var(--at-spacing-lg, 1rem) var(--at-spacing-lg, 1.5rem);
-    border: 1px solid var(--at-border, var(--at-divider));
-    border-inline-start: 3px solid var(--at-primary);
-    background: var(--at-bg-alt);
+    border-block-start: 3px solid var(--at-primary);
+    background: color-mix(in srgb, var(--at-primary) 8%, transparent);
   }
 
   .course-status__line {
@@ -164,7 +170,8 @@ const data = {
     color: var(--at-text-secondary);
   }
 
-  .course-status__due {
+  .course-status__line--lead {
+    color: var(--at-heading);
     font-weight: 600;
   }
 </style>
