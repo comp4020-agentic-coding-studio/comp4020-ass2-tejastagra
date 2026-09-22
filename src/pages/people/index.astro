@@ -1,0 +1,9 @@
+---
+import ContentLayout from "astro-theme-university/layouts/ContentLayout.astro";
+import PeopleGrid from "../../components/PeopleGrid.astro";
+import { siteConfig } from "../../site-config";
+---
+
+<ContentLayout title="People" description="Who teaches the course, and how to reach them." {...siteConfig}>
+  <PeopleGrid />
+</ContentLayout>
