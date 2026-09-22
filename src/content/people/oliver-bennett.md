@@ -1,12 +1,13 @@
 ---
 title: Oliver Bennett
 description:
-  Tutor and later-year undergraduate studying a Bachelor of Communications
+  Tutor and final-year undergraduate studying a Bachelor of Communications
   and Business.
 role: tutor
-affiliation: Communications and Business student, Slop University
-contact: N/A
+affiliation: SU School of Communications
+email: oliver.bennett@slop.university
 ---
 
-Later-year undergraduate studying a Bachelor of Communications and
-Business.
+Final-year undergraduate studying a Bachelor of Communications and
+Business. Landed his first job after cold-emailing the CEO of a large
+consulting firm, who agreed to meet him for coffee.

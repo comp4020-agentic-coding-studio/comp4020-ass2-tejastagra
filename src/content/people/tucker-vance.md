@@ -4,8 +4,8 @@ description:
   Tutor and Masters student studying a Master of Business, formerly
   founder of Fernweather.
 role: tutor
-affiliation: Masters student, Slop University; formerly Fernweather
-contact: N/A
+affiliation: SU School of Business
+email: tucker.vance@slop.university
 ---
 
 Founder and, for fourteen months, sole employee of Fernweather, a "Slack
