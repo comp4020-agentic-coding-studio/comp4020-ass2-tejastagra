@@ -9,8 +9,6 @@ related:
   - lectures/week-08
 ---
 
-Follows the [week 8 lecture](/lectures/week-08/) on the connector's risk.
-
 ## Exercise: find the risk (30 min)
 
 Find an intro request you've sent or received that reads like a cold email

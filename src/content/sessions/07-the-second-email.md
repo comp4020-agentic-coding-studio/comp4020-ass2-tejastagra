@@ -9,9 +9,6 @@ related:
   - lectures/week-07
 ---
 
-Follows the [week 7 lecture](/lectures/week-07/) on what a follow-up needs
-to justify making the reader pay attention again.
-
 ## Exercise: name the new fact (30 min)
 
 Pick an email of yours that went unanswered. Before drafting anything,

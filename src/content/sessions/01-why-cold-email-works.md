@@ -9,9 +9,6 @@ related:
   - lectures/week-01
 ---
 
-Follows the [week 1 lecture](/lectures/week-01/) on cold emails that
-worked.
-
 ## Exercise: find the case (30 min)
 
 Find one cold email in your own history — sent or received — that actually

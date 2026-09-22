@@ -9,9 +9,6 @@ related:
   - lectures/week-06
 ---
 
-Follows the [week 6 lecture](/lectures/week-06/) and its slide deck on the
-relevance-specificity-length framework.
-
 ## Exercise: score an email (30 min)
 
 Take an email that got no reply. Score it on relevance, specificity, and

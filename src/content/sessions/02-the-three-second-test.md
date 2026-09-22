@@ -9,9 +9,6 @@ related:
   - lectures/week-02
 ---
 
-Follows the [week 2 lecture](/lectures/week-02/) on subject lines as the
-pitch, not the label.
-
 ## Exercise: sort five subject lines (30 min)
 
 Take five subject lines from real cold emails you've received or sent.

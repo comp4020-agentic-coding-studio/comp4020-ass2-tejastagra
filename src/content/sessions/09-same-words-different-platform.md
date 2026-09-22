@@ -9,9 +9,6 @@ related:
   - lectures/week-09
 ---
 
-Follows the [week 9 lecture](/lectures/week-09/) on how different platforms
-get skimmed.
-
 ## Exercise: adapt for LinkedIn (20 min)
 
 Take one message you've written for email and adapt it, deliberately, for

@@ -9,9 +9,7 @@ related:
   - lectures/week-12
 ---
 
-Follows the [week 12 lecture](/lectures/week-12/) tying the semester
-together. This is where the final assessment's doctrine starts getting
-drafted.
+This is where the final assessment's doctrine starts getting drafted.
 
 ## Exercise: draft the doctrine (25 min)
 

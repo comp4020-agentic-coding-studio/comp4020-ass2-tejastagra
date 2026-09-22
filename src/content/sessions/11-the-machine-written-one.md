@@ -9,9 +9,6 @@ related:
   - lectures/week-11
 ---
 
-Follows the [week 11 lecture](/lectures/week-11/) on what a sequence trades
-away for scale.
-
 ## Exercise: build the template (30 min)
 
 Take a one-to-one email you're proud of and try to turn it into a template

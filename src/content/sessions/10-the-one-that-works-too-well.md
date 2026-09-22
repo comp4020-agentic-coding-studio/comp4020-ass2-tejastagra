@@ -9,9 +9,6 @@ related:
   - lectures/week-10
 ---
 
-Follows the [week 10 lecture](/lectures/week-10/) on where craft tips into
-manipulation.
-
 ## Exercise: write the honest version (30 min)
 
 Take a technique from an earlier week — specificity, a stated deadline,

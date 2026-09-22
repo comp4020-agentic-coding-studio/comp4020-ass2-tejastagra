@@ -9,9 +9,6 @@ related:
   - lectures/week-04
 ---
 
-Follows the [week 4 lecture](/lectures/week-04/) on the second-sentence
-tell.
-
 ## Exercise: test a line (30 min)
 
 Find a line of "personalisation" in a cold email addressed to you. Try to

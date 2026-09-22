@@ -9,9 +9,6 @@ related:
   - lectures/week-03
 ---
 
-Follows the [week 3 lecture](/lectures/week-03/) on vague asks and the
-three-question rubric.
-
 ## Exercise: run the rubric (30 min)
 
 Take three asks from cold emails you've sent or received (a meeting

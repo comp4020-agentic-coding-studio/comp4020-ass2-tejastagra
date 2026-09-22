@@ -9,8 +9,6 @@ related:
   - lectures/week-05
 ---
 
-Follows the [week 5 lecture](/lectures/week-05/) on shape as information.
-
 ## Exercise: sort the sentences (30 min)
 
 Take an email you've written that felt necessary at every sentence. Go
