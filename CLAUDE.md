@@ -18,7 +18,6 @@ rather than let it drift into generic "how to network" content.
 
 ## Course structure (must appear on the homepage)
 
-- 3 credits.
 - Runs in the summer and winter non-standard teaching periods.
 - Each week is a 1-hour lecture (Mondays 11am–12pm) plus a 1-hour Weekly
   Sync: two contact hours per week.
