@@ -5,7 +5,6 @@ import CardGrid from "astro-theme-university/components/CardGrid.astro";
 import ContentLayout from "astro-theme-university/layouts/ContentLayout.astro";
 import { withBase } from "astro-theme-university/url";
 import heroImage from "../assets/images/hero-home.svg";
-import CourseStatus from "../components/CourseStatus.astro";
 import { courseMeta } from "../course-config";
 import { sessionLabels, siteConfig } from "../site-config";
 
@@ -31,8 +30,6 @@ const blocks = [...new Map(lectures.map((lecture) => [lecture.data.block, lectur
   heroImageAlt="A grid of envelopes in flat black and gold, most sealed and face-down at slightly uneven angles, two turned face-up and opened, in a two-ink risograph print"
   {...siteConfig}
 >
-  <CourseStatus />
-
   <ul class="course-tags" aria-label="Course tags">
     {courseMeta.tags.map((tag) => <li>{tag}</li>)}
   </ul>
