@@ -38,9 +38,11 @@ rather than let it drift into generic "how to network" content.
   schema requires a numeric weight per assessment and needs them to sum to
   100% to build; they are not a mark the student is chasing. What actually
   determines the pass/fail outcome, and what must be stated in plain
-  English on every assessment page and on the main Assessment page, is: a
+  English on every individual assessment page, is: a
   student passes the course by passing Assignment 1, passing Assignment
-  2, and completing at least 8 of the 12 weekly syncs. The Weekly Syncs
+  2, and completing at least 8 of the 12 weekly syncs. The main Assessment
+  page's intro states only the CRS pass/fail fact, not the full rule; the
+  full rule lives on the three individual assessment pages. The Weekly Syncs
   page in particular must lead with the 8-of-12 threshold, not the
   percentages, since that threshold is the thing that actually decides
   whether a student passes, and must not display a weight or a
@@ -178,7 +180,8 @@ it already exists in that week's deck, so nothing is lost in the move.
   assessment collection's structure. These weights are internal data
   the platform needs to build; the pass/fail outcome for a student is
   governed by the pass-Assignment-1/pass-Assignment-2/complete-8-of-12
-  rule above, not by the weights, and the assessment pages must say so.
+  rule above, not by the weights, and each individual assessment page
+  must say so.
 - Assessment descriptions must be written in plain English that a student
   understands without having seen any lecture or slide. No course jargon
   ("failure mode", "taxonomy", or other internal shorthand) on the
