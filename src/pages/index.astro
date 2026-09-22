@@ -50,7 +50,7 @@ const blocks = [...new Map(lectures.map((lecture) => [lecture.data.block, lectur
 
   <h2>Course structure</h2>
   <p>
-    3 credits. Runs in Semester 1, 2027 only. No prerequisites. Each week
+    Runs in Semester 1, 2027 only. No prerequisites. Each week
     pairs a one-hour lecture (Mondays, 11am–12pm, Sloppy Slop Slop Building,
     Rm 7.09) with a one-hour Weekly Sync — two contact hours a week. Graded
     CRS (pass/fail); it does not count toward GPA.
@@ -179,7 +179,7 @@ const blocks = [...new Map(lectures.map((lecture) => [lecture.data.block, lectur
     width: 100%;
     border-collapse: collapse;
     margin-block: 1rem 2rem;
-    display: block;
+    table-layout: auto;
     overflow-x: auto;
   }
 
