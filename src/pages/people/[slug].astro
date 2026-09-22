@@ -16,9 +16,9 @@ const { Content } = await render(person);
 // Map the role enum (instructor|convenor|tutor|guest|other) to display labels
 // rather than rendering the raw lowercase value. The frontmatter value stays
 // "instructor" (spec/course-content.test.ts checks for it); only the label
-// shown to readers reads "Course Convenor".
+// shown to readers reads "Course Convenor and Lecturer".
 const roleLabels: Record<string, string> = {
-  instructor: "Course Convenor",
+  instructor: "Course Convenor and Lecturer",
   convenor: "Convenor",
   tutor: "Tutor",
   guest: "Guest lecturer",

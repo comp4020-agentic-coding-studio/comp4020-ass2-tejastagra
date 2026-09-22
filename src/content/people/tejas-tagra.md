@@ -6,13 +6,23 @@ description:
 role: instructor
 affiliation: Research School of Slopponomics
 email: tejas.tagra@slop.university
-contact: Friday 3pm to 5pm, Sloppy Building, Rm 3.05.
+contact: Friday 3pm to 5pm, Sloppy Building, Rm 3.05 (by appointment only).
 ---
 
-Was Chief Commercial Officer at a startup for several years, then moved
-into venture investing. Joined Slop University in 2023 as an honorary
-professor on the strength of that career. He has only recently started
-publishing.
+Tejas Tagra was the co-founder and Chief Commercial Officer at the XYZ
+startup for over ten years. During his time at XYZ he was responsible
+for sales and business development, and successfully scaled the
+platform's revenue to over $100M while managing 50 key accounts across
+the ANZ region.
 
-Cold email happens to be the one part of both jobs he never stopped
-thinking about.
+After exiting his startup, Tagra was granted an honorary professorship
+at Slop University in recognition of his outstanding contribution to
+the startup domain. He has reportedly claimed to be very delighted to
+be joining his alma mater and teaching in the same classrooms he once
+sat in.
+
+Tagra comes from an unconventional background and does not have much
+experience with research or teaching tertiary courses. He has,
+however, been on both sides of sending and receiving cold emails in a
+commercial environment, which makes him well suited to teaching sales,
+communications and international business at Slop University.
