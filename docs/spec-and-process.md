@@ -10,8 +10,9 @@
   Weekly syncs) and their weights sum to 100%.
 - Every week's deck contains at least one concrete example (real/redacted
   or composite, per docs/content-style.md) built into a slide.
-- Every Weekly Sync page has at least two exercises and names no single
-  leading tutor (the tutor/time schedule lives on the homepage table only).
+- Every Weekly Sync page has at least two exercises. No sync page names a
+  leading tutor — the schedule of which tutor runs which sync lives only on
+  the homepage table.
 - Exactly four people entries exist (one instructor, three tutors).
 
 ## Process habits (not enforced by any check, but expected)
