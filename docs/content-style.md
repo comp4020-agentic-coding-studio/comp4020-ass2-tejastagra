@@ -10,11 +10,9 @@ either. Where "academic register" and "plain and dry" seem to pull apart,
 plain and dry wins; the academic part is about credibility and care, not
 formality for its own sake.
 
-The one deliberate exception is Tucker Vance's own voice (see
-docs/course-structure.md): his bio and any quoted material from him is
-intentionally overblown, as contrast to the course's own register.
-Everything else (module content, assessments, the policies page, and the
-other three people, Tejas and the two other tutors) stays dry.
+All four people's bios (Tejas and the three tutors, including Tucker Vance)
+use this same dry register, alongside module content, assessments, and the
+policies page.
 
 ## Content rules (apply to all generated prose)
 
@@ -137,5 +135,4 @@ directly:
 - Keep specific, odd, concrete detail. Cut generic filler before cutting
   detail.
 
-This applies to every page except Tucker Vance's own material; see the
-Voice section above for that exception.
+This applies to every page, with no exceptions: see the Voice section above.

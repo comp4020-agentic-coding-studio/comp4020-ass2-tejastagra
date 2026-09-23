@@ -25,5 +25,5 @@
   to the harness is itself a course-design decision and belongs in the
   history as one, with a message saying what rule changed and why.
 - Keep the repo private until submission.
-- Do not editorialise tone beyond what's specified per section — e.g. the
-  policies page stays dry even though Tucker's bio doesn't.
+- Do not editorialise tone beyond what's specified per section: every page,
+  including all four people's bios, stays in the site's dry register.
