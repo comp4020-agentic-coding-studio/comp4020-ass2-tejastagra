@@ -1,113 +1,27 @@
 # Process overview
 
-Written by you, for a reader: how you got from the brief to the harness and
-agentic workflow behind this submission. Markers read this file and follow its
-citations; they don't trawl the repo for evidence you didn't point at.
-
-This file is the shape; the course site's
-[assessment page](https://comp.anu.edu.au/courses/comp4020-agentic-coding-studio/topics/assessment/#what-you-submit)
-is the requirement, and its
-[word counts](https://comp.anu.edu.au/courses/comp4020-agentic-coding-studio/topics/assessment/#word-counts)
-cover every deliverable.
-
-## Interim note (crit 6 retro)
-
-This is a working snapshot for the crit 6 retro, not the finished
-submission. My Assignment 2 extension (two days) doesn't carry over to the
-crit cutoff, so this file reflects the repo as it stands today, with the
-remainder of the write-up to follow before the extended deadline. The
-sections below are accurate as far as they go; "How I got here" will get
-fuller treatment once the rest of the content is in.
-
 ## What I built
 
-A course site for "Getting Read" (SLOP3089), a course that treats cold
-email as a triage problem rather than a persuasion problem: the reader has
-fifty of these and a few seconds each, and almost every common writing
-failure is really a failure to respect that constraint. Eleven of the
-twelve weeks each name one specific, distinct failure mode (a vague ask, a
-weak subject line, fake personalisation, and so on); week 1 is the
-exception by design, opening from three real documented cold emails that
-worked instead of a failure. Every session embeds its own worked example
-directly in its prose rather than linking out to a separate examples page,
-and the harness (`CLAUDE.md`) encodes the course-design rules — including
-the split between what a session argues in full and what its matching
-lecture page is allowed to restate — as decisions I had to justify to the
-agent, not just style preferences.
+I built a course on cold email, the kind of course I would have wanted to take as a student. SLOP3089 is formally titled "Writing to Strangers", though I like to call it "Nobody Owes You a Reply". Over twelve weeks it teaches students to write a cold email someone will answer, starting from one premise: the reader skims a full inbox and decides in seconds whether to reply.
+
+The course has three assessment tasks, twelve slide decks and twelve Weekly Syncs (the tutorials), each with at least two exercises. It has features I wish ANU courses had, like a quick summary on every lecture page and easy navigation. I kept to the design template we were given, because I value consistency across course websites. The course is taught by me as convenor, with three tutors running the Weekly Syncs.
+
+The harness is CLAUDE.md plus five topic files under `docs/`, with checks in `spec/`.
 
 ## How I got here
 
-The first working session produced most of the course's early structure —
-course config, all twelve weeks' sessions and lectures, the three
-assessments, the two people bios, the policy, and several rounds of
-CLAUDE.md — without committing any of it. I noticed this once I went back
-to CLAUDE.md's own process rule, which asks for commits that describe the
-decision behind a change, not just the file touched, and realised I had
-nothing to point this file at. I committed that first batch of work as a
-small set of logical commits grouped by what actually belonged together
-(course record and starter cleanup in
-[`22971b9...fc77d4a`](https://github.com/comp4020-agentic-coding-studio/comp4020-ass2-tejastagra/compare/22971b9...fc77d4a),
-each week's session and lecture as a pair in
-[`12371b6...428e930`](https://github.com/comp4020-agentic-coding-studio/comp4020-ass2-tejastagra/compare/12371b6...428e930),
-the spec checks in
-[`ab16b37`](https://github.com/comp4020-agentic-coding-studio/comp4020-ass2-tejastagra/commit/ab16b37),
-and CLAUDE.md's state at that point in
-[`49c94f2`](https://github.com/comp4020-agentic-coding-studio/comp4020-ass2-tejastagra/commit/49c94f2)),
-rather than one commit dumping everything at once or, worse, backdating
-commits to imply a discipline I hadn't actually kept. From that point on I
-committed after each discrete piece of work: a finished week, a CLAUDE.md
-revision, a new spec/ check.
+Before touching any code, I thought about what the university courses I enjoyed had in common. I settled on two things: content that was easy to follow, and assessments and slide decks I could find quickly. I shared both with the agent. One goal I kept private: everything should be reachable within about five clicks. It was a user design decision, made by treating myself as the ideal persona for the course, and it became my own test of what Claude built.
 
-I'm noting this directly rather than letting the timestamps speak for
-themselves, because the gap is real and an honest account of catching and
-fixing it says more about how I actually worked than a commit history
-massaged to look clean from the start would.
+Two of the best courses I have taken were graded pass or fail. I learned more in them because I was focused on understanding the material, and I was not chasing marks or mechanically following guidelines. I wanted this course to work the same way, and that choice is in the first version of the harness [`49c94f2`](https://github.com/comp4020-agentic-coding-studio/comp4020-ass2-tejastagra/commit/49c94f2). Claude had little to go on, and its assessment drafts kept drifting back toward a score to chase, so I designed the contents of each assignment myself and Claude put them in place [`337379d`](https://github.com/comp4020-agentic-coding-studio/comp4020-ass2-tejastagra/commit/337379d). Every assessment page now says plainly that the percentages exist only so the platform can build [`f3b64ce`](https://github.com/comp4020-agentic-coding-studio/comp4020-ass2-tejastagra/commit/f3b64ce), [`73b1484`](https://github.com/comp4020-agentic-coding-studio/comp4020-ass2-tejastagra/commit/73b1484), [`adcd6b6`](https://github.com/comp4020-agentic-coding-studio/comp4020-ass2-tejastagra/commit/adcd6b6).
 
-The rest of the account: how the work actually went, and how I knew the
-result was right.
+I planned the course in a separate chat on my own Claude account, which also wrote my structured prompts for Claude Code. I asked it to think like a YC founder with a business background, so the content was checked for practical usefulness before it reached Claude Code. Some of that persona leaked into the first build as a tutor: an ex-founder whose startup had raised money on a nine-slide deck [`203f4f0`](https://github.com/comp4020-agentic-coding-studio/comp4020-ass2-tejastagra/commit/203f4f0). A course about writing plainly felt incoherent with one tutor shouting in a different register, so I rewrote him as a student with a real cold-email story [`5816820`](https://github.com/comp4020-agentic-coding-studio/comp4020-ass2-tejastagra/commit/5816820).
 
-The breakthrough worth citing here is a harness correction, not a content
-fix. Early on, each week's example email lived on its own page under
-`src/pages/examples/week-XX/`, linked from that week's session. That
-matched a literal reading of CLAUDE.md's original rule ("links to at least
-one real or plausibly-redacted example email") but produced exactly the
-kind of thing the course's own thesis argues against: a reader has to open
-a second page to find the one piece of information the session was
-building toward. I caught this by checking week 1 against the rule and
-noticing it didn't have a second page at all — its three real cases
-(Ghulati, Janoch, Field) were written straight into the session's own
-prose. Rather than let weeks 1 and 2 diverge from weeks 3–12 structurally,
-I asked the agent to confirm scope (all twelve weeks, not just the two I'd
-flagged) and rewrote CLAUDE.md's rule itself before touching content again:
-"No separate sources/examples page or collection — the example lives in
-the session text itself." That rewrite, and the twelve session pages it
-then required editing, are in
-[`c05b2b7...ab16b37`](https://github.com/comp4020-agentic-coding-studio/comp4020-ass2-tejastagra/compare/c05b2b7...ab16b37).
+The first decks were generic and ugly, and the lecture pages repeated the slides in prose. I asked what a student needs: something quick to scan, and a reason to attend the lecture. That became a rule. The lecture page carries a short recap, and the full teaching and worked examples live on the deck [`4afe0dc`](https://github.com/comp4020-agentic-coding-studio/comp4020-ass2-tejastagra/commit/4afe0dc). We gave every example a proper email layout, which made the decks easier to follow and made the course look purpose built [`2845731`](https://github.com/comp4020-agentic-coding-studio/comp4020-ass2-tejastagra/commit/2845731). I also added orientation slides at the start of week 1, the way real courses open [`79b622b`](https://github.com/comp4020-agentic-coding-studio/comp4020-ass2-tejastagra/commit/79b622b).
 
-Before: a session pointed away from itself at the exact moment it needed
-to make its case. After: the example is load-bearing prose on the same
-page, checked by
-[`spec/course-content.test.ts`](spec/course-content.test.ts)'s assertion
-that every session's built HTML contains an embedded example rather than a
-link out. The fix worked because it came from re-reading the rule against
-the one week that already violated it by accident (week 1 having no second
-page was never a deliberate exception to the sources-page structure — it
-just happened to be right), not from a general instinct that "inline is
-better."
+Partway through, the harness became the problem. Its rules had started contradicting each other, and the agent would do the work and only afterward tell me it had broken one. I split it into separate files for content, deck design, course structure and decision-making [`ae278ee`](https://github.com/comp4020-agentic-coding-studio/comp4020-ass2-tejastagra/commit/ae278ee), [`0302246`](https://github.com/comp4020-agentic-coding-studio/comp4020-ass2-tejastagra/commit/0302246), then removed rules that were stated twice [`942a735`](https://github.com/comp4020-agentic-coding-studio/comp4020-ass2-tejastagra/commit/942a735), [`d844914`](https://github.com/comp4020-agentic-coding-studio/comp4020-ass2-tejastagra/commit/d844914).
 
-A second discipline gap worth citing plainly: a full session's worth of
-work (course config, all twelve weeks, CLAUDE.md through several
-revisions) went uncommitted before I checked the repo's own git history
-against CLAUDE.md's process rule and found nothing there. That gap, how it
-was caught, and the commits that resulted are described above and in
-[`22971b9...e873225`](https://github.com/comp4020-agentic-coding-studio/comp4020-ass2-tejastagra/compare/22971b9...e873225).
+The split also let me run one agent per week, each reasoning against one small file. One agent working through all twelve weeks built the first six carefully, then cut corners and argued back. Separate agents kept every week at the same standard [`44da9bd`](https://github.com/comp4020-agentic-coding-studio/comp4020-ass2-tejastagra/commit/44da9bd), [`da31bbd`](https://github.com/comp4020-agentic-coding-studio/comp4020-ass2-tejastagra/commit/da31bbd), [`64d6439`](https://github.com/comp4020-agentic-coding-studio/comp4020-ass2-tejastagra/commit/64d6439).
 
-## Before you ship
+It still took a lot of back and forth. Describing what I wanted with no gaps was hard, and Claude filled every gap with slop. I wrote each tutor's profile by hand in the end [`1a1e2df`](https://github.com/comp4020-agentic-coding-studio/comp4020-ass2-tejastagra/commit/1a1e2df), [`4c98e2f`](https://github.com/comp4020-agentic-coding-studio/comp4020-ass2-tejastagra/commit/4c98e2f). Claude handled the university policies with little correction [`4064fd5`](https://github.com/comp4020-agentic-coding-studio/comp4020-ass2-tejastagra/commit/4064fd5). For lectures and Weekly Syncs, once I had perfected one week, it could follow that pattern for the rest [`6c7d632`](https://github.com/comp4020-agentic-coding-studio/comp4020-ass2-tejastagra/commit/6c7d632). Every file still needed a manual audit.
 
-`pnpm check:evidence` verifies that this comment is gone, that your citations
-resolve to real commits, that a crit week's reflection entry is in
-`reflections/`, and that your `CLAUDE.md` is there. It checks that your account
-is traceable, not that it is good: that is the marker's call.
-
-Images aren't checked: unlike a citation whose SHA doesn't resolve, a broken
-image is visible the moment this file is rendered on GitHub.
+Some problems needed a human. The content width is much narrower than the browser window and my page names were long, so the search button kept dropping onto a second row of the nav bar. Every fix Claude made for laptops broke mobile, and the next broke laptops again. I told it to reduce the minimum spacing between the logo and the first page link. That freed exactly enough room, and the nav bar rendered correctly at both sizes [`6b7837f`](https://github.com/comp4020-agentic-coding-studio/comp4020-ass2-tejastagra/commit/6b7837f). Claude kept reaching for complicated fixes, and the simple one was obvious to me looking at the page.
