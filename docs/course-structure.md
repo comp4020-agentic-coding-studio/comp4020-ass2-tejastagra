@@ -161,10 +161,9 @@ doesn't exist.
 
 - People collection needs exactly four entries: Tejas Tagra (instructor) and
   three tutors, one of whom is Tucker Vance. Do not invent staff
-  beyond these four. Only Tucker's bio uses the overblown register (see
-  docs/content-style.md); Tejas and the other two tutors stay dry, or the
-  "one deliberate exception" loses its point. The two new tutors need
-  distinct, plausible practitioner backgrounds, not variations on Tucker.
+  beyond these four. All four bios stay in the dry register (see
+  docs/content-style.md). The three tutors need distinct, plausible
+  practitioner backgrounds, not variations on each other.
   How people are displayed is covered by the People contact-card layout in
   "Site component conventions" below.
 
